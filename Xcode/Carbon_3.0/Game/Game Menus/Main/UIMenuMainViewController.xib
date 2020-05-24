@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tondo-Bold.ttf">
+            <string>Tondo-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIMenuMainViewController" customModule="Carbon_3_0" customModuleProvider="target">
+            <connections>
+                <outlet property="chooserButton" destination="gUK-zc-qWY" id="G32-cx-t04"/>
+                <outlet property="chooserLabel" destination="rsa-6V-Rqu" id="Bgl-qM-1xl"/>
+                <outlet property="diceButton" destination="YrK-OR-bfp" id="pYO-5x-RVj"/>
+                <outlet property="diceLabel" destination="UfA-Vy-xxp" id="36D-Ve-3xV"/>
+                <outlet property="historyButton" destination="int-Us-KSK" id="naN-W3-Ibo"/>
+                <outlet property="historyLabel" destination="ZbV-MF-nzg" id="4Yu-g1-Xhc"/>
+                <outlet property="mainMenuButton" destination="68t-qV-BXW" id="dhT-ih-mu1"/>
+                <outlet property="namesButton" destination="CzL-3A-mOT" id="iGm-QJ-FsI"/>
+                <outlet property="namesLabel" destination="oka-N4-xzR" id="GB1-Xo-0bL"/>
+                <outlet property="resetButton" destination="kK7-cz-UXM" id="hY9-lK-h85"/>
+                <outlet property="resetLabel" destination="btd-7w-n0n" id="d8f-hN-JML"/>
+                <outlet property="timerButton" destination="F4a-0x-0wS" id="RTS-pD-iBD"/>
+                <outlet property="timerLabel" destination="q2m-HE-UxY" id="Csn-oX-pja"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kK7-cz-UXM" customClass="UIAnimatableButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="149" y="172.66666666666666" width="77" height="77"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="77" id="YYX-U4-umz"/>
+                        <constraint firstAttribute="width" constant="77" id="emE-NH-Tae"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Auxiliary_HardReset"/>
+                    <connections>
+                        <action selector="resetButtonPressed:" destination="-1" eventType="touchUpInside" id="14U-VN-QCT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CzL-3A-mOT" customClass="UIAnimatableButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="261.66666666666669" y="172.66666666666666" width="77" height="77"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="77" id="Fkz-I1-zsN"/>
+                        <constraint firstAttribute="width" constant="77" id="pz4-cW-srL"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Auxiliary_Text"/>
+                    <connections>
+                        <action selector="namesButtonPressed:" destination="-1" eventType="touchUpInside" id="cs4-f6-2iP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4a-0x-0wS" customClass="UIAnimatableButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="36.666666666666657" y="172.66666666666666" width="77" height="77"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="77" id="kLy-BN-lvQ"/>
+                        <constraint firstAttribute="height" constant="77" id="rJu-HM-XyV"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Auxiliary_Timer"/>
+                    <connections>
+                        <action selector="timerButtonPressed:" destination="-1" eventType="touchUpInside" id="xDW-ce-tQp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrK-OR-bfp" customClass="UIAnimatableButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="261.66666666666669" y="384" width="77" height="77"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="77" id="31g-kD-72u"/>
+                        <constraint firstAttribute="height" constant="77" id="Xxa-jR-vtF"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Auxiliary_Dice"/>
+                    <connections>
+                        <action selector="diceButtonPressed:" destination="-1" eventType="touchUpInside" id="C14-1v-Zu0"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DICE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UfA-Vy-xxp">
+                    <rect key="frame" x="281.66666666666669" y="464" width="36.666666666666686" height="19.666666666666686"/>
+                    <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="16"/>
+                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIMER" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2m-HE-UxY">
+                    <rect key="frame" x="50.666666666666671" y="252.66666666666666" width="48.666666666666671" height="19.666666666666657"/>
+                    <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="16"/>
+                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESET" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btd-7w-n0n">
+                    <rect key="frame" x="163" y="252.66666666666666" width="49" height="19.666666666666657"/>
+                    <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="16"/>
+                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAMES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oka-N4-xzR">
+                    <rect key="frame" x="272.33333333333331" y="252.66666666666666" width="55.666666666666686" height="19.666666666666657"/>
+                    <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="16"/>
+                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUK-zc-qWY" customClass="UIAnimatableButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="36.666666666666657" y="384" width="77" height="77"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="77" id="c3o-KA-6Ij"/>
+                        <constraint firstAttribute="height" constant="77" id="nhZ-LA-M41"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Auxiliary_Chooser"/>
+                    <connections>
+                        <action selector="chooserButtonPressed:" destination="-1" eventType="touchUpInside" id="rp7-iG-VUm"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHOOSER" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsa-6V-Rqu">
+                    <rect key="frame" x="36.666666666666657" y="464" width="77" height="19.666666666666686"/>
+                    <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="16"/>
+                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68t-qV-BXW" customClass="UISquircleButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="103.66666666666669" y="603.66666666666663" width="168" height="60"/>
+                    <color key="backgroundColor" red="0.37254901959999998" green="0.40000000000000002" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="168" id="VEG-Ap-fNy"/>
+                        <constraint firstAttribute="height" constant="60" id="uDv-Uq-ktx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="22"/>
+                    <state key="normal" title="MAIN MENU">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="mainMenuButtonPressed:" destination="-1" eventType="touchUpInside" id="oic-UQ-Oho"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="int-Us-KSK" customClass="UIAnimatableButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="149" y="384" width="77" height="77"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="77" id="ILm-uy-aBP"/>
+                        <constraint firstAttribute="width" constant="77" id="aS6-vQ-qh6"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Auxiliary_History"/>
+                    <connections>
+                        <action selector="historyButtonPressed:" destination="-1" eventType="touchUpInside" id="0pw-jO-nMu"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HISTORY" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZbV-MF-nzg">
+                    <rect key="frame" x="154" y="464" width="67" height="19.666666666666686"/>
+                    <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="16"/>
+                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="YrK-OR-bfp" firstAttribute="centerY" secondItem="int-Us-KSK" secondAttribute="centerY" id="0Rs-nE-83R"/>
+                <constraint firstItem="F4a-0x-0wS" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="trailing" multiplier="0.2" id="8yU-7M-Ln9"/>
+                <constraint firstItem="int-Us-KSK" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="C0K-qe-ZgW"/>
+                <constraint firstItem="btd-7w-n0n" firstAttribute="top" secondItem="kK7-cz-UXM" secondAttribute="bottom" constant="3" id="DvW-9v-gaT"/>
+                <constraint firstItem="F4a-0x-0wS" firstAttribute="centerY" secondItem="kK7-cz-UXM" secondAttribute="centerY" id="Gza-mf-Anp"/>
+                <constraint firstItem="YrK-OR-bfp" firstAttribute="centerX" secondItem="CzL-3A-mOT" secondAttribute="centerX" id="Kgq-j4-Do5"/>
+                <constraint firstItem="kK7-cz-UXM" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="LDT-t6-szq"/>
+                <constraint firstItem="int-Us-KSK" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="bottom" multiplier="3.8/7" id="LdY-bM-kAp"/>
+                <constraint firstItem="btd-7w-n0n" firstAttribute="centerX" secondItem="kK7-cz-UXM" secondAttribute="centerX" id="Pg7-ar-Utv"/>
+                <constraint firstItem="gUK-zc-qWY" firstAttribute="centerX" secondItem="F4a-0x-0wS" secondAttribute="centerX" id="R5E-lP-ljk"/>
+                <constraint firstItem="rsa-6V-Rqu" firstAttribute="top" secondItem="gUK-zc-qWY" secondAttribute="bottom" constant="3" id="RHB-lO-13F"/>
+                <constraint firstItem="ZbV-MF-nzg" firstAttribute="centerX" secondItem="int-Us-KSK" secondAttribute="centerX" id="SKM-dT-yEf"/>
+                <constraint firstItem="rsa-6V-Rqu" firstAttribute="centerX" secondItem="gUK-zc-qWY" secondAttribute="centerX" id="Sbt-C4-7KC"/>
+                <constraint firstItem="kK7-cz-UXM" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="bottom" multiplier="1.9/7" id="Ysw-m8-WVc"/>
+                <constraint firstItem="q2m-HE-UxY" firstAttribute="top" secondItem="F4a-0x-0wS" secondAttribute="bottom" constant="3" id="ZNz-Pb-jfj"/>
+                <constraint firstItem="oka-N4-xzR" firstAttribute="top" secondItem="CzL-3A-mOT" secondAttribute="bottom" constant="3" id="aMJ-x5-QRC"/>
+                <constraint firstItem="UfA-Vy-xxp" firstAttribute="centerX" secondItem="YrK-OR-bfp" secondAttribute="centerX" id="bt5-fZ-zrg"/>
+                <constraint firstItem="68t-qV-BXW" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="bottom" multiplier="5.7/7" id="c6F-DJ-yMK"/>
+                <constraint firstItem="UfA-Vy-xxp" firstAttribute="top" secondItem="YrK-OR-bfp" secondAttribute="bottom" constant="3" id="eCS-k7-PBM"/>
+                <constraint firstItem="gUK-zc-qWY" firstAttribute="centerY" secondItem="int-Us-KSK" secondAttribute="centerY" id="eaZ-20-pgu"/>
+                <constraint firstItem="q2m-HE-UxY" firstAttribute="centerX" secondItem="F4a-0x-0wS" secondAttribute="centerX" id="gdM-5C-NM1"/>
+                <constraint firstItem="68t-qV-BXW" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="inv-Ws-Y2E"/>
+                <constraint firstItem="CzL-3A-mOT" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="trailing" multiplier="0.8" id="lP2-ls-LTN"/>
+                <constraint firstItem="oka-N4-xzR" firstAttribute="centerX" secondItem="CzL-3A-mOT" secondAttribute="centerX" id="sP5-S9-7Qr"/>
+                <constraint firstItem="CzL-3A-mOT" firstAttribute="centerY" secondItem="kK7-cz-UXM" secondAttribute="centerY" id="uHm-OL-rAP"/>
+                <constraint firstItem="ZbV-MF-nzg" firstAttribute="top" secondItem="int-Us-KSK" secondAttribute="bottom" constant="3" id="uQP-ga-9X9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Auxiliary_Chooser" width="100" height="100"/>
+        <image name="Auxiliary_Dice" width="100" height="100"/>
+        <image name="Auxiliary_HardReset" width="100" height="100"/>
+        <image name="Auxiliary_History" width="100" height="100"/>
+        <image name="Auxiliary_Text" width="100" height="100"/>
+        <image name="Auxiliary_Timer" width="100" height="100"/>
+    </resources>
+</document>

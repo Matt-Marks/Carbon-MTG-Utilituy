@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tondo-Bold.ttf">
+            <string>Tondo-Bold</string>
+        </array>
+        <array key="Tondo-Regular.ttf">
+            <string>Tondo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UISetupChooserViewController" customModule="Carbon_3_0" customModuleProvider="target">
+            <connections>
+                <outlet property="skipButton" destination="2Ae-iY-n9w" id="gj9-zf-IjJ"/>
+                <outlet property="subtitleLabel" destination="jQ2-3b-3hE" id="GjD-eC-sTk"/>
+                <outlet property="titleLabel" destination="LOJ-On-ihB" id="i9P-No-mQ0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="UIThemeableView" customModule="Carbon_3_0" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ae-iY-n9w" customClass="UISquircleButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="97.666666666666686" y="526" width="180" height="70"/>
+                    <color key="backgroundColor" red="0.29803921570000003" green="0.62352941179999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="091-Ww-s0l"/>
+                        <constraint firstAttribute="width" constant="180" id="RXZ-Sc-RIt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="25"/>
+                    <state key="normal" title="SKIP">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="skipButtonPressed:" destination="-1" eventType="touchUpInside" id="fCe-Ys-aS6"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Each player holds a finger on the screen. After three seconds, one is randomly chosen to go first!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQ2-3b-3hE" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="57.666666666666657" y="276" width="260" height="62.666666666666686"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="260" id="R9N-oK-XZ0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Tondo-Regular" family="Tondo" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHOOSE A PLAYER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOJ-On-ihB" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="50.333333333333343" y="227.66666666666666" width="274.66666666666663" height="38.333333333333343"/>
+                    <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="31"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LOJ-On-ihB" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="-145" id="4iQ-aT-Elp"/>
+                <constraint firstItem="2Ae-iY-n9w" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="90c-gu-sqy"/>
+                <constraint firstItem="jQ2-3b-3hE" firstAttribute="centerX" secondItem="LOJ-On-ihB" secondAttribute="centerX" id="EVh-RH-cwj"/>
+                <constraint firstItem="jQ2-3b-3hE" firstAttribute="top" secondItem="LOJ-On-ihB" secondAttribute="bottom" constant="10" id="XQt-ug-YiH"/>
+                <constraint firstItem="LOJ-On-ihB" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="p8E-lG-6KC"/>
+                <constraint firstItem="2Ae-iY-n9w" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="115" id="qRo-p4-aPf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

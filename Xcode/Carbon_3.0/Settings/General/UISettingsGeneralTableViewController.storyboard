@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="snl-vS-d4f">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings General Table View Controller-->
+        <scene sceneID="PRt-xz-wIt">
+            <objects>
+                <tableViewController id="snl-vS-d4f" customClass="UISettingsGeneralTableViewController" customModule="Carbon_3_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="30n-Rg-FJi" customClass="UIThemeableTableView" customModule="Carbon_3_0" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection footerTitle="Disables confirmation messages throughout the application. " id="3zr-mT-hDD">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="nyQ-AZ-e8A" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="35" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nyQ-AZ-e8A" id="256-T2-xi2">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prevent Popups" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Men-HM-EDr" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="14.333333333333336" width="121" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="G9p-vI-9do" customClass="UIThemeableSwitch" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="311" y="9.3333333333333357" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="preventPopupsToggled:" destination="snl-vS-d4f" eventType="valueChanged" id="gZh-jI-jWJ"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="G9p-vI-9do" firstAttribute="centerY" secondItem="256-T2-xi2" secondAttribute="centerY" id="V9l-Jk-d9v"/>
+                                                <constraint firstItem="Men-HM-EDr" firstAttribute="centerY" secondItem="256-T2-xi2" secondAttribute="centerY" id="cjG-rT-qFj"/>
+                                                <constraint firstItem="Men-HM-EDr" firstAttribute="leading" secondItem="256-T2-xi2" secondAttribute="leading" constant="15" id="tKQ-bJ-Lem"/>
+                                                <constraint firstAttribute="trailing" secondItem="G9p-vI-9do" secondAttribute="trailing" constant="15" id="ycE-PG-WF2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection footerTitle="Resetting a game removes extra counters players added during the game." id="WA8-UA-YdO">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="n8Z-pD-fkH" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="149" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n8Z-pD-fkH" id="SUL-Xq-lNj">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Removes Counters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ftt-rt-SYg" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="14.333333333333336" width="192" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aEp-De-fBL" customClass="UIThemeableSwitch" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="311" y="9.3333333333333357" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="resetRemovesCountersToggled:" destination="snl-vS-d4f" eventType="valueChanged" id="dO8-9O-KFe"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="aEp-De-fBL" secondAttribute="trailing" constant="15" id="Fa9-iP-KQk"/>
+                                                <constraint firstItem="Ftt-rt-SYg" firstAttribute="leading" secondItem="SUL-Xq-lNj" secondAttribute="leading" constant="15" id="GuG-nX-ecL"/>
+                                                <constraint firstItem="aEp-De-fBL" firstAttribute="centerY" secondItem="SUL-Xq-lNj" secondAttribute="centerY" id="Re7-KK-gpA"/>
+                                                <constraint firstItem="Ftt-rt-SYg" firstAttribute="centerY" secondItem="SUL-Xq-lNj" secondAttribute="centerY" id="vb2-lR-Kbg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection footerTitle="Resetting a game stops and resets the match timer." id="AIn-D0-V0Z">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="c6I-lF-rp1" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="263" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c6I-lF-rp1" id="TRE-fR-bHt">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Resets Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylW-Hf-Iga" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="14.333333333333336" width="148" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Kor-ff-ZNf" customClass="UIThemeableSwitch" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="311" y="9.3333333333333357" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="resetResetsTimerToggled:" destination="snl-vS-d4f" eventType="valueChanged" id="eqq-Wc-zTB"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Kor-ff-ZNf" secondAttribute="trailing" constant="15" id="NXt-aA-yoa"/>
+                                                <constraint firstItem="ylW-Hf-Iga" firstAttribute="leading" secondItem="TRE-fR-bHt" secondAttribute="leading" constant="15" id="Snz-SI-dmm"/>
+                                                <constraint firstItem="ylW-Hf-Iga" firstAttribute="centerY" secondItem="TRE-fR-bHt" secondAttribute="centerY" id="q70-QE-dSh"/>
+                                                <constraint firstItem="Kor-ff-ZNf" firstAttribute="centerY" secondItem="TRE-fR-bHt" secondAttribute="centerY" id="wCr-qE-2aQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection footerTitle="Resetting a game does not clear the game history." id="oZr-88-lzT">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="3rX-nr-td6" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="361" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3rX-nr-td6" id="z2Z-c3-ioh">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Keeps History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ej6-aO-OVa" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="14.333333333333336" width="154.33333333333334" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3mJ-DE-RLa" customClass="UIThemeableSwitch" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="311" y="9.3333333333333357" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="resetKeepsHistoryToggled:" destination="snl-vS-d4f" eventType="valueChanged" id="e4c-HY-xJS"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="3mJ-DE-RLa" firstAttribute="centerY" secondItem="z2Z-c3-ioh" secondAttribute="centerY" id="1pK-nV-jgh"/>
+                                                <constraint firstItem="Ej6-aO-OVa" firstAttribute="centerY" secondItem="z2Z-c3-ioh" secondAttribute="centerY" id="6Az-pC-p7I"/>
+                                                <constraint firstAttribute="trailing" secondItem="3mJ-DE-RLa" secondAttribute="trailing" constant="15" id="6jO-NX-xk7"/>
+                                                <constraint firstItem="Ej6-aO-OVa" firstAttribute="leading" secondItem="z2Z-c3-ioh" secondAttribute="leading" constant="15" id="8dC-Vc-MWe"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection footerTitle="Hides changes to non-life counters in the game history." id="1dw-ba-V23">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="8jP-gI-Pex" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="459" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8jP-gI-Pex" id="Hz6-dp-4NX">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History Hides Counters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMj-2R-xpS" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="14.333333333333336" width="177.33333333333334" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="p9L-E3-xD2" customClass="UIThemeableSwitch" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="311" y="9.3333333333333357" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="historyHidesCountersToggled:" destination="snl-vS-d4f" eventType="valueChanged" id="jCN-fg-aRh"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="p9L-E3-xD2" secondAttribute="trailing" constant="15" id="3ie-vv-1Os"/>
+                                                <constraint firstItem="JMj-2R-xpS" firstAttribute="centerY" secondItem="Hz6-dp-4NX" secondAttribute="centerY" id="PwQ-cd-ahJ"/>
+                                                <constraint firstItem="JMj-2R-xpS" firstAttribute="leading" secondItem="Hz6-dp-4NX" secondAttribute="leading" constant="15" id="gnd-uF-tJV"/>
+                                                <constraint firstItem="p9L-E3-xD2" firstAttribute="centerY" secondItem="Hz6-dp-4NX" secondAttribute="centerY" id="pTa-jW-fxD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="snl-vS-d4f" id="6aa-gr-L96"/>
+                            <outlet property="delegate" destination="snl-vS-d4f" id="FV8-xK-LZ6"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="historyHidesCounters" destination="p9L-E3-xD2" id="0b9-oG-Zsg"/>
+                        <outlet property="preventPopupsSwitch" destination="G9p-vI-9do" id="I9a-XY-P8o"/>
+                        <outlet property="resetKeepsHistory" destination="3mJ-DE-RLa" id="xTu-YM-wxF"/>
+                        <outlet property="resetRemovesCountersSwitch" destination="aEp-De-fBL" id="45H-mf-Rlc"/>
+                        <outlet property="resetResetsTimerSwitch" destination="Kor-ff-ZNf" id="YR9-i9-AE2"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E38-GO-H0h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31" y="72"/>
+        </scene>
+    </scenes>
+</document>

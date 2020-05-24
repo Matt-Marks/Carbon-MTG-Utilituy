@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tondo-Bold.ttf">
+            <string>Tondo-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIColorsViewController" customModule="Carbon_3_0" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="ZdG-fE-Ynf" id="z5C-I7-6o3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ZdG-fE-Ynf">
+            <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isk-l6-Uwp" customClass="UISquircleButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="337" y="282.5" width="138" height="60"/>
+                    <color key="backgroundColor" red="0.37254901959999998" green="0.40000000000000002" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="138" id="9vx-lr-fz1"/>
+                        <constraint firstAttribute="height" constant="60" id="Eom-mK-0iL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="22"/>
+                    <state key="normal" title="CANCEL">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelButtonPressed:" destination="-1" eventType="touchUpInside" id="gCa-wA-Suz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGg-NQ-NfL" customClass="UIAnimatableButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="303.5" y="147.5" width="80" height="80"/>
+                    <color key="backgroundColor" red="0.1058823529" green="0.63529411759999999" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="9Jo-kQ-8RS"/>
+                        <constraint firstAttribute="height" constant="80" id="THJ-dS-38x"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="35"/>
+                    <state key="normal" title="P">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.56999999999999995" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="colorButtonPressed:" destination="-1" eventType="touchUpInside" id="AzU-Cq-6mF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8IE-mw-DTW" customClass="UIAnimatableButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="178.5" y="147.5" width="80" height="80"/>
+                    <color key="backgroundColor" red="0.01176470588" green="0.75294117650000003" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="cNP-OB-RID"/>
+                        <constraint firstAttribute="height" constant="80" id="yGN-9J-kgX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="35"/>
+                    <state key="normal" title="Cl">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.56999999999999995" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="colorButtonPressed:" destination="-1" eventType="touchUpInside" id="9NN-AO-Y2R"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXk-y2-wBq" customClass="UIAnimatableButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="53.5" y="147.5" width="80" height="80"/>
+                    <color key="backgroundColor" red="0.50588235290000005" green="0.78039215689999997" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="EFo-Zb-RmV"/>
+                        <constraint firstAttribute="width" constant="80" id="ykD-Q6-Xnf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="35"/>
+                    <state key="normal" title="Ba">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.56999999999999995" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="colorButtonPressed:" destination="-1" eventType="touchUpInside" id="Ip9-fe-0lE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3BT-7Z-8NC" customClass="UIAnimatableButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="428.5" y="147.5" width="80" height="80"/>
+                    <color key="backgroundColor" red="0.1960784314" green="0.50980392159999999" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="ik7-73-oHP"/>
+                        <constraint firstAttribute="height" constant="80" id="kgV-Z0-xDF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="35"/>
+                    <state key="normal" title="Si">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.56999999999999995" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="colorButtonPressed:" destination="-1" eventType="touchUpInside" id="Un1-rk-ngg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cg-cl-EWw" customClass="UIAnimatableButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="553.5" y="147.5" width="80" height="80"/>
+                    <color key="backgroundColor" red="0.34901960780000002" green="0.42745098040000001" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="j31-s1-MoF"/>
+                        <constraint firstAttribute="height" constant="80" id="x4s-Ty-z1d"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="35"/>
+                    <state key="normal" title="Zn">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.56999999999999995" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="colorButtonPressed:" destination="-1" eventType="touchUpInside" id="O7R-iE-83U"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eM-mv-qTu" customClass="UIAnimatableButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="678.5" y="147.5" width="80" height="80"/>
+                    <color key="backgroundColor" red="0.49803921569999998" green="0.33725490200000002" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="2KB-Jr-ZoQ"/>
+                        <constraint firstAttribute="height" constant="80" id="6hf-tQ-yeD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="35"/>
+                    <state key="normal" title="N">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.56999999999999995" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="colorButtonPressed:" destination="-1" eventType="touchUpInside" id="jgW-kL-Kzm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lii-w0-og2" customClass="UIAnimatableButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="303.5" y="41.5" width="80" height="80"/>
+                    <color key="backgroundColor" red="0.95294117649999999" green="0.30588235289999999" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="aa5-ji-aJ1"/>
+                        <constraint firstAttribute="width" constant="80" id="apd-Os-htj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="35"/>
+                    <state key="normal" title="Li">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.56999999999999995" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="colorButtonPressed:" destination="-1" eventType="touchUpInside" id="VmH-Rx-H7a"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYM-la-hNn" customClass="UIAnimatableButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="178.5" y="41.5" width="80" height="80"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.1764705882" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="8Ne-tK-Cei"/>
+                        <constraint firstAttribute="width" constant="80" id="RdR-7K-010"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="35"/>
+                    <state key="normal" title="Ne">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.56999999999999995" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="colorButtonPressed:" destination="-1" eventType="touchUpInside" id="icZ-Fg-hof"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ueh-n7-b00" customClass="UIAnimatableButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="53.5" y="41.5" width="80" height="80"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="Lve-OT-M3P"/>
+                        <constraint firstAttribute="width" constant="80" id="cUP-U4-OFA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="35"/>
+                    <state key="normal" title="C">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.56999999999999995" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="colorButtonPressed:" destination="-1" eventType="touchUpInside" id="PTA-H5-eM2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKS-Rb-OHx" customClass="UIAnimatableButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="428.5" y="41.5" width="80" height="80"/>
+                    <color key="backgroundColor" red="1" green="0.43529411759999997" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="Vom-Uo-VzH"/>
+                        <constraint firstAttribute="width" constant="80" id="Z1e-Tf-7e0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="35"/>
+                    <state key="normal" title="He">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.56999999999999995" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="colorButtonPressed:" destination="-1" eventType="touchUpInside" id="cuO-Jb-QeO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYT-Ch-CC5" customClass="UIAnimatableButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="553.5" y="41.5" width="80" height="80"/>
+                    <color key="backgroundColor" red="1" green="0.61960784310000006" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="csQ-ou-iee"/>
+                        <constraint firstAttribute="height" constant="80" id="lu1-hr-ZNE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="35"/>
+                    <state key="normal" title="Fe">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.56999999999999995" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="colorButtonPressed:" destination="-1" eventType="touchUpInside" id="tL8-N9-jok"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4FW-Eh-uvi" customClass="UIAnimatableButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="678.5" y="41.5" width="80" height="80"/>
+                    <color key="backgroundColor" red="1" green="0.80392156859999997" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="oGS-lC-htG"/>
+                        <constraint firstAttribute="width" constant="80" id="zNK-ik-LNH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="35"/>
+                    <state key="normal" title="O">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.56999999999999995" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="colorButtonPressed:" destination="-1" eventType="touchUpInside" id="mbc-WZ-F32"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="pYM-la-hNn" firstAttribute="centerX" secondItem="X1w-Xx-po6" secondAttribute="trailing" multiplier="3.5/13" id="1jF-tE-ujO"/>
+                <constraint firstItem="ueh-n7-b00" firstAttribute="centerY" secondItem="X1w-Xx-po6" secondAttribute="bottom" multiplier="1.3/6" id="2r4-gK-oRY"/>
+                <constraint firstItem="hYT-Ch-CC5" firstAttribute="centerY" secondItem="ueh-n7-b00" secondAttribute="centerY" id="4w5-dH-mTj"/>
+                <constraint firstItem="hYT-Ch-CC5" firstAttribute="centerX" secondItem="X1w-Xx-po6" secondAttribute="trailing" multiplier="9.5/13" id="9Oj-TR-qNs"/>
+                <constraint firstItem="NKS-Rb-OHx" firstAttribute="centerX" secondItem="3BT-7Z-8NC" secondAttribute="centerX" id="A1v-U9-kIU"/>
+                <constraint firstItem="bXk-y2-wBq" firstAttribute="centerY" secondItem="X1w-Xx-po6" secondAttribute="centerY" id="CMv-Eq-wXW"/>
+                <constraint firstItem="isk-l6-Uwp" firstAttribute="centerX" secondItem="X1w-Xx-po6" secondAttribute="centerX" id="E0J-fu-ky4"/>
+                <constraint firstItem="hYT-Ch-CC5" firstAttribute="centerX" secondItem="8Cg-cl-EWw" secondAttribute="centerX" id="J8i-cV-egU"/>
+                <constraint firstItem="Lii-w0-og2" firstAttribute="centerY" secondItem="ueh-n7-b00" secondAttribute="centerY" id="JMe-4D-eYc"/>
+                <constraint firstItem="pYM-la-hNn" firstAttribute="centerX" secondItem="8IE-mw-DTW" secondAttribute="centerX" id="KV3-Hm-qN1"/>
+                <constraint firstItem="1eM-mv-qTu" firstAttribute="centerY" secondItem="bXk-y2-wBq" secondAttribute="centerY" id="MMp-g4-wXF"/>
+                <constraint firstItem="8Cg-cl-EWw" firstAttribute="centerY" secondItem="bXk-y2-wBq" secondAttribute="centerY" id="MVb-4P-aRu"/>
+                <constraint firstItem="ueh-n7-b00" firstAttribute="centerX" secondItem="X1w-Xx-po6" secondAttribute="trailing" multiplier="1.5/13" id="OYu-tq-d5r"/>
+                <constraint firstItem="4FW-Eh-uvi" firstAttribute="centerX" secondItem="X1w-Xx-po6" secondAttribute="trailing" multiplier="11.5/13" id="Psb-3n-hjU"/>
+                <constraint firstItem="4FW-Eh-uvi" firstAttribute="centerY" secondItem="ueh-n7-b00" secondAttribute="centerY" id="UNC-Sz-OeC"/>
+                <constraint firstItem="Lii-w0-og2" firstAttribute="centerX" secondItem="ZGg-NQ-NfL" secondAttribute="centerX" id="X5h-sS-3rj"/>
+                <constraint firstItem="pYM-la-hNn" firstAttribute="centerY" secondItem="ueh-n7-b00" secondAttribute="centerY" id="Z4Y-hM-WMk"/>
+                <constraint firstItem="NKS-Rb-OHx" firstAttribute="centerY" secondItem="ueh-n7-b00" secondAttribute="centerY" id="cKE-h7-tYz"/>
+                <constraint firstItem="8IE-mw-DTW" firstAttribute="centerY" secondItem="bXk-y2-wBq" secondAttribute="centerY" id="dIj-GK-FXU"/>
+                <constraint firstItem="isk-l6-Uwp" firstAttribute="centerY" secondItem="ZdG-fE-Ynf" secondAttribute="bottom" multiplier="5/6" id="deN-0n-Y4N"/>
+                <constraint firstItem="4FW-Eh-uvi" firstAttribute="centerX" secondItem="1eM-mv-qTu" secondAttribute="centerX" id="eQG-In-mKD"/>
+                <constraint firstItem="ZGg-NQ-NfL" firstAttribute="centerY" secondItem="bXk-y2-wBq" secondAttribute="centerY" id="hLI-PC-GdK"/>
+                <constraint firstItem="ueh-n7-b00" firstAttribute="centerX" secondItem="bXk-y2-wBq" secondAttribute="centerX" id="mMN-oz-zRr"/>
+                <constraint firstItem="3BT-7Z-8NC" firstAttribute="centerY" secondItem="bXk-y2-wBq" secondAttribute="centerY" id="mxX-3P-4jD"/>
+                <constraint firstItem="Lii-w0-og2" firstAttribute="centerX" secondItem="X1w-Xx-po6" secondAttribute="trailing" multiplier="5.5/13" id="wtl-Y1-yre"/>
+                <constraint firstItem="NKS-Rb-OHx" firstAttribute="centerX" secondItem="X1w-Xx-po6" secondAttribute="trailing" multiplier="7.5/13" id="xjo-s4-3eA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="X1w-Xx-po6"/>
+            <point key="canvasLocation" x="118" y="1"/>
+        </view>
+    </objects>
+</document>

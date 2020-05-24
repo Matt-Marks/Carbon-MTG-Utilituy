@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Dense-Regular.otf">
+            <string>Dense-Regular</string>
+        </array>
+        <array key="Tondo-Bold.ttf">
+            <string>Tondo-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UISetupLifeViewController" customModule="Carbon_3_0" customModuleProvider="target">
+            <connections>
+                <outlet property="customLifeButton" destination="l1D-5L-u4x" id="4jW-83-m8l"/>
+                <outlet property="fourtyButton" destination="3bQ-NH-95o" id="RNf-9L-8Dh"/>
+                <outlet property="thirtyButton" destination="FK3-Sn-WeW" id="9bz-AM-EzR"/>
+                <outlet property="twentyButton" destination="cOj-DO-kd0" id="gdb-v5-9iZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="UIThemeableView" customModule="Carbon_3_0" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FK3-Sn-WeW" customClass="UISquircleButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="140" y="348.66666666666669" width="95" height="95"/>
+                    <color key="backgroundColor" red="0.29803921570000003" green="0.62352941179999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="95" id="Daw-Jc-JvK"/>
+                        <constraint firstAttribute="height" constant="95" id="rwP-4R-vJx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dense-Regular" family="Dense" pointSize="80"/>
+                    <state key="normal" title="30">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="thirtyLifeButtonPressed:" destination="-1" eventType="touchUpInside" id="2ng-uA-yxh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="40" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bQ-NH-95o" customClass="UISquircleButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="247" y="348.66666666666669" width="95" height="95"/>
+                    <color key="backgroundColor" red="0.29803921570000003" green="0.62352941179999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="95" id="Fx2-ay-8yP"/>
+                        <constraint firstAttribute="height" constant="95" id="Svw-Xb-Zxp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dense-Regular" family="Dense" pointSize="80"/>
+                    <state key="normal" title="40">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="fourtyLifeButtonPressed:" destination="-1" eventType="touchUpInside" id="Bqb-qT-t14"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOj-DO-kd0" customClass="UISquircleButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="33" y="348.66666666666669" width="95" height="95"/>
+                    <color key="backgroundColor" red="0.29803921570000003" green="0.62352941179999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="95" id="WbX-ia-6Aa"/>
+                        <constraint firstAttribute="width" constant="95" id="o9k-r9-MXI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dense-Regular" family="Dense" pointSize="80"/>
+                    <state key="normal" title="20">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="twentyLifeButtonPressed:" destination="-1" eventType="touchUpInside" id="FYa-yr-Tmh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1D-5L-u4x" customClass="UISquircleButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="47.666666666666657" y="526" width="280" height="70"/>
+                    <color key="backgroundColor" red="0.29803921570000003" green="0.62352941179999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="JdO-5x-PMb"/>
+                        <constraint firstAttribute="height" constant="70" id="xnv-3o-Q1p"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="25"/>
+                    <state key="normal" title="CUSTOM LIFE">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="customLifeButtonPressed:" destination="-1" eventType="touchUpInside" id="wbe-qa-SRp"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SET STARTING LIFE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFb-bm-LWN" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="46.666666666666657" y="227.66666666666666" width="282" height="38.333333333333343"/>
+                    <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="31"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="l1D-5L-u4x" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="115" id="6X7-Wl-epH"/>
+                <constraint firstItem="kFb-bm-LWN" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="DPj-Q4-R6m"/>
+                <constraint firstItem="l1D-5L-u4x" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="DYD-Mn-nhx"/>
+                <constraint firstItem="FK3-Sn-WeW" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="EUo-4G-nqv"/>
+                <constraint firstItem="FK3-Sn-WeW" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="-15" id="RUS-Yi-bcC"/>
+                <constraint firstItem="cOj-DO-kd0" firstAttribute="centerY" secondItem="FK3-Sn-WeW" secondAttribute="centerY" id="Rok-QH-CMK"/>
+                <constraint firstItem="kFb-bm-LWN" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="-145" id="dob-O7-0Uy"/>
+                <constraint firstItem="3bQ-NH-95o" firstAttribute="centerY" secondItem="FK3-Sn-WeW" secondAttribute="centerY" id="enu-eg-wQD"/>
+                <constraint firstItem="FK3-Sn-WeW" firstAttribute="leading" secondItem="cOj-DO-kd0" secondAttribute="trailing" constant="12" id="iw7-SG-igC"/>
+                <constraint firstItem="3bQ-NH-95o" firstAttribute="leading" secondItem="FK3-Sn-WeW" secondAttribute="trailing" constant="12" id="nUk-NW-vLe"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

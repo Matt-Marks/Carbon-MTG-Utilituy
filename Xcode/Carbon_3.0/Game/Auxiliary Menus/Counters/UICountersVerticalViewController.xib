@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tondo-Bold.ttf">
+            <string>Tondo-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UICountersViewController" customModule="Carbon_3_0" customModuleProvider="target">
+            <connections>
+                <outlet property="completionButton" destination="tAK-vT-64E" id="wwD-rp-meD"/>
+                <outlet property="view" destination="QuP-6f-p6X" id="unw-d5-Pav"/>
+                <outletCollection property="iconButtons" destination="peA-yM-Eif" collectionClass="NSMutableArray" id="mes-q0-png"/>
+                <outletCollection property="iconButtons" destination="Njo-2R-f2V" collectionClass="NSMutableArray" id="Pci-O4-4QQ"/>
+                <outletCollection property="iconButtons" destination="2Ck-5C-OpT" collectionClass="NSMutableArray" id="2NB-7k-4Wm"/>
+                <outletCollection property="iconButtons" destination="HUL-Dg-7SB" collectionClass="NSMutableArray" id="SF0-Sk-DXM"/>
+                <outletCollection property="iconButtons" destination="V5s-Qq-SI3" collectionClass="NSMutableArray" id="3NW-mx-EpG"/>
+                <outletCollection property="iconButtons" destination="1w4-OA-YWB" collectionClass="NSMutableArray" id="4BN-b9-mX5"/>
+                <outletCollection property="iconButtons" destination="Rcs-Jg-g4B" collectionClass="NSMutableArray" id="cZe-IH-ANo"/>
+                <outletCollection property="iconButtons" destination="J4w-c2-VVE" collectionClass="NSMutableArray" id="8X3-Q4-f74"/>
+                <outletCollection property="iconButtons" destination="bV1-UV-Dxo" collectionClass="NSMutableArray" id="3OW-oD-O4O"/>
+                <outletCollection property="iconButtons" destination="HS4-Fs-DQJ" collectionClass="NSMutableArray" id="T8f-PH-jGR"/>
+                <outletCollection property="iconButtons" destination="0hp-Ee-Lsj" collectionClass="NSMutableArray" id="WTa-Ew-Ned"/>
+                <outletCollection property="iconButtons" destination="YaI-7x-iCv" collectionClass="NSMutableArray" id="UKj-07-DtB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="QuP-6f-p6X">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" clipsSubviews="YES" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bV1-UV-Dxo" customClass="UIIconButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="260" y="350" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="a91-1M-4SZ"/>
+                        <constraint firstAttribute="width" constant="80" id="rof-as-nFt"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Counter_Black"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="40"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="iconButtonPressed:" destination="-1" eventType="touchUpInside" id="XMQ-QW-SWR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4w-c2-VVE" customClass="UIIconButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="147.5" y="350" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="COS-CT-I9g"/>
+                        <constraint firstAttribute="height" constant="80" id="veF-XL-SWn"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Counter_Blue"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="40"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="iconButtonPressed:" destination="-1" eventType="touchUpInside" id="csk-JQ-02M"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rcs-Jg-g4B" customClass="UIIconButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="35" y="350" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="fKb-zP-Rpg"/>
+                        <constraint firstAttribute="height" constant="80" id="geL-Mh-PeA"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Counter_White"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="40"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="iconButtonPressed:" destination="-1" eventType="touchUpInside" id="ebq-Gq-HPv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ck-5C-OpT" customClass="UIIconButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="260" y="73.5" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="D81-80-dCA"/>
+                        <constraint firstAttribute="width" constant="80" id="RKq-TU-dKt"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Counter_Poison"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="40"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="iconButtonPressed:" destination="-1" eventType="touchUpInside" id="cpE-O4-WAq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Njo-2R-f2V" customClass="UIIconButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="147.5" y="73.5" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="2TV-6p-eTz"/>
+                        <constraint firstAttribute="width" constant="80" id="QhG-l4-rx1"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Counter_Experience"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="40"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="iconButtonPressed:" destination="-1" eventType="touchUpInside" id="qkJ-AL-kWP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peA-yM-Eif" customClass="UIIconButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="35" y="73.5" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="BWj-GW-VmY"/>
+                        <constraint firstAttribute="width" constant="80" id="TM9-zC-gOt"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Counter_Energy"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="40"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="iconButtonPressed:" destination="-1" eventType="touchUpInside" id="nrI-Us-dzX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HS4-Fs-DQJ" customClass="UIIconButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="35" y="488" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="nGJ-pw-LEB"/>
+                        <constraint firstAttribute="width" constant="80" id="z10-ot-cLF"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Counter_Red"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="40"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="iconButtonPressed:" destination="-1" eventType="touchUpInside" id="WO9-4Y-r5y"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hp-Ee-Lsj" customClass="UIIconButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="147.5" y="488" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="E8n-od-gHt"/>
+                        <constraint firstAttribute="width" constant="80" id="RNa-Yf-JFR"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Counter_Green"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="40"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="iconButtonPressed:" destination="-1" eventType="touchUpInside" id="aB0-Ix-IC2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YaI-7x-iCv" customClass="UIIconButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="260" y="488" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="10Y-hh-1i5"/>
+                        <constraint firstAttribute="height" constant="80" id="qBF-jT-smb"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Counter_Colorless"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="40"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="iconButtonPressed:" destination="-1" eventType="touchUpInside" id="W7t-Hd-WfW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUL-Dg-7SB" customClass="UIIconButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="35" y="211.5" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="HZv-cJ-pgP"/>
+                        <constraint firstAttribute="height" constant="80" id="bgl-wv-hI2"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Counter_Storm"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="40"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="iconButtonPressed:" destination="-1" eventType="touchUpInside" id="dGJ-rs-LT8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5s-Qq-SI3" customClass="UIIconButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="147.5" y="211.5" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="CUt-Nw-hxg"/>
+                        <constraint firstAttribute="height" constant="80" id="R2C-yB-5w2"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Counter_Tax"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="40"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="iconButtonPressed:" destination="-1" eventType="touchUpInside" id="RHD-mP-XfJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1w4-OA-YWB" customClass="UIIconButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="260" y="211.5" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="84v-oJ-tOi"/>
+                        <constraint firstAttribute="height" constant="80" id="8Jf-nv-lUg"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Counter_Damage"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="40"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="iconButtonPressed:" destination="-1" eventType="touchUpInside" id="TiW-9h-nlm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAK-vT-64E" customClass="UISquircleButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="118.5" y="668.5" width="138" height="60"/>
+                    <color key="backgroundColor" red="0.37254901959999998" green="0.40000000000000002" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="138" id="RJH-rG-8MU"/>
+                        <constraint firstAttribute="height" constant="60" id="qOZ-ef-Nkr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="22"/>
+                    <state key="normal" title="CANCEL">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="completionButtonPressed:" destination="-1" eventType="touchUpInside" id="guK-KM-Niv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="HS4-Fs-DQJ" firstAttribute="centerY" secondItem="YaI-7x-iCv" secondAttribute="centerY" id="1LJ-GR-Gcp"/>
+                <constraint firstItem="HS4-Fs-DQJ" firstAttribute="centerY" secondItem="5A8-0u-nk8" secondAttribute="bottom" multiplier="6.5/10" id="2v1-gm-YqE"/>
+                <constraint firstItem="Rcs-Jg-g4B" firstAttribute="centerY" secondItem="J4w-c2-VVE" secondAttribute="centerY" id="4DM-bY-e7C"/>
+                <constraint firstItem="2Ck-5C-OpT" firstAttribute="centerX" secondItem="1w4-OA-YWB" secondAttribute="centerX" id="55y-wg-u78"/>
+                <constraint firstItem="Rcs-Jg-g4B" firstAttribute="centerY" secondItem="5A8-0u-nk8" secondAttribute="bottom" multiplier="4.8/10" id="709-6F-wZO"/>
+                <constraint firstItem="tAK-vT-64E" firstAttribute="centerY" secondItem="5A8-0u-nk8" secondAttribute="bottom" multiplier="8.6/10" id="7aQ-so-qIk"/>
+                <constraint firstItem="peA-yM-Eif" firstAttribute="centerX" secondItem="HS4-Fs-DQJ" secondAttribute="centerX" id="8Tw-MB-6H9"/>
+                <constraint firstItem="Njo-2R-f2V" firstAttribute="centerX" secondItem="5A8-0u-nk8" secondAttribute="centerX" id="9ic-5B-5ut"/>
+                <constraint firstItem="2Ck-5C-OpT" firstAttribute="centerX" secondItem="YaI-7x-iCv" secondAttribute="centerX" id="9uV-VH-oIO"/>
+                <constraint firstItem="HUL-Dg-7SB" firstAttribute="centerY" secondItem="5A8-0u-nk8" secondAttribute="bottom" multiplier="3.1/10" id="Eog-vG-Y8u"/>
+                <constraint firstItem="peA-yM-Eif" firstAttribute="centerY" secondItem="2Ck-5C-OpT" secondAttribute="centerY" id="Ks4-iL-p0L"/>
+                <constraint firstItem="HUL-Dg-7SB" firstAttribute="centerY" secondItem="V5s-Qq-SI3" secondAttribute="centerY" id="NP9-mC-Flr"/>
+                <constraint firstItem="Rcs-Jg-g4B" firstAttribute="centerY" secondItem="bV1-UV-Dxo" secondAttribute="centerY" id="Qlr-Kx-02g"/>
+                <constraint firstItem="HUL-Dg-7SB" firstAttribute="centerY" secondItem="1w4-OA-YWB" secondAttribute="centerY" id="XBQ-MK-ilA"/>
+                <constraint firstItem="HS4-Fs-DQJ" firstAttribute="centerY" secondItem="0hp-Ee-Lsj" secondAttribute="centerY" id="ZIe-XH-lVj"/>
+                <constraint firstItem="peA-yM-Eif" firstAttribute="centerX" secondItem="HUL-Dg-7SB" secondAttribute="centerX" id="cck-Pr-MoE"/>
+                <constraint firstItem="peA-yM-Eif" firstAttribute="centerY" secondItem="Njo-2R-f2V" secondAttribute="centerY" id="eL0-Zr-ItL"/>
+                <constraint firstItem="peA-yM-Eif" firstAttribute="centerY" secondItem="5A8-0u-nk8" secondAttribute="bottom" multiplier="1.4/10" id="eU1-aA-jWO"/>
+                <constraint firstItem="2Ck-5C-OpT" firstAttribute="centerX" secondItem="5A8-0u-nk8" secondAttribute="trailing" multiplier="0.8" id="gn1-Pv-2U3"/>
+                <constraint firstItem="tAK-vT-64E" firstAttribute="centerX" secondItem="5A8-0u-nk8" secondAttribute="centerX" id="qDL-5V-K7e"/>
+                <constraint firstItem="Njo-2R-f2V" firstAttribute="centerX" secondItem="J4w-c2-VVE" secondAttribute="centerX" id="sP0-fq-AZI"/>
+                <constraint firstItem="Njo-2R-f2V" firstAttribute="centerX" secondItem="0hp-Ee-Lsj" secondAttribute="centerX" id="ud6-EV-QVZ"/>
+                <constraint firstItem="peA-yM-Eif" firstAttribute="centerX" secondItem="Rcs-Jg-g4B" secondAttribute="centerX" id="w9F-D1-zKx"/>
+                <constraint firstItem="Njo-2R-f2V" firstAttribute="centerX" secondItem="V5s-Qq-SI3" secondAttribute="centerX" id="wtN-XH-nFL"/>
+                <constraint firstItem="peA-yM-Eif" firstAttribute="centerX" secondItem="5A8-0u-nk8" secondAttribute="trailing" multiplier="0.2" id="xXp-B0-88w"/>
+                <constraint firstItem="2Ck-5C-OpT" firstAttribute="centerX" secondItem="bV1-UV-Dxo" secondAttribute="centerX" id="y0p-nm-bza"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="5A8-0u-nk8"/>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Counter_Black" width="80" height="80"/>
+        <image name="Counter_Blue" width="80" height="80"/>
+        <image name="Counter_Colorless" width="80" height="80"/>
+        <image name="Counter_Damage" width="80" height="80"/>
+        <image name="Counter_Energy" width="80" height="80"/>
+        <image name="Counter_Experience" width="80" height="80"/>
+        <image name="Counter_Green" width="80" height="80"/>
+        <image name="Counter_Poison" width="80" height="80"/>
+        <image name="Counter_Red" width="80" height="80"/>
+        <image name="Counter_Storm" width="80" height="80"/>
+        <image name="Counter_Tax" width="80" height="80"/>
+        <image name="Counter_White" width="80" height="80"/>
+    </resources>
+</document>

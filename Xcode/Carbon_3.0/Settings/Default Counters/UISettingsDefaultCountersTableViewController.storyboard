@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="It6-GQ-DS5">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings Default Counters Table View Controller-->
+        <scene sceneID="O7y-vw-fss">
+            <objects>
+                <tableViewController id="It6-GQ-DS5" customClass="UISettingsDefaultCountersTableViewController" customModule="Carbon_3_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="AYJ-pc-n39" customClass="UIThemeableTableView" customModule="Carbon_3_0" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Default Counters" footerTitle="Each player will start with these counters." id="Fvx-OU-vOP">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="GuE-0A-S5I" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="600" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GuE-0A-S5I" id="x2f-4p-sjZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Energy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwh-2K-nRl" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="60" y="14.5" width="53.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Counter_Energy" translatesAutoresizingMaskIntoConstraints="NO" id="IJI-bm-LOi" customClass="UIThemeableImageView" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="10" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="lLN-oh-mbP"/>
+                                                        <constraint firstAttribute="height" constant="30" id="vO3-ka-ssc"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GI0-Vs-D2f" customClass="UIThemeableSwitch" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="540" y="9.5" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.0" green="0.58823529409999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="counterToggled:" destination="It6-GQ-DS5" eventType="valueChanged" id="SP5-t9-K5S"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjx-Sa-1Yr" customClass="CarbonProLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="485" y="14" width="40" height="22"/>
+                                                    <color key="backgroundColor" red="0.92941176469999998" green="0.30588235289999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="4qO-5o-OaY"/>
+                                                        <constraint firstAttribute="width" constant="40" id="BjK-ai-37R"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="IJI-bm-LOi" firstAttribute="centerY" secondItem="x2f-4p-sjZ" secondAttribute="centerY" id="1XM-9N-LO0"/>
+                                                <constraint firstItem="nwh-2K-nRl" firstAttribute="centerY" secondItem="x2f-4p-sjZ" secondAttribute="centerY" id="79g-rU-zjO"/>
+                                                <constraint firstItem="nwh-2K-nRl" firstAttribute="leading" secondItem="IJI-bm-LOi" secondAttribute="trailing" constant="15" id="Cgy-zK-ahC"/>
+                                                <constraint firstItem="GI0-Vs-D2f" firstAttribute="leading" secondItem="jjx-Sa-1Yr" secondAttribute="trailing" constant="15" id="DGL-xc-kFG"/>
+                                                <constraint firstItem="jjx-Sa-1Yr" firstAttribute="centerY" secondItem="x2f-4p-sjZ" secondAttribute="centerY" id="E4Z-pc-vKe"/>
+                                                <constraint firstAttribute="trailing" secondItem="GI0-Vs-D2f" secondAttribute="trailing" constant="11" id="YX8-4O-zcU"/>
+                                                <constraint firstItem="IJI-bm-LOi" firstAttribute="leading" secondItem="x2f-4p-sjZ" secondAttribute="leading" constant="15" id="mKm-oo-n0L"/>
+                                                <constraint firstItem="GI0-Vs-D2f" firstAttribute="centerY" secondItem="x2f-4p-sjZ" secondAttribute="centerY" id="uWI-7v-18t"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="Oqu-Y6-bf1" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="105.5" width="600" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Oqu-Y6-bf1" id="ge2-Rn-eYz">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Experience" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Bp-Z3-rt7" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="60" y="14.5" width="85" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Counter_Experience" translatesAutoresizingMaskIntoConstraints="NO" id="8uS-QP-naU" customClass="UIThemeableImageView" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="10" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="FnY-uQ-4X2"/>
+                                                        <constraint firstAttribute="width" constant="30" id="iIb-GF-Lwv"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Qlz-W4-XtH" customClass="UIThemeableSwitch" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="540" y="9.5" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.0" green="0.58823529409999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="counterToggled:" destination="It6-GQ-DS5" eventType="valueChanged" id="Fc8-CG-FIY"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkh-gf-C4K" customClass="CarbonProLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="485" y="14" width="40" height="22"/>
+                                                    <color key="backgroundColor" red="0.92941176469999998" green="0.30588235289999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="26C-H5-LW2"/>
+                                                        <constraint firstAttribute="width" constant="40" id="Scy-OS-8xB"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="8uS-QP-naU" firstAttribute="centerY" secondItem="ge2-Rn-eYz" secondAttribute="centerY" id="DqV-E5-dFJ"/>
+                                                <constraint firstItem="3Bp-Z3-rt7" firstAttribute="leading" secondItem="8uS-QP-naU" secondAttribute="trailing" constant="15" id="I4j-Wv-1oJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="Qlz-W4-XtH" secondAttribute="trailing" constant="11" id="K28-pm-tlA"/>
+                                                <constraint firstItem="Qlz-W4-XtH" firstAttribute="centerY" secondItem="ge2-Rn-eYz" secondAttribute="centerY" id="NEo-yW-Qiw"/>
+                                                <constraint firstItem="Qlz-W4-XtH" firstAttribute="leading" secondItem="bkh-gf-C4K" secondAttribute="trailing" constant="15" id="Y6s-Ve-IMN"/>
+                                                <constraint firstItem="bkh-gf-C4K" firstAttribute="centerY" secondItem="ge2-Rn-eYz" secondAttribute="centerY" id="coy-qq-QGN"/>
+                                                <constraint firstItem="3Bp-Z3-rt7" firstAttribute="centerY" secondItem="ge2-Rn-eYz" secondAttribute="centerY" id="mgS-pc-VC8"/>
+                                                <constraint firstItem="8uS-QP-naU" firstAttribute="leading" secondItem="ge2-Rn-eYz" secondAttribute="leading" constant="15" id="peU-7U-m1p"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="Ilu-FW-vuL" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="155.5" width="600" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ilu-FW-vuL" id="Nbg-8P-pQD">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poison" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6G-xL-gBy" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="60" y="14.5" width="51.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Counter_Poison" translatesAutoresizingMaskIntoConstraints="NO" id="6hY-mt-wwf" customClass="UIThemeableImageView" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="10" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="98T-6p-M6W"/>
+                                                        <constraint firstAttribute="height" constant="30" id="NTZ-W6-hp1"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <switch opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="obp-8g-QVO" customClass="UIThemeableSwitch" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="540" y="9.5" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.0" green="0.58823529409999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="counterToggled:" destination="It6-GQ-DS5" eventType="valueChanged" id="cnZ-1W-AAM"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAH-U3-150" customClass="CarbonProLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="485" y="14" width="40" height="22"/>
+                                                    <color key="backgroundColor" red="0.92941176469999998" green="0.30588235289999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="AdB-EO-Jk7"/>
+                                                        <constraint firstAttribute="height" constant="22" id="p03-ap-ate"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="obp-8g-QVO" firstAttribute="centerY" secondItem="Nbg-8P-pQD" secondAttribute="centerY" id="2Eh-r7-RaP"/>
+                                                <constraint firstItem="6hY-mt-wwf" firstAttribute="leading" secondItem="Nbg-8P-pQD" secondAttribute="leading" constant="15" id="3e1-TD-EqD"/>
+                                                <constraint firstItem="S6G-xL-gBy" firstAttribute="centerY" secondItem="Nbg-8P-pQD" secondAttribute="centerY" id="I0Z-me-gjZ"/>
+                                                <constraint firstItem="WAH-U3-150" firstAttribute="centerY" secondItem="Nbg-8P-pQD" secondAttribute="centerY" id="OXc-dL-RJY"/>
+                                                <constraint firstItem="obp-8g-QVO" firstAttribute="leading" secondItem="WAH-U3-150" secondAttribute="trailing" constant="15" id="X3a-aa-jxR"/>
+                                                <constraint firstAttribute="trailing" secondItem="obp-8g-QVO" secondAttribute="trailing" constant="11" id="ZIm-OZ-VTK"/>
+                                                <constraint firstItem="6hY-mt-wwf" firstAttribute="centerY" secondItem="Nbg-8P-pQD" secondAttribute="centerY" id="hbS-Sd-gPD"/>
+                                                <constraint firstItem="S6G-xL-gBy" firstAttribute="leading" secondItem="6hY-mt-wwf" secondAttribute="trailing" constant="15" id="lpl-NQ-LWI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="teA-xf-Jnx" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="205.5" width="600" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="teA-xf-Jnx" id="JWK-vJ-gRB">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Storm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6I-O5-CDt" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="60" y="14.5" width="46.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Counter_Storm" translatesAutoresizingMaskIntoConstraints="NO" id="Kdh-gM-daL" customClass="UIThemeableImageView" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="10" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="obv-LT-Sxl"/>
+                                                        <constraint firstAttribute="width" constant="30" id="xG6-6Q-vRh"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <switch opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Dcj-um-gkm" customClass="UIThemeableSwitch" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="540" y="9.5" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.0" green="0.58823529409999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="counterToggled:" destination="It6-GQ-DS5" eventType="valueChanged" id="dVr-qU-dj9"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WT0-jx-IkM" customClass="CarbonProLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="485" y="14" width="40" height="22"/>
+                                                    <color key="backgroundColor" red="0.92941176469999998" green="0.30588235289999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="bAI-DD-f2U"/>
+                                                        <constraint firstAttribute="width" constant="40" id="gmB-fo-Ifc"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="V6I-O5-CDt" firstAttribute="leading" secondItem="Kdh-gM-daL" secondAttribute="trailing" constant="15" id="7UO-dU-zib"/>
+                                                <constraint firstItem="Kdh-gM-daL" firstAttribute="leading" secondItem="JWK-vJ-gRB" secondAttribute="leading" constant="15" id="EOn-4Z-KRM"/>
+                                                <constraint firstItem="Dcj-um-gkm" firstAttribute="centerY" secondItem="JWK-vJ-gRB" secondAttribute="centerY" id="EnW-Wc-avJ"/>
+                                                <constraint firstItem="V6I-O5-CDt" firstAttribute="centerY" secondItem="JWK-vJ-gRB" secondAttribute="centerY" id="HSC-6c-Ene"/>
+                                                <constraint firstAttribute="trailing" secondItem="Dcj-um-gkm" secondAttribute="trailing" constant="11" id="HWP-Fj-mLP"/>
+                                                <constraint firstItem="WT0-jx-IkM" firstAttribute="centerY" secondItem="JWK-vJ-gRB" secondAttribute="centerY" id="MzU-ea-qyE"/>
+                                                <constraint firstItem="Dcj-um-gkm" firstAttribute="leading" secondItem="WT0-jx-IkM" secondAttribute="trailing" constant="15" id="sQa-VE-Erq"/>
+                                                <constraint firstItem="Kdh-gM-daL" firstAttribute="centerY" secondItem="JWK-vJ-gRB" secondAttribute="centerY" id="wFC-03-aJc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="czt-PF-OCm" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="255.5" width="600" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="czt-PF-OCm" id="sKD-6W-ofQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tax" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fC-dO-CH4" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="60" y="14.5" width="26.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Counter_Tax" translatesAutoresizingMaskIntoConstraints="NO" id="uFg-zX-0jH" customClass="UIThemeableImageView" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="10" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="kLS-jY-yCA"/>
+                                                        <constraint firstAttribute="width" constant="30" id="phW-16-f6d"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <switch opaque="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eos-e7-ZxN" customClass="UIThemeableSwitch" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="540" y="9.5" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.0" green="0.58823529409999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="counterToggled:" destination="It6-GQ-DS5" eventType="valueChanged" id="mzc-Du-9mn"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zJ-4A-a6K" customClass="CarbonProLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="485" y="14" width="40" height="22"/>
+                                                    <color key="backgroundColor" red="0.92941176469999998" green="0.30588235289999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="sKn-fi-cPR"/>
+                                                        <constraint firstAttribute="height" constant="22" id="vwV-zv-Uf8"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="3fC-dO-CH4" firstAttribute="leading" secondItem="uFg-zX-0jH" secondAttribute="trailing" constant="15" id="0Ms-vf-c1Q"/>
+                                                <constraint firstItem="8zJ-4A-a6K" firstAttribute="centerY" secondItem="sKD-6W-ofQ" secondAttribute="centerY" id="6rl-9o-YIS"/>
+                                                <constraint firstItem="eos-e7-ZxN" firstAttribute="centerY" secondItem="sKD-6W-ofQ" secondAttribute="centerY" id="Ay7-Sp-BvU"/>
+                                                <constraint firstItem="uFg-zX-0jH" firstAttribute="leading" secondItem="sKD-6W-ofQ" secondAttribute="leading" constant="15" id="UH9-1b-jaf"/>
+                                                <constraint firstItem="uFg-zX-0jH" firstAttribute="centerY" secondItem="sKD-6W-ofQ" secondAttribute="centerY" id="cfc-Ue-8y0"/>
+                                                <constraint firstItem="3fC-dO-CH4" firstAttribute="centerY" secondItem="sKD-6W-ofQ" secondAttribute="centerY" id="lbc-R1-aug"/>
+                                                <constraint firstAttribute="trailing" secondItem="eos-e7-ZxN" secondAttribute="trailing" constant="11" id="whZ-c0-pmc"/>
+                                                <constraint firstItem="eos-e7-ZxN" firstAttribute="leading" secondItem="8zJ-4A-a6K" secondAttribute="trailing" constant="15" id="y3K-nj-7NP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="5Me-5v-VZi" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="305.5" width="600" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5Me-5v-VZi" id="dmJ-XH-c46">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Damage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZG-RT-ctH" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="60" y="14.5" width="64" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Counter_Damage" translatesAutoresizingMaskIntoConstraints="NO" id="YhI-Ps-rEy" customClass="UIThemeableImageView" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="10" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="d0x-3G-z0I"/>
+                                                        <constraint firstAttribute="width" constant="30" id="tfQ-3e-Boe"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <switch opaque="NO" tag="6" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7JD-b0-NEv" customClass="UIThemeableSwitch" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="540" y="9.5" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.0" green="0.58823529409999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="counterToggled:" destination="It6-GQ-DS5" eventType="valueChanged" id="SFs-rx-xdt"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2z5-5t-Xaa" customClass="CarbonProLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="485" y="14" width="40" height="22"/>
+                                                    <color key="backgroundColor" red="0.92941176469999998" green="0.30588235289999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="4Bd-Jt-S8y"/>
+                                                        <constraint firstAttribute="width" constant="40" id="Qkf-bJ-YNd"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="YhI-Ps-rEy" firstAttribute="centerY" secondItem="dmJ-XH-c46" secondAttribute="centerY" id="22s-eY-rD5"/>
+                                                <constraint firstItem="YhI-Ps-rEy" firstAttribute="leading" secondItem="dmJ-XH-c46" secondAttribute="leading" constant="15" id="588-vX-4Kb"/>
+                                                <constraint firstAttribute="trailing" secondItem="7JD-b0-NEv" secondAttribute="trailing" constant="11" id="F2H-nl-b3d"/>
+                                                <constraint firstItem="PZG-RT-ctH" firstAttribute="centerY" secondItem="dmJ-XH-c46" secondAttribute="centerY" id="H42-YY-AYv"/>
+                                                <constraint firstItem="7JD-b0-NEv" firstAttribute="centerY" secondItem="dmJ-XH-c46" secondAttribute="centerY" id="NAt-fy-uAZ"/>
+                                                <constraint firstItem="2z5-5t-Xaa" firstAttribute="centerY" secondItem="dmJ-XH-c46" secondAttribute="centerY" id="gX3-h7-CUY"/>
+                                                <constraint firstItem="PZG-RT-ctH" firstAttribute="leading" secondItem="YhI-Ps-rEy" secondAttribute="trailing" constant="15" id="i2p-bx-sWs"/>
+                                                <constraint firstItem="7JD-b0-NEv" firstAttribute="leading" secondItem="2z5-5t-Xaa" secondAttribute="trailing" constant="15" id="peS-NT-kPd"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="dOl-43-gxS" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="355.5" width="600" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dOl-43-gxS" id="5zH-e9-8vV">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="White" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Xe-J0-pLW" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="60" y="14.5" width="45" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Counter_White" translatesAutoresizingMaskIntoConstraints="NO" id="bdI-Lj-SzG" customClass="UIThemeableImageView" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="10" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="bii-XP-6fh"/>
+                                                        <constraint firstAttribute="width" constant="30" id="fQq-JZ-2KF"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <switch opaque="NO" tag="7" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="c66-Cm-ZRf" customClass="UIThemeableSwitch" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="540" y="9.5" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.0" green="0.58823529409999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="counterToggled:" destination="It6-GQ-DS5" eventType="valueChanged" id="fsH-df-ITZ"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JpJ-58-agL" customClass="CarbonProLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="485" y="14" width="40" height="22"/>
+                                                    <color key="backgroundColor" red="0.92941176469999998" green="0.30588235289999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="2vo-YS-enY"/>
+                                                        <constraint firstAttribute="width" constant="40" id="SbU-ZL-4NP"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="c66-Cm-ZRf" firstAttribute="leading" secondItem="JpJ-58-agL" secondAttribute="trailing" constant="15" id="01H-4G-CxL"/>
+                                                <constraint firstItem="9Xe-J0-pLW" firstAttribute="leading" secondItem="bdI-Lj-SzG" secondAttribute="trailing" constant="15" id="658-PN-5fM"/>
+                                                <constraint firstItem="bdI-Lj-SzG" firstAttribute="centerY" secondItem="5zH-e9-8vV" secondAttribute="centerY" id="Jbw-Xp-HYo"/>
+                                                <constraint firstItem="c66-Cm-ZRf" firstAttribute="centerY" secondItem="5zH-e9-8vV" secondAttribute="centerY" id="UC2-FD-rR2"/>
+                                                <constraint firstItem="JpJ-58-agL" firstAttribute="centerY" secondItem="5zH-e9-8vV" secondAttribute="centerY" id="YYF-lf-kfm"/>
+                                                <constraint firstItem="9Xe-J0-pLW" firstAttribute="centerY" secondItem="5zH-e9-8vV" secondAttribute="centerY" id="bvu-sP-x5f"/>
+                                                <constraint firstAttribute="trailing" secondItem="c66-Cm-ZRf" secondAttribute="trailing" constant="11" id="lsp-p5-eam"/>
+                                                <constraint firstItem="bdI-Lj-SzG" firstAttribute="leading" secondItem="5zH-e9-8vV" secondAttribute="leading" constant="15" id="noT-4H-yzn"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="vx4-XW-Nkd" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="405.5" width="600" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vx4-XW-Nkd" id="dxj-4O-YLZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkz-fM-ShF" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="60" y="14.5" width="34" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Counter_Blue" translatesAutoresizingMaskIntoConstraints="NO" id="NhR-sJ-bIg" customClass="UIThemeableImageView" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="10" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="eFn-R6-hNX"/>
+                                                        <constraint firstAttribute="height" constant="30" id="vY3-aa-M95"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <switch opaque="NO" tag="8" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NKn-V6-su0" customClass="UIThemeableSwitch" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="540" y="9.5" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.0" green="0.58823529409999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="counterToggled:" destination="It6-GQ-DS5" eventType="valueChanged" id="1Hb-Ml-XEQ"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYj-Bf-SLI" customClass="CarbonProLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="485" y="14" width="40" height="22"/>
+                                                    <color key="backgroundColor" red="0.92941176469999998" green="0.30588235289999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="56T-WB-FPf"/>
+                                                        <constraint firstAttribute="height" constant="22" id="otg-Wm-ksg"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="NKn-V6-su0" firstAttribute="centerY" secondItem="dxj-4O-YLZ" secondAttribute="centerY" id="35w-Bv-gGj"/>
+                                                <constraint firstItem="RYj-Bf-SLI" firstAttribute="centerY" secondItem="dxj-4O-YLZ" secondAttribute="centerY" id="AfN-Ve-Hoe"/>
+                                                <constraint firstItem="nkz-fM-ShF" firstAttribute="centerY" secondItem="dxj-4O-YLZ" secondAttribute="centerY" id="SW8-jO-MdV"/>
+                                                <constraint firstItem="NhR-sJ-bIg" firstAttribute="leading" secondItem="dxj-4O-YLZ" secondAttribute="leading" constant="15" id="a6t-iP-9rX"/>
+                                                <constraint firstItem="nkz-fM-ShF" firstAttribute="leading" secondItem="NhR-sJ-bIg" secondAttribute="trailing" constant="15" id="cvn-Jh-FJA"/>
+                                                <constraint firstItem="NhR-sJ-bIg" firstAttribute="centerY" secondItem="dxj-4O-YLZ" secondAttribute="centerY" id="keH-qe-M3n"/>
+                                                <constraint firstAttribute="trailing" secondItem="NKn-V6-su0" secondAttribute="trailing" constant="11" id="rSh-qS-BVx"/>
+                                                <constraint firstItem="NKn-V6-su0" firstAttribute="leading" secondItem="RYj-Bf-SLI" secondAttribute="trailing" constant="15" id="vfl-LW-oDP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="BSZ-bX-WJy" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="455.5" width="600" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BSZ-bX-WJy" id="o0U-aa-sev">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Black" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BC-yc-jh0" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="60" y="14.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Counter_Black" translatesAutoresizingMaskIntoConstraints="NO" id="89j-Qx-oq6" customClass="UIThemeableImageView" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="10" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="oLp-BS-u5h"/>
+                                                        <constraint firstAttribute="height" constant="30" id="soG-W8-gys"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <switch opaque="NO" tag="9" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="feT-MO-WNg" customClass="UIThemeableSwitch" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="540" y="9.5" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.0" green="0.58823529409999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="counterToggled:" destination="It6-GQ-DS5" eventType="valueChanged" id="Bmy-4N-Qcb"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnK-9O-fbL" customClass="CarbonProLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="485" y="14" width="40" height="22"/>
+                                                    <color key="backgroundColor" red="0.92941176469999998" green="0.30588235289999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="DKe-4K-mpa"/>
+                                                        <constraint firstAttribute="height" constant="22" id="yDn-f8-vB2"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="3BC-yc-jh0" firstAttribute="leading" secondItem="89j-Qx-oq6" secondAttribute="trailing" constant="15" id="4V1-IA-5xR"/>
+                                                <constraint firstItem="89j-Qx-oq6" firstAttribute="leading" secondItem="o0U-aa-sev" secondAttribute="leading" constant="15" id="KJZ-Ea-I9Q"/>
+                                                <constraint firstItem="89j-Qx-oq6" firstAttribute="centerY" secondItem="o0U-aa-sev" secondAttribute="centerY" id="N0l-DY-N5r"/>
+                                                <constraint firstItem="feT-MO-WNg" firstAttribute="centerY" secondItem="o0U-aa-sev" secondAttribute="centerY" id="Olo-KE-2Py"/>
+                                                <constraint firstItem="3BC-yc-jh0" firstAttribute="centerY" secondItem="o0U-aa-sev" secondAttribute="centerY" id="Q7Y-Bh-tDe"/>
+                                                <constraint firstAttribute="trailing" secondItem="feT-MO-WNg" secondAttribute="trailing" constant="11" id="WYc-hp-1Eg"/>
+                                                <constraint firstItem="feT-MO-WNg" firstAttribute="leading" secondItem="gnK-9O-fbL" secondAttribute="trailing" constant="15" id="tcW-G4-fHb"/>
+                                                <constraint firstItem="gnK-9O-fbL" firstAttribute="centerY" secondItem="o0U-aa-sev" secondAttribute="centerY" id="vGs-y5-LBv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="Pgv-hV-la9" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="505.5" width="600" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pgv-hV-la9" id="BzP-WP-Occ">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVA-CV-MLm" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="60" y="14.5" width="30" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Counter_Red" translatesAutoresizingMaskIntoConstraints="NO" id="fs3-4k-0Iw" customClass="UIThemeableImageView" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="10" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="1Fk-AK-vHO"/>
+                                                        <constraint firstAttribute="width" constant="30" id="BwX-TP-jDP"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <switch opaque="NO" tag="10" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="L9O-3q-fOM" customClass="UIThemeableSwitch" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="540" y="9.5" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.0" green="0.58823529409999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="counterToggled:" destination="It6-GQ-DS5" eventType="valueChanged" id="039-if-uPA"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aer-4t-h6b" customClass="CarbonProLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="485" y="14" width="40" height="22"/>
+                                                    <color key="backgroundColor" red="0.92941176469999998" green="0.30588235289999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="WDe-JA-lWS"/>
+                                                        <constraint firstAttribute="height" constant="22" id="rNb-fE-Hzh"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="aer-4t-h6b" firstAttribute="centerY" secondItem="BzP-WP-Occ" secondAttribute="centerY" id="6Q3-5j-UIA"/>
+                                                <constraint firstItem="L9O-3q-fOM" firstAttribute="leading" secondItem="aer-4t-h6b" secondAttribute="trailing" constant="15" id="8eI-ou-8Ho"/>
+                                                <constraint firstItem="fs3-4k-0Iw" firstAttribute="centerY" secondItem="BzP-WP-Occ" secondAttribute="centerY" id="UJD-BK-Rmr"/>
+                                                <constraint firstItem="FVA-CV-MLm" firstAttribute="centerY" secondItem="BzP-WP-Occ" secondAttribute="centerY" id="aQY-8o-EjA"/>
+                                                <constraint firstAttribute="trailing" secondItem="L9O-3q-fOM" secondAttribute="trailing" constant="11" id="dRZ-Se-8ha"/>
+                                                <constraint firstItem="fs3-4k-0Iw" firstAttribute="leading" secondItem="BzP-WP-Occ" secondAttribute="leading" constant="15" id="gFH-uq-2g2"/>
+                                                <constraint firstItem="FVA-CV-MLm" firstAttribute="leading" secondItem="fs3-4k-0Iw" secondAttribute="trailing" constant="15" id="jCb-uy-ZrT"/>
+                                                <constraint firstItem="L9O-3q-fOM" firstAttribute="centerY" secondItem="BzP-WP-Occ" secondAttribute="centerY" id="uoA-9N-eoD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="0TV-Ax-Vrx" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="555.5" width="600" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0TV-Ax-Vrx" id="4yn-Ta-mKm">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xri-5L-7du" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="60" y="14.5" width="46.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Counter_Green" translatesAutoresizingMaskIntoConstraints="NO" id="GoY-jv-WK2" customClass="UIThemeableImageView" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="10" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="PUE-3y-nKE"/>
+                                                        <constraint firstAttribute="height" constant="30" id="WsZ-Og-Y7o"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <switch opaque="NO" tag="11" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ihj-06-daY" customClass="UIThemeableSwitch" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="540" y="9.5" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.0" green="0.58823529409999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="counterToggled:" destination="It6-GQ-DS5" eventType="valueChanged" id="Lpm-gd-5vp"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFl-7m-QPz" customClass="CarbonProLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="485" y="14" width="40" height="22"/>
+                                                    <color key="backgroundColor" red="0.92941176469999998" green="0.30588235289999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="Rbi-YI-hAF"/>
+                                                        <constraint firstAttribute="height" constant="22" id="dnw-J1-MJP"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="YFl-7m-QPz" firstAttribute="centerY" secondItem="4yn-Ta-mKm" secondAttribute="centerY" id="7hl-Tz-PcD"/>
+                                                <constraint firstItem="ihj-06-daY" firstAttribute="leading" secondItem="YFl-7m-QPz" secondAttribute="trailing" constant="15" id="BCT-aE-LPK"/>
+                                                <constraint firstItem="GoY-jv-WK2" firstAttribute="centerY" secondItem="4yn-Ta-mKm" secondAttribute="centerY" id="DyL-G4-EVe"/>
+                                                <constraint firstAttribute="trailing" secondItem="ihj-06-daY" secondAttribute="trailing" constant="11" id="FAF-Rv-rBx"/>
+                                                <constraint firstItem="ihj-06-daY" firstAttribute="centerY" secondItem="4yn-Ta-mKm" secondAttribute="centerY" id="MP9-qt-65S"/>
+                                                <constraint firstItem="xri-5L-7du" firstAttribute="leading" secondItem="GoY-jv-WK2" secondAttribute="trailing" constant="15" id="Oeh-Yw-4Xy"/>
+                                                <constraint firstItem="xri-5L-7du" firstAttribute="centerY" secondItem="4yn-Ta-mKm" secondAttribute="centerY" id="UUU-jm-YiX"/>
+                                                <constraint firstItem="GoY-jv-WK2" firstAttribute="leading" secondItem="4yn-Ta-mKm" secondAttribute="leading" constant="15" id="s5B-cR-eOC"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="vbJ-AG-kkT" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="605.5" width="600" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vbJ-AG-kkT" id="1m1-Gp-8Go">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Colorless" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMF-ei-Y8Z" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="60" y="14.5" width="71.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Counter_Colorless" translatesAutoresizingMaskIntoConstraints="NO" id="Pmd-Za-Pya" customClass="UIThemeableImageView" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="10" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="NKM-Ib-AvA"/>
+                                                        <constraint firstAttribute="width" constant="30" id="i37-Ml-Uoo"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <switch opaque="NO" tag="12" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Sse-T9-Yxg" customClass="UIThemeableSwitch" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="315" y="9.5" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.0" green="0.58823529409999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="counterToggled:" destination="It6-GQ-DS5" eventType="valueChanged" id="wtq-st-Ut5"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfm-cU-Jhx" customClass="CarbonProLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="260" y="14" width="40" height="22"/>
+                                                    <color key="backgroundColor" red="0.92941176469999998" green="0.30588235289999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="be2-eF-5JK"/>
+                                                        <constraint firstAttribute="height" constant="22" id="rr7-Xz-Ott"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Sse-T9-Yxg" firstAttribute="centerY" secondItem="1m1-Gp-8Go" secondAttribute="centerY" id="8jM-3a-xGc"/>
+                                                <constraint firstItem="Pmd-Za-Pya" firstAttribute="leading" secondItem="1m1-Gp-8Go" secondAttribute="leading" constant="15" id="Adc-gE-0SG"/>
+                                                <constraint firstItem="Sse-T9-Yxg" firstAttribute="leading" secondItem="Qfm-cU-Jhx" secondAttribute="trailing" constant="15" id="Cav-gK-TpX"/>
+                                                <constraint firstItem="ZMF-ei-Y8Z" firstAttribute="leading" secondItem="Pmd-Za-Pya" secondAttribute="trailing" constant="15" id="Msm-aa-eMh"/>
+                                                <constraint firstAttribute="trailing" secondItem="Sse-T9-Yxg" secondAttribute="trailing" constant="11" id="Y8Z-Yc-WhV"/>
+                                                <constraint firstItem="Pmd-Za-Pya" firstAttribute="centerY" secondItem="1m1-Gp-8Go" secondAttribute="centerY" id="cST-nT-g68"/>
+                                                <constraint firstItem="ZMF-ei-Y8Z" firstAttribute="centerY" secondItem="1m1-Gp-8Go" secondAttribute="centerY" id="lFf-8l-xDz"/>
+                                                <constraint firstItem="Qfm-cU-Jhx" firstAttribute="centerY" secondItem="1m1-Gp-8Go" secondAttribute="centerY" id="seY-Hz-61X"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="It6-GQ-DS5" id="pll-m0-1Tt"/>
+                            <outlet property="delegate" destination="It6-GQ-DS5" id="gnY-oc-cP3"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outletCollection property="toggles" destination="GI0-Vs-D2f" collectionClass="NSMutableArray" id="Dsy-P8-fsZ"/>
+                        <outletCollection property="toggles" destination="Qlz-W4-XtH" collectionClass="NSMutableArray" id="Mww-Wr-8FK"/>
+                        <outletCollection property="toggles" destination="obp-8g-QVO" collectionClass="NSMutableArray" id="C8b-DJ-GDR"/>
+                        <outletCollection property="toggles" destination="Dcj-um-gkm" collectionClass="NSMutableArray" id="0pd-u1-aEt"/>
+                        <outletCollection property="toggles" destination="eos-e7-ZxN" collectionClass="NSMutableArray" id="eRg-fw-fcO"/>
+                        <outletCollection property="toggles" destination="7JD-b0-NEv" collectionClass="NSMutableArray" id="deK-Gb-xC7"/>
+                        <outletCollection property="toggles" destination="c66-Cm-ZRf" collectionClass="NSMutableArray" id="wmV-40-zcU"/>
+                        <outletCollection property="toggles" destination="NKn-V6-su0" collectionClass="NSMutableArray" id="IsU-vu-3sy"/>
+                        <outletCollection property="toggles" destination="feT-MO-WNg" collectionClass="NSMutableArray" id="UqP-Qd-T6P"/>
+                        <outletCollection property="toggles" destination="L9O-3q-fOM" collectionClass="NSMutableArray" id="otL-G6-L3E"/>
+                        <outletCollection property="toggles" destination="ihj-06-daY" collectionClass="NSMutableArray" id="CtK-zb-nVe"/>
+                        <outletCollection property="toggles" destination="Sse-T9-Yxg" collectionClass="NSMutableArray" id="c5v-a2-zMd"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S55-Be-qci" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31" y="72"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Counter_Black" width="80" height="80"/>
+        <image name="Counter_Blue" width="80" height="80"/>
+        <image name="Counter_Colorless" width="80" height="80"/>
+        <image name="Counter_Damage" width="80" height="80"/>
+        <image name="Counter_Energy" width="80" height="80"/>
+        <image name="Counter_Experience" width="80" height="80"/>
+        <image name="Counter_Green" width="80" height="80"/>
+        <image name="Counter_Poison" width="80" height="80"/>
+        <image name="Counter_Red" width="80" height="80"/>
+        <image name="Counter_Storm" width="80" height="80"/>
+        <image name="Counter_Tax" width="80" height="80"/>
+        <image name="Counter_White" width="80" height="80"/>
+    </resources>
+</document>

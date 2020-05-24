@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NRk-Pr-YkZ">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings Our Team Table View Controller-->
+        <scene sceneID="AKu-hL-3wB">
+            <objects>
+                <tableViewController id="NRk-Pr-YkZ" customClass="UISettingsOurTeamTableViewController" customModule="Carbon_3_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Tj7-mK-otr" customClass="UIThemeableTableView" customModule="Carbon_3_0" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="IOS DEVELOPMENT &amp; APP DESIGN" id="qVl-uC-H7s">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="166" id="bCO-tW-xNt" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.333333333333343" width="375" height="166"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bCO-tW-xNt" id="tog-v0-QFp">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="165.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matt Marks" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3L-Wa-35P" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="80" y="14.999999999999998" width="90.333333333333314" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Cx-Jm-w6E" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="80" y="45.333333333333336" width="280" height="101.66666666666666"/>
+                                                    <string key="text">Matt is an undergraduate studying physics and computer science at the University of Maryland. He splits his time between biology research, app development, and rockclimbing.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Matt" translatesAutoresizingMaskIntoConstraints="NO" id="193-cf-tzk">
+                                                    <rect key="frame" x="15" y="15" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="FBD-AX-k3T"/>
+                                                        <constraint firstAttribute="height" constant="50" id="ZaX-40-7Te"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="25"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="p3L-Wa-35P" firstAttribute="top" secondItem="tog-v0-QFp" secondAttribute="top" constant="15" id="6cM-rF-50c"/>
+                                                <constraint firstItem="2Cx-Jm-w6E" firstAttribute="top" secondItem="p3L-Wa-35P" secondAttribute="bottom" constant="10" id="BPo-hE-xWd"/>
+                                                <constraint firstItem="p3L-Wa-35P" firstAttribute="leading" secondItem="193-cf-tzk" secondAttribute="trailing" constant="15" id="LrC-Za-upv"/>
+                                                <constraint firstItem="2Cx-Jm-w6E" firstAttribute="leading" secondItem="193-cf-tzk" secondAttribute="trailing" constant="15" id="T9A-dz-T7y"/>
+                                                <constraint firstItem="193-cf-tzk" firstAttribute="top" secondItem="tog-v0-QFp" secondAttribute="top" constant="15" id="XCD-p3-eHI"/>
+                                                <constraint firstItem="193-cf-tzk" firstAttribute="leading" secondItem="tog-v0-QFp" secondAttribute="leading" constant="15" id="aZn-6B-xdQ"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2Cx-Jm-w6E" secondAttribute="bottom" constant="15" id="oL9-TB-Ce3"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2Cx-Jm-w6E" secondAttribute="trailing" constant="15" id="v5x-Y9-ijE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="80" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="canSelect" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="50" id="hWu-Uc-6Qn" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="221.33333333333334" width="375" height="50.000000000000028"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hWu-Uc-6Qn" id="fWT-MT-Rnj">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="49.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@Matt__Marks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jyv-E8-FDX" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="224.66666666666666" y="14.333333333333336" width="111.33333333333334" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Twitter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kjb-1S-9mP" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="80" y="14.333333333333336" width="53" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Kjb-1S-9mP" firstAttribute="centerY" secondItem="fWT-MT-Rnj" secondAttribute="centerY" id="56U-BQ-QIV"/>
+                                                <constraint firstAttribute="trailing" secondItem="Jyv-E8-FDX" secondAttribute="trailing" constant="5" id="GqO-6p-SEr"/>
+                                                <constraint firstItem="Kjb-1S-9mP" firstAttribute="leading" secondItem="fWT-MT-Rnj" secondAttribute="leading" constant="80" id="brU-yE-zA7"/>
+                                                <constraint firstItem="Jyv-E8-FDX" firstAttribute="centerY" secondItem="fWT-MT-Rnj" secondAttribute="centerY" id="pay-do-fRv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="80" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="canSelect" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="ANDROID DEVELOPMENT" id="bVu-Vf-n0O">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="166" id="QMO-bX-SGB" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="327.33333333333337" width="375" height="166"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QMO-bX-SGB" id="OOL-JS-rMr">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="165.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jon Lockwood" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMN-bD-bye" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="80" y="14.999999999999998" width="115.33333333333331" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQE-eQ-Ep3" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="80" y="45.333333333333336" width="266.66666666666669" height="101.66666666666666"/>
+                                                    <string key="text">Jon is a software developer in California with a penchant for comedy and a minor in astronomy. He wants to improve the world in ever-increasing ways.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Jon" translatesAutoresizingMaskIntoConstraints="NO" id="VrQ-Go-N5B">
+                                                    <rect key="frame" x="15" y="15" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="6WT-NV-mxs"/>
+                                                        <constraint firstAttribute="height" constant="50" id="Q56-73-vHc"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="25"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="VrQ-Go-N5B" firstAttribute="top" secondItem="OOL-JS-rMr" secondAttribute="top" constant="15" id="3oZ-YC-lta"/>
+                                                <constraint firstItem="MQE-eQ-Ep3" firstAttribute="leading" secondItem="VrQ-Go-N5B" secondAttribute="trailing" constant="15" id="9TR-dL-Dt0"/>
+                                                <constraint firstItem="BMN-bD-bye" firstAttribute="leading" secondItem="VrQ-Go-N5B" secondAttribute="trailing" constant="15" id="JUm-6L-cbT"/>
+                                                <constraint firstItem="VrQ-Go-N5B" firstAttribute="leading" secondItem="OOL-JS-rMr" secondAttribute="leading" constant="15" id="Xh6-7p-ILj"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MQE-eQ-Ep3" secondAttribute="trailing" constant="15" id="b52-TJ-mKR"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="MQE-eQ-Ep3" secondAttribute="bottom" constant="15" id="bnk-hh-hfO"/>
+                                                <constraint firstItem="BMN-bD-bye" firstAttribute="top" secondItem="OOL-JS-rMr" secondAttribute="top" constant="15" id="d34-wv-KX3"/>
+                                                <constraint firstItem="MQE-eQ-Ep3" firstAttribute="top" secondItem="BMN-bD-bye" secondAttribute="bottom" constant="10" id="myN-RU-TpM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="80" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="canSelect" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="50" id="AgA-pF-7xc" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="493.33333333333337" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AgA-pF-7xc" id="7hn-mZ-dEh">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="49.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@JonathanLockw13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJX-w5-ml3" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="182.66666666666663" y="14.333333333333336" width="153.33333333333337" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Twitter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqu-CQ-oLf" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="80" y="14.333333333333336" width="53" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="gJX-w5-ml3" secondAttribute="trailing" constant="5" id="2Zm-23-gvT"/>
+                                                <constraint firstItem="gJX-w5-ml3" firstAttribute="centerY" secondItem="7hn-mZ-dEh" secondAttribute="centerY" id="GwH-3N-UEn"/>
+                                                <constraint firstItem="tqu-CQ-oLf" firstAttribute="centerY" secondItem="7hn-mZ-dEh" secondAttribute="centerY" id="OuY-F9-jho"/>
+                                                <constraint firstItem="tqu-CQ-oLf" firstAttribute="leading" secondItem="7hn-mZ-dEh" secondAttribute="leading" constant="80" id="fZ1-Mn-4pe"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="80" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="canSelect" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="NRk-Pr-YkZ" id="rB7-xy-M6c"/>
+                            <outlet property="delegate" destination="NRk-Pr-YkZ" id="Mtn-On-6kx"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pd2-HJ-inh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31.199999999999999" y="71.514242878560722"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Jon" width="200" height="200"/>
+        <image name="Matt" width="200" height="200"/>
+    </resources>
+</document>

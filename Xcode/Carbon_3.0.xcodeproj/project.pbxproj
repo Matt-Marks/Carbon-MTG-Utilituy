@@ -1,0 +1,1861 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C90ED407216C545C00E046F8 /* UIIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90ED406216C545C00E046F8 /* UIIconButton.swift */; };
+		C91346E021EFB80F00D219CA /* CarbonProViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91346DE21EFB80F00D219CA /* CarbonProViewController.swift */; };
+		C91346E121EFB80F00D219CA /* CarbonProViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C91346DF21EFB80F00D219CA /* CarbonProViewController.xib */; };
+		C91441F421AF83E600884D11 /* HistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91441F321AF83E600884D11 /* HistoryItem.swift */; };
+		C91922AE216F014300CBD511 /* UISettingsGesturesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91922AD216F014300CBD511 /* UISettingsGesturesTableViewController.swift */; };
+		C91922B0216F015800CBD511 /* UISettingsDefaultCountersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91922AF216F015800CBD511 /* UISettingsDefaultCountersTableViewController.swift */; };
+		C91922B6216F021F00CBD511 /* UISettingsDefaultCountersTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91922B5216F021F00CBD511 /* UISettingsDefaultCountersTableViewController.storyboard */; };
+		C91922B8216F022D00CBD511 /* UISettingsGesturesTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91922B7216F022D00CBD511 /* UISettingsGesturesTableViewController.storyboard */; };
+		C92472FD216CEC7300DE6F7D /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92472FC216CEC7300DE6F7D /* UIFont+Extension.swift */; };
+		C928604E21A9F6D000AD1B9B /* CGSize+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928604D21A9F6D000AD1B9B /* CGSize+Extension.swift */; };
+		C928942D218E084100E0384E /* UIGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928942C218E084100E0384E /* UIGameViewController.swift */; };
+		C9289432218E096700E0384E /* UIPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9289430218E096700E0384E /* UIPlayerViewController.swift */; };
+		C92E2FD42197443600845A09 /* UICounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92E2FD22197443600845A09 /* UICounterViewController.swift */; };
+		C92E2FDC21975D8C00845A09 /* UIColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92E2FDA21975D8C00845A09 /* UIColorsViewController.swift */; };
+		C92E2FDF21975EA100845A09 /* UIColorsVerticalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C92E2FDE21975EA100845A09 /* UIColorsVerticalViewController.xib */; };
+		C92E2FE121975EAE00845A09 /* UIColorsHorizontalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C92E2FE021975EAE00845A09 /* UIColorsHorizontalViewController.xib */; };
+		C92E2FE32197639E00845A09 /* UIBlurryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92E2FE22197639E00845A09 /* UIBlurryView.swift */; };
+		C92E2FE52197683500845A09 /* UIEffectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92E2FE42197683500845A09 /* UIEffectsViewController.swift */; };
+		C92E2FE72197684300845A09 /* UICountersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92E2FE62197684300845A09 /* UICountersViewController.swift */; };
+		C92E2FE92197685600845A09 /* UIEffectsVerticalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C92E2FE82197685600845A09 /* UIEffectsVerticalViewController.xib */; };
+		C92E2FEB2197686400845A09 /* UIEffectsHorizontalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C92E2FEA2197686400845A09 /* UIEffectsHorizontalViewController.xib */; };
+		C92E2FED2197687A00845A09 /* UICountersVerticalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C92E2FEC2197687A00845A09 /* UICountersVerticalViewController.xib */; };
+		C92E2FEF2197688C00845A09 /* UICountersHorizontalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C92E2FEE2197688C00845A09 /* UICountersHorizontalViewController.xib */; };
+		C92EF340216BB976004BCAAA /* UIAnimatableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92EF33F216BB976004BCAAA /* UIAnimatableButton.swift */; };
+		C92EF342216BF6CA004BCAAA /* UISquircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92EF341216BF6CA004BCAAA /* UISquircleButton.swift */; };
+		C93B6E1F21EFD4F0007496E0 /* CarbonProItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93B6E1D21EFD4F0007496E0 /* CarbonProItemCell.swift */; };
+		C93B6E2021EFD4F0007496E0 /* CarbonProItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C93B6E1E21EFD4F0007496E0 /* CarbonProItemCell.xib */; };
+		C940BCCE21AC27770026E85C /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940BCCD21AC27770026E85C /* UILabel+Extension.swift */; };
+		C940BCD021AC28750026E85C /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940BCCF21AC28750026E85C /* UIImageView+Extension.swift */; };
+		C9440E16216E3064007CD783 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9440E15216E3064007CD783 /* UserPreferences.swift */; };
+		C9440E1F216E59B7007CD783 /* UISettingsMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9440E1D216E59B7007CD783 /* UISettingsMainTableViewController.swift */; };
+		C9440E22216E5A4E007CD783 /* UISettingsMainTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9440E21216E5A4E007CD783 /* UISettingsMainTableViewController.storyboard */; };
+		C9440E26216E5C8C007CD783 /* UISettingsThemeAndAppearanceTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9440E25216E5C8C007CD783 /* UISettingsThemeAndAppearanceTableViewController.storyboard */; };
+		C9440E28216E5CA0007CD783 /* UISettingsThemeAndAppearanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9440E27216E5CA0007CD783 /* UISettingsThemeAndAppearanceTableViewController.swift */; };
+		C94E14A0219DD3E200CFAABB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E149F219DD3E200CFAABB /* UIView+Extension.swift */; };
+		C9567AC821E4CE810000CB40 /* CBConfettiLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9567AC721E4CE810000CB40 /* CBConfettiLayer.swift */; };
+		C9693DC221F0E34100B9A44A /* CarbonProLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9693DC121F0E34100B9A44A /* CarbonProLabel.swift */; };
+		C96A4CB12094CDF700367421 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96A4CB02094CDF700367421 /* AppDelegate.swift */; };
+		C96A4CB92094CDF700367421 /* Carbon_3_0.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C96A4CB72094CDF700367421 /* Carbon_3_0.xcdatamodeld */; };
+		C96A4CBB2094CDF800367421 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C96A4CBA2094CDF800367421 /* Assets.xcassets */; };
+		C96A4CBE2094CDF800367421 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96A4CBC2094CDF800367421 /* LaunchScreen.storyboard */; };
+		C96A4CC92094CDF800367421 /* Carbon_3_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96A4CC82094CDF800367421 /* Carbon_3_0Tests.swift */; };
+		C96A4CD42094CDF800367421 /* Carbon_3_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96A4CD32094CDF800367421 /* Carbon_3_0UITests.swift */; };
+		C96D4EAA21D6E49D00C84B7B /* UISettingsTwoFingerHoldTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96D4EA921D6E49D00C84B7B /* UISettingsTwoFingerHoldTableViewController.storyboard */; };
+		C96D4EAC21D6E4C400C84B7B /* UISettingsTwoFingerHoldTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96D4EAB21D6E4C400C84B7B /* UISettingsTwoFingerHoldTableTableViewController.swift */; };
+		C96EE04023A60EAD00DD1F18 /* Tondo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C96EE03C23A60EAD00DD1F18 /* Tondo-Bold.ttf */; };
+		C96EE04123A60EAD00DD1F18 /* Tondo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C96EE03D23A60EAD00DD1F18 /* Tondo-Light.ttf */; };
+		C96EE04223A60EAD00DD1F18 /* Tondo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C96EE03E23A60EAD00DD1F18 /* Tondo-Regular.ttf */; };
+		C96EE04323A60EAD00DD1F18 /* Dense-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C96EE03F23A60EAD00DD1F18 /* Dense-Regular.otf */; };
+		C96EE0B023A60EE600DD1F18 /* NitrogenDark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE04423A60EE200DD1F18 /* NitrogenDark@3x.png */; };
+		C96EE0B123A60EE600DD1F18 /* IronBlack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE04523A60EE200DD1F18 /* IronBlack@2x.png */; };
+		C96EE0B223A60EE600DD1F18 /* IronBlack-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE04623A60EE200DD1F18 /* IronBlack-iPad.png */; };
+		C96EE0B323A60EE600DD1F18 /* HeliumLight-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE04723A60EE200DD1F18 /* HeliumLight-iPad.png */; };
+		C96EE0B423A60EE600DD1F18 /* OxygenDark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE04823A60EE300DD1F18 /* OxygenDark@3x.png */; };
+		C96EE0B523A60EE600DD1F18 /* SiliconBlack-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE04923A60EE300DD1F18 /* SiliconBlack-iPad.png */; };
+		C96EE0B623A60EE600DD1F18 /* ZincBlack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE04A23A60EE300DD1F18 /* ZincBlack@2x.png */; };
+		C96EE0B723A60EE600DD1F18 /* ZincLight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE04B23A60EE300DD1F18 /* ZincLight@2x.png */; };
+		C96EE0B823A60EE600DD1F18 /* NeonLight-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE04C23A60EE300DD1F18 /* NeonLight-iPad.png */; };
+		C96EE0B923A60EE600DD1F18 /* SiliconBlack@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE04D23A60EE300DD1F18 /* SiliconBlack@3x.png */; };
+		C96EE0BA23A60EE600DD1F18 /* PhosphorusLight-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE04E23A60EE300DD1F18 /* PhosphorusLight-iPad.png */; };
+		C96EE0BB23A60EE600DD1F18 /* ZincBlack@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE04F23A60EE300DD1F18 /* ZincBlack@3x.png */; };
+		C96EE0BC23A60EE600DD1F18 /* HeliumLight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE05023A60EE300DD1F18 /* HeliumLight@3x.png */; };
+		C96EE0BD23A60EE600DD1F18 /* SiliconDark-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE05123A60EE300DD1F18 /* SiliconDark-iPad.png */; };
+		C96EE0BE23A60EE600DD1F18 /* ChlorineBlack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE05223A60EE300DD1F18 /* ChlorineBlack@2x.png */; };
+		C96EE0BF23A60EE600DD1F18 /* BariumBlack-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE05323A60EE300DD1F18 /* BariumBlack-iPad.png */; };
+		C96EE0C023A60EE600DD1F18 /* BariumDark-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE05423A60EE300DD1F18 /* BariumDark-iPad.png */; };
+		C96EE0C123A60EE600DD1F18 /* OxygenBlack-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE05523A60EE300DD1F18 /* OxygenBlack-iPad.png */; };
+		C96EE0C223A60EE600DD1F18 /* IronDark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE05623A60EE300DD1F18 /* IronDark@3x.png */; };
+		C96EE0C323A60EE600DD1F18 /* NitrogenBlack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE05723A60EE300DD1F18 /* NitrogenBlack@2x.png */; };
+		C96EE0C423A60EE600DD1F18 /* BariumDark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE05823A60EE300DD1F18 /* BariumDark@3x.png */; };
+		C96EE0C523A60EE600DD1F18 /* DefaultLight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE05923A60EE300DD1F18 /* DefaultLight@2x.png */; };
+		C96EE0C623A60EE600DD1F18 /* LithiumDark-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE05A23A60EE300DD1F18 /* LithiumDark-iPad.png */; };
+		C96EE0C723A60EE600DD1F18 /* HeliumDark-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE05B23A60EE300DD1F18 /* HeliumDark-iPad.png */; };
+		C96EE0C823A60EE600DD1F18 /* LithiumDark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE05C23A60EE300DD1F18 /* LithiumDark@2x.png */; };
+		C96EE0C923A60EE600DD1F18 /* SiliconDark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE05D23A60EE300DD1F18 /* SiliconDark@2x.png */; };
+		C96EE0CA23A60EE600DD1F18 /* NeonDark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE05E23A60EE300DD1F18 /* NeonDark@3x.png */; };
+		C96EE0CB23A60EE600DD1F18 /* DefaultDark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE05F23A60EE300DD1F18 /* DefaultDark@3x.png */; };
+		C96EE0CC23A60EE600DD1F18 /* LithiumBlack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE06023A60EE300DD1F18 /* LithiumBlack@2x.png */; };
+		C96EE0CD23A60EE600DD1F18 /* ZincLight-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE06123A60EE300DD1F18 /* ZincLight-iPad.png */; };
+		C96EE0CE23A60EE600DD1F18 /* ChlorineLight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE06223A60EE300DD1F18 /* ChlorineLight@2x.png */; };
+		C96EE0CF23A60EE600DD1F18 /* NitrogenDark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE06323A60EE300DD1F18 /* NitrogenDark@2x.png */; };
+		C96EE0D023A60EE600DD1F18 /* HeliumBlack-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE06423A60EE300DD1F18 /* HeliumBlack-iPad.png */; };
+		C96EE0D123A60EE600DD1F18 /* OxygenDark-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE06523A60EE300DD1F18 /* OxygenDark-iPad.png */; };
+		C96EE0D223A60EE600DD1F18 /* SiliconLight-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE06623A60EE300DD1F18 /* SiliconLight-iPad.png */; };
+		C96EE0D323A60EE600DD1F18 /* SiliconLight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE06723A60EE400DD1F18 /* SiliconLight@3x.png */; };
+		C96EE0D423A60EE600DD1F18 /* ChlorineLight-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE06823A60EE400DD1F18 /* ChlorineLight-iPad.png */; };
+		C96EE0D523A60EE600DD1F18 /* LithiumDark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE06923A60EE400DD1F18 /* LithiumDark@3x.png */; };
+		C96EE0D623A60EE600DD1F18 /* NitrogenLight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE06A23A60EE400DD1F18 /* NitrogenLight@3x.png */; };
+		C96EE0D723A60EE600DD1F18 /* BariumDark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE06B23A60EE400DD1F18 /* BariumDark@2x.png */; };
+		C96EE0D823A60EE600DD1F18 /* HeliumLight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE06C23A60EE400DD1F18 /* HeliumLight@2x.png */; };
+		C96EE0D923A60EE600DD1F18 /* PhosphorusBlack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE06D23A60EE400DD1F18 /* PhosphorusBlack@2x.png */; };
+		C96EE0DA23A60EE600DD1F18 /* PhosphorusDark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE06E23A60EE400DD1F18 /* PhosphorusDark@2x.png */; };
+		C96EE0DB23A60EE600DD1F18 /* IronLight-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE06F23A60EE400DD1F18 /* IronLight-iPad.png */; };
+		C96EE0DC23A60EE600DD1F18 /* NeonDark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE07023A60EE400DD1F18 /* NeonDark@2x.png */; };
+		C96EE0DD23A60EE600DD1F18 /* NeonLight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE07123A60EE400DD1F18 /* NeonLight@3x.png */; };
+		C96EE0DE23A60EE600DD1F18 /* ZincDark-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE07223A60EE400DD1F18 /* ZincDark-iPad.png */; };
+		C96EE0DF23A60EE600DD1F18 /* NeonLight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE07323A60EE400DD1F18 /* NeonLight@2x.png */; };
+		C96EE0E023A60EE600DD1F18 /* SiliconLight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE07423A60EE400DD1F18 /* SiliconLight@2x.png */; };
+		C96EE0E123A60EE600DD1F18 /* NitrogenLight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE07523A60EE400DD1F18 /* NitrogenLight@2x.png */; };
+		C96EE0E223A60EE600DD1F18 /* NeonDark-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE07623A60EE400DD1F18 /* NeonDark-iPad.png */; };
+		C96EE0E323A60EE600DD1F18 /* LithiumLight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE07723A60EE400DD1F18 /* LithiumLight@3x.png */; };
+		C96EE0E423A60EE600DD1F18 /* SiliconDark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE07823A60EE400DD1F18 /* SiliconDark@3x.png */; };
+		C96EE0E523A60EE600DD1F18 /* BariumLight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE07923A60EE400DD1F18 /* BariumLight@3x.png */; };
+		C96EE0E623A60EE600DD1F18 /* ZincLight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE07A23A60EE400DD1F18 /* ZincLight@3x.png */; };
+		C96EE0E723A60EE600DD1F18 /* ChlorineBlack@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE07B23A60EE400DD1F18 /* ChlorineBlack@3x.png */; };
+		C96EE0E823A60EE600DD1F18 /* IronDark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE07C23A60EE400DD1F18 /* IronDark@2x.png */; };
+		C96EE0E923A60EE600DD1F18 /* LithiumLight-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE07D23A60EE400DD1F18 /* LithiumLight-iPad.png */; };
+		C96EE0EA23A60EE600DD1F18 /* BariumBlack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE07E23A60EE400DD1F18 /* BariumBlack@2x.png */; };
+		C96EE0EB23A60EE600DD1F18 /* DefaultDark-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE07F23A60EE400DD1F18 /* DefaultDark-iPad.png */; };
+		C96EE0EC23A60EE600DD1F18 /* ZincDark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE08023A60EE400DD1F18 /* ZincDark@3x.png */; };
+		C96EE0ED23A60EE600DD1F18 /* HeliumBlack@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE08123A60EE400DD1F18 /* HeliumBlack@3x.png */; };
+		C96EE0EE23A60EE600DD1F18 /* PhosphorusDark-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE08223A60EE400DD1F18 /* PhosphorusDark-iPad.png */; };
+		C96EE0EF23A60EE600DD1F18 /* LithiumLight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE08323A60EE400DD1F18 /* LithiumLight@2x.png */; };
+		C96EE0F023A60EE600DD1F18 /* PhosphorusLight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE08423A60EE400DD1F18 /* PhosphorusLight@3x.png */; };
+		C96EE0F123A60EE600DD1F18 /* LithiumBlack@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE08523A60EE400DD1F18 /* LithiumBlack@3x.png */; };
+		C96EE0F223A60EE600DD1F18 /* IronLight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE08623A60EE400DD1F18 /* IronLight@3x.png */; };
+		C96EE0F323A60EE600DD1F18 /* ChlorineDark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE08723A60EE400DD1F18 /* ChlorineDark@2x.png */; };
+		C96EE0F423A60EE600DD1F18 /* PhosphorusBlack-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE08823A60EE500DD1F18 /* PhosphorusBlack-iPad.png */; };
+		C96EE0F523A60EE600DD1F18 /* NeonBlack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE08923A60EE500DD1F18 /* NeonBlack@2x.png */; };
+		C96EE0F623A60EE600DD1F18 /* DefaultBlack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE08A23A60EE500DD1F18 /* DefaultBlack@2x.png */; };
+		C96EE0F723A60EE600DD1F18 /* DefaultLight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE08B23A60EE500DD1F18 /* DefaultLight@3x.png */; };
+		C96EE0F823A60EE600DD1F18 /* PhosphorusDark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE08C23A60EE500DD1F18 /* PhosphorusDark@3x.png */; };
+		C96EE0F923A60EE600DD1F18 /* OxygenBlack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE08D23A60EE500DD1F18 /* OxygenBlack@2x.png */; };
+		C96EE0FA23A60EE600DD1F18 /* BariumBlack@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE08E23A60EE500DD1F18 /* BariumBlack@3x.png */; };
+		C96EE0FB23A60EE600DD1F18 /* ZincDark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE08F23A60EE500DD1F18 /* ZincDark@2x.png */; };
+		C96EE0FC23A60EE600DD1F18 /* NitrogenLight-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE09023A60EE500DD1F18 /* NitrogenLight-iPad.png */; };
+		C96EE0FD23A60EE600DD1F18 /* ChlorineLight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE09123A60EE500DD1F18 /* ChlorineLight@3x.png */; };
+		C96EE0FE23A60EE600DD1F18 /* HeliumDark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE09223A60EE500DD1F18 /* HeliumDark@3x.png */; };
+		C96EE0FF23A60EE600DD1F18 /* IronBlack@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE09323A60EE500DD1F18 /* IronBlack@3x.png */; };
+		C96EE10023A60EE600DD1F18 /* HeliumBlack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE09423A60EE500DD1F18 /* HeliumBlack@2x.png */; };
+		C96EE10123A60EE600DD1F18 /* IronLight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE09523A60EE500DD1F18 /* IronLight@2x.png */; };
+		C96EE10223A60EE600DD1F18 /* LithiumBlack-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE09623A60EE500DD1F18 /* LithiumBlack-iPad.png */; };
+		C96EE10323A60EE600DD1F18 /* BariumLight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE09723A60EE500DD1F18 /* BariumLight@2x.png */; };
+		C96EE10423A60EE600DD1F18 /* SiliconBlack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE09823A60EE500DD1F18 /* SiliconBlack@2x.png */; };
+		C96EE10523A60EE600DD1F18 /* NitrogenBlack@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE09923A60EE500DD1F18 /* NitrogenBlack@3x.png */; };
+		C96EE10623A60EE600DD1F18 /* HeliumDark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE09A23A60EE500DD1F18 /* HeliumDark@2x.png */; };
+		C96EE10723A60EE600DD1F18 /* PhosphorusBlack@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE09B23A60EE500DD1F18 /* PhosphorusBlack@3x.png */; };
+		C96EE10823A60EE600DD1F18 /* ChlorineDark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE09C23A60EE500DD1F18 /* ChlorineDark@3x.png */; };
+		C96EE10923A60EE600DD1F18 /* ZincBlack-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE09D23A60EE500DD1F18 /* ZincBlack-iPad.png */; };
+		C96EE10A23A60EE600DD1F18 /* NeonBlack@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE09E23A60EE500DD1F18 /* NeonBlack@3x.png */; };
+		C96EE10B23A60EE600DD1F18 /* DefaultBlack@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE09F23A60EE500DD1F18 /* DefaultBlack@3x.png */; };
+		C96EE10C23A60EE600DD1F18 /* BariumLight-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE0A023A60EE500DD1F18 /* BariumLight-iPad.png */; };
+		C96EE10D23A60EE600DD1F18 /* DefaultBlack-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE0A123A60EE500DD1F18 /* DefaultBlack-iPad.png */; };
+		C96EE10E23A60EE600DD1F18 /* DefaultLight-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE0A223A60EE500DD1F18 /* DefaultLight-iPad.png */; };
+		C96EE10F23A60EE600DD1F18 /* ChlorineDark-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE0A323A60EE500DD1F18 /* ChlorineDark-iPad.png */; };
+		C96EE11023A60EE600DD1F18 /* PhosphorusLight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE0A423A60EE500DD1F18 /* PhosphorusLight@2x.png */; };
+		C96EE11123A60EE600DD1F18 /* OxygenBlack@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE0A523A60EE500DD1F18 /* OxygenBlack@3x.png */; };
+		C96EE11223A60EE600DD1F18 /* NitrogenDark-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE0A623A60EE500DD1F18 /* NitrogenDark-iPad.png */; };
+		C96EE11323A60EE600DD1F18 /* IronDark-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE0A723A60EE500DD1F18 /* IronDark-iPad.png */; };
+		C96EE11423A60EE600DD1F18 /* ChlorineBlack-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE0A823A60EE500DD1F18 /* ChlorineBlack-iPad.png */; };
+		C96EE11523A60EE600DD1F18 /* DefaultDark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE0A923A60EE600DD1F18 /* DefaultDark@2x.png */; };
+		C96EE11623A60EE600DD1F18 /* OxygenLight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE0AA23A60EE600DD1F18 /* OxygenLight@3x.png */; };
+		C96EE11723A60EE600DD1F18 /* NitrogenBlack-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE0AB23A60EE600DD1F18 /* NitrogenBlack-iPad.png */; };
+		C96EE11823A60EE600DD1F18 /* NeonBlack-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE0AC23A60EE600DD1F18 /* NeonBlack-iPad.png */; };
+		C96EE11923A60EE600DD1F18 /* OxygenLight-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE0AD23A60EE600DD1F18 /* OxygenLight-iPad.png */; };
+		C96EE11A23A60EE600DD1F18 /* OxygenDark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE0AE23A60EE600DD1F18 /* OxygenDark@2x.png */; };
+		C96EE11B23A60EE600DD1F18 /* OxygenLight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C96EE0AF23A60EE600DD1F18 /* OxygenLight@2x.png */; };
+		C974B20121E62DAC005F96BD /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C974B20021E62DAC005F96BD /* Array+Extension.swift */; };
+		C9827032216F8B24000A5414 /* UISettingsTwoFingerTapTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9827031216F8B24000A5414 /* UISettingsTwoFingerTapTableViewController.swift */; };
+		C9827034216F8B35000A5414 /* UISettingsOneFingerHoldTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9827033216F8B35000A5414 /* UISettingsOneFingerHoldTableViewController.swift */; };
+		C9827036216F8B43000A5414 /* UISettingsShakeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9827035216F8B43000A5414 /* UISettingsShakeTableViewController.swift */; };
+		C9827038216F8D35000A5414 /* UISettingsOneFingerHoldTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9827037216F8D35000A5414 /* UISettingsOneFingerHoldTableViewController.storyboard */; };
+		C982703A216F8D51000A5414 /* UISettingsShakeTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9827039216F8D51000A5414 /* UISettingsShakeTableViewController.storyboard */; };
+		C982703C216F8D66000A5414 /* UISettingsTwoFingerTapTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C982703B216F8D66000A5414 /* UISettingsTwoFingerTapTableViewController.storyboard */; };
+		C98631EF218DE9EB00489872 /* UIChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98631EE218DE9EB00489872 /* UIChooserViewController.swift */; };
+		C98684AD2170CE5A00FD5222 /* UIThemeableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98684AC2170CE5A00FD5222 /* UIThemeableLabel.swift */; };
+		C98684B02170D0A300FD5222 /* AppearanceModifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98684AF2170D0A300FD5222 /* AppearanceModifiable.swift */; };
+		C98684B22170DE4000FD5222 /* UIThemeableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98684B12170DE4000FD5222 /* UIThemeableTableViewCell.swift */; };
+		C98684BA2170DEB000FD5222 /* UIThemeableSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98684B92170DEB000FD5222 /* UIThemeableSwitch.swift */; };
+		C98684BC2170DED100FD5222 /* UIThemeableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98684BB2170DED100FD5222 /* UIThemeableImageView.swift */; };
+		C98684BE2170DFBA00FD5222 /* UIThemeableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98684BD2170DFBA00FD5222 /* UIThemeableView.swift */; };
+		C98684C02170E0E500FD5222 /* UIThemeableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98684BF2170E0E500FD5222 /* UIThemeableTableView.swift */; };
+		C98684C22171001900FD5222 /* UIThemeableNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98684C12171001900FD5222 /* UIThemeableNavigationController.swift */; };
+		C98C5D49220A70C100A8C01E /* UIWonderfulAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C5D48220A70C100A8C01E /* UIWonderfulAlert.swift */; };
+		C9980957220BCE60004A0C16 /* UserStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9980956220BCE60004A0C16 /* UserStatistics.swift */; };
+		C99A828E2184ABC5004FB5B6 /* UISetupLifeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A828C2184ABC5004FB5B6 /* UISetupLifeViewController.swift */; };
+		C99A828F2184ABC5004FB5B6 /* UISetupLifeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C99A828D2184ABC5004FB5B6 /* UISetupLifeViewController.xib */; };
+		C99A82942184ABE2004FB5B6 /* UISetupPlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A82922184ABE2004FB5B6 /* UISetupPlayersViewController.swift */; };
+		C99A82952184ABE2004FB5B6 /* UISetupPlayersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C99A82932184ABE2004FB5B6 /* UISetupPlayersViewController.xib */; };
+		C99A82982184ABEE004FB5B6 /* UISetupLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A82962184ABEE004FB5B6 /* UISetupLayoutViewController.swift */; };
+		C99A82992184ABEE004FB5B6 /* UISetupLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C99A82972184ABEE004FB5B6 /* UISetupLayoutViewController.xib */; };
+		C99A829C2184ABF9004FB5B6 /* UISetupChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A829A2184ABF9004FB5B6 /* UISetupChooserViewController.swift */; };
+		C99A829D2184ABF9004FB5B6 /* UISetupChooserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C99A829B2184ABF9004FB5B6 /* UISetupChooserViewController.xib */; };
+		C99A82A02184AC46004FB5B6 /* UISetupHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A829E2184AC46004FB5B6 /* UISetupHomeViewController.swift */; };
+		C99A82A12184AC46004FB5B6 /* UISetupHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C99A829F2184AC46004FB5B6 /* UISetupHomeViewController.xib */; };
+		C99A82A32184AEC9004FB5B6 /* UIPageViewControllerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A82A22184AEC9004FB5B6 /* UIPageViewControllerPage.swift */; };
+		C99A82A52184BB00004FB5B6 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99A82A42184BB00004FB5B6 /* UIImage+Extension.swift */; };
+		C9B36F84220F65C400851AD9 /* UISettingsOurTeamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B36F83220F65C400851AD9 /* UISettingsOurTeamTableViewController.swift */; };
+		C9B36F8C220F6F5600851AD9 /* UISettingsOurTeamTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B36F8B220F6F5600851AD9 /* UISettingsOurTeamTableViewController.storyboard */; };
+		C9B590CB21ADD842004E1BF9 /* UISettingsAppIconTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B590CA21ADD842004E1BF9 /* UISettingsAppIconTableViewController.swift */; };
+		C9B590CD21ADD865004E1BF9 /* UISettingsAppIconTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B590CC21ADD865004E1BF9 /* UISettingsAppIconTableViewController.storyboard */; };
+		C9B590CF21AE291C004E1BF9 /* Notification.Name+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B590CE21AE291C004E1BF9 /* Notification.Name+Extension.swift */; };
+		C9B923D121F143E50047845D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B923D021F143E50047845D /* StoreKit.framework */; };
+		C9B923D321F144C60047845D /* InAppPurchaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B923D221F144C60047845D /* InAppPurchaseHelper.swift */; };
+		C9BEA533217F6EC100A538B3 /* UISetupPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEA532217F6EC100A538B3 /* UISetupPageViewController.swift */; };
+		C9BEA541217F819300A538B3 /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEA540217F819300A538B3 /* UIStoryboard+Extension.swift */; };
+		C9C9E6CC21E7D97D0082CC17 /* UIPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C9E6CB21E7D97D0082CC17 /* UIPopUpViewController.swift */; };
+		C9C9E6D021E8241A0082CC17 /* UIChoicePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C9E6CF21E8241A0082CC17 /* UIChoicePopUpViewController.swift */; };
+		C9C9E6D221E836580082CC17 /* UINumberPadPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C9E6D121E836580082CC17 /* UINumberPadPopUpViewController.swift */; };
+		C9C9E6D421E8366B0082CC17 /* UITimePickerPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C9E6D321E8366B0082CC17 /* UITimePickerPopUpViewController.swift */; };
+		C9CB1232220F3112001E160F /* CarbonProBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CB1230220F3112001E160F /* CarbonProBanner.swift */; };
+		C9CB1233220F3112001E160F /* CarbonProBanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9CB1231220F3112001E160F /* CarbonProBanner.xib */; };
+		C9CD31F7218E1A95003CF4B8 /* Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD31F6218E1A95003CF4B8 /* Setup.swift */; };
+		C9CD31F9218E3C82003CF4B8 /* CBEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD31F8218E3C82003CF4B8 /* CBEdge.swift */; };
+		C9CD31FB218E3D82003CF4B8 /* CBLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD31FA218E3D82003CF4B8 /* CBLayout.swift */; };
+		C9CD31FF218E3F3C003CF4B8 /* CBParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD31FE218E3F3C003CF4B8 /* CBParameters.swift */; };
+		C9CD3201218E5A33003CF4B8 /* UIMenuPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD3200218E5A33003CF4B8 /* UIMenuPageViewController.swift */; };
+		C9CD320B218E5CC7003CF4B8 /* UIMenuMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD3209218E5CC7003CF4B8 /* UIMenuMainViewController.swift */; };
+		C9CD320C218E5CC7003CF4B8 /* UIMenuMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9CD320A218E5CC7003CF4B8 /* UIMenuMainViewController.xib */; };
+		C9CD320F218E5CE5003CF4B8 /* UIMenuTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD320D218E5CE5003CF4B8 /* UIMenuTimerViewController.swift */; };
+		C9CD3210218E5CE5003CF4B8 /* UIMenuTimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9CD320E218E5CE5003CF4B8 /* UIMenuTimerViewController.xib */; };
+		C9CD3213218E5CF7003CF4B8 /* UIMenuNamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD3211218E5CF7003CF4B8 /* UIMenuNamesViewController.swift */; };
+		C9CD3214218E5CF7003CF4B8 /* UIMenuNamesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9CD3212218E5CF7003CF4B8 /* UIMenuNamesViewController.xib */; };
+		C9CD3217218E5FD5003CF4B8 /* UIMenuChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD3215218E5FD5003CF4B8 /* UIMenuChooserViewController.swift */; };
+		C9CD3218218E5FD5003CF4B8 /* UIMenuChooserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9CD3216218E5FD5003CF4B8 /* UIMenuChooserViewController.xib */; };
+		C9CD321B218E60DF003CF4B8 /* UIMenuHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD3219218E60DF003CF4B8 /* UIMenuHistoryViewController.swift */; };
+		C9CD321C218E60DF003CF4B8 /* UIMenuHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9CD321A218E60DF003CF4B8 /* UIMenuHistoryViewController.xib */; };
+		C9CD321F218E60F1003CF4B8 /* UIMenuDiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD321D218E60F1003CF4B8 /* UIMenuDiceViewController.swift */; };
+		C9CD3220218E60F1003CF4B8 /* UIMenuDiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9CD321E218E60F1003CF4B8 /* UIMenuDiceViewController.xib */; };
+		C9D897892128554300FDE385 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D897882128554300FDE385 /* UIColor+Extension.swift */; };
+		C9E5C55321FF8B50009DCC49 /* Monetization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E5C55221FF8B50009DCC49 /* Monetization.swift */; };
+		C9E9283621A0B5EC0038D97A /* UISettingsGeneralTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E9283521A0B5EC0038D97A /* UISettingsGeneralTableViewController.swift */; };
+		C9E9283821A0B6080038D97A /* UISettingsGeneralTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E9283721A0B6080038D97A /* UISettingsGeneralTableViewController.storyboard */; };
+		C9F88E3021D1AC5E004CE220 /* CBCityLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F88E2F21D1AC5E004CE220 /* CBCityLayer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C96A4CC52094CDF800367421 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C96A4CA52094CDF700367421 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C96A4CAC2094CDF700367421;
+			remoteInfo = Carbon_3.0;
+		};
+		C96A4CD02094CDF800367421 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C96A4CA52094CDF700367421 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C96A4CAC2094CDF700367421;
+			remoteInfo = Carbon_3.0;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C90ED406216C545C00E046F8 /* UIIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIIconButton.swift; sourceTree = "<group>"; };
+		C91346DE21EFB80F00D219CA /* CarbonProViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonProViewController.swift; sourceTree = "<group>"; };
+		C91346DF21EFB80F00D219CA /* CarbonProViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarbonProViewController.xib; sourceTree = "<group>"; };
+		C91441F321AF83E600884D11 /* HistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryItem.swift; sourceTree = "<group>"; };
+		C91922AD216F014300CBD511 /* UISettingsGesturesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISettingsGesturesTableViewController.swift; sourceTree = "<group>"; };
+		C91922AF216F015800CBD511 /* UISettingsDefaultCountersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISettingsDefaultCountersTableViewController.swift; sourceTree = "<group>"; };
+		C91922B5216F021F00CBD511 /* UISettingsDefaultCountersTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISettingsDefaultCountersTableViewController.storyboard; sourceTree = "<group>"; };
+		C91922B7216F022D00CBD511 /* UISettingsGesturesTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISettingsGesturesTableViewController.storyboard; sourceTree = "<group>"; };
+		C92472FC216CEC7300DE6F7D /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		C928604D21A9F6D000AD1B9B /* CGSize+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Extension.swift"; sourceTree = "<group>"; };
+		C928942C218E084100E0384E /* UIGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGameViewController.swift; sourceTree = "<group>"; };
+		C9289430218E096700E0384E /* UIPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPlayerViewController.swift; sourceTree = "<group>"; };
+		C92E2FD22197443600845A09 /* UICounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICounterViewController.swift; sourceTree = "<group>"; };
+		C92E2FDA21975D8C00845A09 /* UIColorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorsViewController.swift; sourceTree = "<group>"; };
+		C92E2FDE21975EA100845A09 /* UIColorsVerticalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIColorsVerticalViewController.xib; sourceTree = "<group>"; };
+		C92E2FE021975EAE00845A09 /* UIColorsHorizontalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIColorsHorizontalViewController.xib; sourceTree = "<group>"; };
+		C92E2FE22197639E00845A09 /* UIBlurryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBlurryView.swift; sourceTree = "<group>"; };
+		C92E2FE42197683500845A09 /* UIEffectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEffectsViewController.swift; sourceTree = "<group>"; };
+		C92E2FE62197684300845A09 /* UICountersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICountersViewController.swift; sourceTree = "<group>"; };
+		C92E2FE82197685600845A09 /* UIEffectsVerticalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIEffectsVerticalViewController.xib; sourceTree = "<group>"; };
+		C92E2FEA2197686400845A09 /* UIEffectsHorizontalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIEffectsHorizontalViewController.xib; sourceTree = "<group>"; };
+		C92E2FEC2197687A00845A09 /* UICountersVerticalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UICountersVerticalViewController.xib; sourceTree = "<group>"; };
+		C92E2FEE2197688C00845A09 /* UICountersHorizontalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UICountersHorizontalViewController.xib; sourceTree = "<group>"; };
+		C92EF33F216BB976004BCAAA /* UIAnimatableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAnimatableButton.swift; sourceTree = "<group>"; };
+		C92EF341216BF6CA004BCAAA /* UISquircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISquircleButton.swift; sourceTree = "<group>"; };
+		C93B6E1D21EFD4F0007496E0 /* CarbonProItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonProItemCell.swift; sourceTree = "<group>"; };
+		C93B6E1E21EFD4F0007496E0 /* CarbonProItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarbonProItemCell.xib; sourceTree = "<group>"; };
+		C940BCCD21AC27770026E85C /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		C940BCCF21AC28750026E85C /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		C9440E15216E3064007CD783 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		C9440E1D216E59B7007CD783 /* UISettingsMainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISettingsMainTableViewController.swift; sourceTree = "<group>"; };
+		C9440E21216E5A4E007CD783 /* UISettingsMainTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISettingsMainTableViewController.storyboard; sourceTree = "<group>"; };
+		C9440E25216E5C8C007CD783 /* UISettingsThemeAndAppearanceTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISettingsThemeAndAppearanceTableViewController.storyboard; sourceTree = "<group>"; };
+		C9440E27216E5CA0007CD783 /* UISettingsThemeAndAppearanceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISettingsThemeAndAppearanceTableViewController.swift; sourceTree = "<group>"; };
+		C94E149F219DD3E200CFAABB /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		C9567AC721E4CE810000CB40 /* CBConfettiLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBConfettiLayer.swift; sourceTree = "<group>"; };
+		C9693DC121F0E34100B9A44A /* CarbonProLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonProLabel.swift; sourceTree = "<group>"; };
+		C96A4CAD2094CDF700367421 /* Carbon_3.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carbon_3.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C96A4CB02094CDF700367421 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C96A4CB82094CDF700367421 /* Carbon_3_0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Carbon_3_0.xcdatamodel; sourceTree = "<group>"; };
+		C96A4CBA2094CDF800367421 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C96A4CBD2094CDF800367421 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C96A4CBF2094CDF800367421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C96A4CC42094CDF800367421 /* Carbon_3.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Carbon_3.0Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C96A4CC82094CDF800367421 /* Carbon_3_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carbon_3_0Tests.swift; sourceTree = "<group>"; };
+		C96A4CCA2094CDF800367421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C96A4CCF2094CDF800367421 /* Carbon_3.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Carbon_3.0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C96A4CD32094CDF800367421 /* Carbon_3_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carbon_3_0UITests.swift; sourceTree = "<group>"; };
+		C96A4CD52094CDF800367421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C96D4EA921D6E49D00C84B7B /* UISettingsTwoFingerHoldTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISettingsTwoFingerHoldTableViewController.storyboard; sourceTree = "<group>"; };
+		C96D4EAB21D6E4C400C84B7B /* UISettingsTwoFingerHoldTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISettingsTwoFingerHoldTableTableViewController.swift; sourceTree = "<group>"; };
+		C96EE03C23A60EAD00DD1F18 /* Tondo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Tondo-Bold.ttf"; path = "../../../../../Fonts/Tondo-Bold.ttf"; sourceTree = "<group>"; };
+		C96EE03D23A60EAD00DD1F18 /* Tondo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Tondo-Light.ttf"; path = "../../../../../Fonts/Tondo-Light.ttf"; sourceTree = "<group>"; };
+		C96EE03E23A60EAD00DD1F18 /* Tondo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Tondo-Regular.ttf"; path = "../../../../../Fonts/Tondo-Regular.ttf"; sourceTree = "<group>"; };
+		C96EE03F23A60EAD00DD1F18 /* Dense-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dense-Regular.otf"; path = "../../../../../Fonts/Dense-Regular.otf"; sourceTree = "<group>"; };
+		C96EE04423A60EE200DD1F18 /* NitrogenDark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NitrogenDark@3x.png"; path = "../../../../../App Icon/Alternate Icons/NitrogenDark@3x.png"; sourceTree = "<group>"; };
+		C96EE04523A60EE200DD1F18 /* IronBlack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "IronBlack@2x.png"; path = "../../../../../App Icon/Alternate Icons/IronBlack@2x.png"; sourceTree = "<group>"; };
+		C96EE04623A60EE200DD1F18 /* IronBlack-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "IronBlack-iPad.png"; path = "../../../../../App Icon/Alternate Icons/IronBlack-iPad.png"; sourceTree = "<group>"; };
+		C96EE04723A60EE200DD1F18 /* HeliumLight-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HeliumLight-iPad.png"; path = "../../../../../App Icon/Alternate Icons/HeliumLight-iPad.png"; sourceTree = "<group>"; };
+		C96EE04823A60EE300DD1F18 /* OxygenDark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "OxygenDark@3x.png"; path = "../../../../../App Icon/Alternate Icons/OxygenDark@3x.png"; sourceTree = "<group>"; };
+		C96EE04923A60EE300DD1F18 /* SiliconBlack-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SiliconBlack-iPad.png"; path = "../../../../../App Icon/Alternate Icons/SiliconBlack-iPad.png"; sourceTree = "<group>"; };
+		C96EE04A23A60EE300DD1F18 /* ZincBlack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ZincBlack@2x.png"; path = "../../../../../App Icon/Alternate Icons/ZincBlack@2x.png"; sourceTree = "<group>"; };
+		C96EE04B23A60EE300DD1F18 /* ZincLight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ZincLight@2x.png"; path = "../../../../../App Icon/Alternate Icons/ZincLight@2x.png"; sourceTree = "<group>"; };
+		C96EE04C23A60EE300DD1F18 /* NeonLight-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NeonLight-iPad.png"; path = "../../../../../App Icon/Alternate Icons/NeonLight-iPad.png"; sourceTree = "<group>"; };
+		C96EE04D23A60EE300DD1F18 /* SiliconBlack@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SiliconBlack@3x.png"; path = "../../../../../App Icon/Alternate Icons/SiliconBlack@3x.png"; sourceTree = "<group>"; };
+		C96EE04E23A60EE300DD1F18 /* PhosphorusLight-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PhosphorusLight-iPad.png"; path = "../../../../../App Icon/Alternate Icons/PhosphorusLight-iPad.png"; sourceTree = "<group>"; };
+		C96EE04F23A60EE300DD1F18 /* ZincBlack@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ZincBlack@3x.png"; path = "../../../../../App Icon/Alternate Icons/ZincBlack@3x.png"; sourceTree = "<group>"; };
+		C96EE05023A60EE300DD1F18 /* HeliumLight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HeliumLight@3x.png"; path = "../../../../../App Icon/Alternate Icons/HeliumLight@3x.png"; sourceTree = "<group>"; };
+		C96EE05123A60EE300DD1F18 /* SiliconDark-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SiliconDark-iPad.png"; path = "../../../../../App Icon/Alternate Icons/SiliconDark-iPad.png"; sourceTree = "<group>"; };
+		C96EE05223A60EE300DD1F18 /* ChlorineBlack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ChlorineBlack@2x.png"; path = "../../../../../App Icon/Alternate Icons/ChlorineBlack@2x.png"; sourceTree = "<group>"; };
+		C96EE05323A60EE300DD1F18 /* BariumBlack-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BariumBlack-iPad.png"; path = "../../../../../App Icon/Alternate Icons/BariumBlack-iPad.png"; sourceTree = "<group>"; };
+		C96EE05423A60EE300DD1F18 /* BariumDark-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BariumDark-iPad.png"; path = "../../../../../App Icon/Alternate Icons/BariumDark-iPad.png"; sourceTree = "<group>"; };
+		C96EE05523A60EE300DD1F18 /* OxygenBlack-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "OxygenBlack-iPad.png"; path = "../../../../../App Icon/Alternate Icons/OxygenBlack-iPad.png"; sourceTree = "<group>"; };
+		C96EE05623A60EE300DD1F18 /* IronDark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "IronDark@3x.png"; path = "../../../../../App Icon/Alternate Icons/IronDark@3x.png"; sourceTree = "<group>"; };
+		C96EE05723A60EE300DD1F18 /* NitrogenBlack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NitrogenBlack@2x.png"; path = "../../../../../App Icon/Alternate Icons/NitrogenBlack@2x.png"; sourceTree = "<group>"; };
+		C96EE05823A60EE300DD1F18 /* BariumDark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BariumDark@3x.png"; path = "../../../../../App Icon/Alternate Icons/BariumDark@3x.png"; sourceTree = "<group>"; };
+		C96EE05923A60EE300DD1F18 /* DefaultLight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "DefaultLight@2x.png"; path = "../../../../../App Icon/Alternate Icons/DefaultLight@2x.png"; sourceTree = "<group>"; };
+		C96EE05A23A60EE300DD1F18 /* LithiumDark-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LithiumDark-iPad.png"; path = "../../../../../App Icon/Alternate Icons/LithiumDark-iPad.png"; sourceTree = "<group>"; };
+		C96EE05B23A60EE300DD1F18 /* HeliumDark-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HeliumDark-iPad.png"; path = "../../../../../App Icon/Alternate Icons/HeliumDark-iPad.png"; sourceTree = "<group>"; };
+		C96EE05C23A60EE300DD1F18 /* LithiumDark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LithiumDark@2x.png"; path = "../../../../../App Icon/Alternate Icons/LithiumDark@2x.png"; sourceTree = "<group>"; };
+		C96EE05D23A60EE300DD1F18 /* SiliconDark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SiliconDark@2x.png"; path = "../../../../../App Icon/Alternate Icons/SiliconDark@2x.png"; sourceTree = "<group>"; };
+		C96EE05E23A60EE300DD1F18 /* NeonDark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NeonDark@3x.png"; path = "../../../../../App Icon/Alternate Icons/NeonDark@3x.png"; sourceTree = "<group>"; };
+		C96EE05F23A60EE300DD1F18 /* DefaultDark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "DefaultDark@3x.png"; path = "../../../../../App Icon/Alternate Icons/DefaultDark@3x.png"; sourceTree = "<group>"; };
+		C96EE06023A60EE300DD1F18 /* LithiumBlack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LithiumBlack@2x.png"; path = "../../../../../App Icon/Alternate Icons/LithiumBlack@2x.png"; sourceTree = "<group>"; };
+		C96EE06123A60EE300DD1F18 /* ZincLight-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ZincLight-iPad.png"; path = "../../../../../App Icon/Alternate Icons/ZincLight-iPad.png"; sourceTree = "<group>"; };
+		C96EE06223A60EE300DD1F18 /* ChlorineLight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ChlorineLight@2x.png"; path = "../../../../../App Icon/Alternate Icons/ChlorineLight@2x.png"; sourceTree = "<group>"; };
+		C96EE06323A60EE300DD1F18 /* NitrogenDark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NitrogenDark@2x.png"; path = "../../../../../App Icon/Alternate Icons/NitrogenDark@2x.png"; sourceTree = "<group>"; };
+		C96EE06423A60EE300DD1F18 /* HeliumBlack-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HeliumBlack-iPad.png"; path = "../../../../../App Icon/Alternate Icons/HeliumBlack-iPad.png"; sourceTree = "<group>"; };
+		C96EE06523A60EE300DD1F18 /* OxygenDark-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "OxygenDark-iPad.png"; path = "../../../../../App Icon/Alternate Icons/OxygenDark-iPad.png"; sourceTree = "<group>"; };
+		C96EE06623A60EE300DD1F18 /* SiliconLight-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SiliconLight-iPad.png"; path = "../../../../../App Icon/Alternate Icons/SiliconLight-iPad.png"; sourceTree = "<group>"; };
+		C96EE06723A60EE400DD1F18 /* SiliconLight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SiliconLight@3x.png"; path = "../../../../../App Icon/Alternate Icons/SiliconLight@3x.png"; sourceTree = "<group>"; };
+		C96EE06823A60EE400DD1F18 /* ChlorineLight-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ChlorineLight-iPad.png"; path = "../../../../../App Icon/Alternate Icons/ChlorineLight-iPad.png"; sourceTree = "<group>"; };
+		C96EE06923A60EE400DD1F18 /* LithiumDark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LithiumDark@3x.png"; path = "../../../../../App Icon/Alternate Icons/LithiumDark@3x.png"; sourceTree = "<group>"; };
+		C96EE06A23A60EE400DD1F18 /* NitrogenLight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NitrogenLight@3x.png"; path = "../../../../../App Icon/Alternate Icons/NitrogenLight@3x.png"; sourceTree = "<group>"; };
+		C96EE06B23A60EE400DD1F18 /* BariumDark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BariumDark@2x.png"; path = "../../../../../App Icon/Alternate Icons/BariumDark@2x.png"; sourceTree = "<group>"; };
+		C96EE06C23A60EE400DD1F18 /* HeliumLight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HeliumLight@2x.png"; path = "../../../../../App Icon/Alternate Icons/HeliumLight@2x.png"; sourceTree = "<group>"; };
+		C96EE06D23A60EE400DD1F18 /* PhosphorusBlack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PhosphorusBlack@2x.png"; path = "../../../../../App Icon/Alternate Icons/PhosphorusBlack@2x.png"; sourceTree = "<group>"; };
+		C96EE06E23A60EE400DD1F18 /* PhosphorusDark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PhosphorusDark@2x.png"; path = "../../../../../App Icon/Alternate Icons/PhosphorusDark@2x.png"; sourceTree = "<group>"; };
+		C96EE06F23A60EE400DD1F18 /* IronLight-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "IronLight-iPad.png"; path = "../../../../../App Icon/Alternate Icons/IronLight-iPad.png"; sourceTree = "<group>"; };
+		C96EE07023A60EE400DD1F18 /* NeonDark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NeonDark@2x.png"; path = "../../../../../App Icon/Alternate Icons/NeonDark@2x.png"; sourceTree = "<group>"; };
+		C96EE07123A60EE400DD1F18 /* NeonLight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NeonLight@3x.png"; path = "../../../../../App Icon/Alternate Icons/NeonLight@3x.png"; sourceTree = "<group>"; };
+		C96EE07223A60EE400DD1F18 /* ZincDark-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ZincDark-iPad.png"; path = "../../../../../App Icon/Alternate Icons/ZincDark-iPad.png"; sourceTree = "<group>"; };
+		C96EE07323A60EE400DD1F18 /* NeonLight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NeonLight@2x.png"; path = "../../../../../App Icon/Alternate Icons/NeonLight@2x.png"; sourceTree = "<group>"; };
+		C96EE07423A60EE400DD1F18 /* SiliconLight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SiliconLight@2x.png"; path = "../../../../../App Icon/Alternate Icons/SiliconLight@2x.png"; sourceTree = "<group>"; };
+		C96EE07523A60EE400DD1F18 /* NitrogenLight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NitrogenLight@2x.png"; path = "../../../../../App Icon/Alternate Icons/NitrogenLight@2x.png"; sourceTree = "<group>"; };
+		C96EE07623A60EE400DD1F18 /* NeonDark-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NeonDark-iPad.png"; path = "../../../../../App Icon/Alternate Icons/NeonDark-iPad.png"; sourceTree = "<group>"; };
+		C96EE07723A60EE400DD1F18 /* LithiumLight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LithiumLight@3x.png"; path = "../../../../../App Icon/Alternate Icons/LithiumLight@3x.png"; sourceTree = "<group>"; };
+		C96EE07823A60EE400DD1F18 /* SiliconDark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SiliconDark@3x.png"; path = "../../../../../App Icon/Alternate Icons/SiliconDark@3x.png"; sourceTree = "<group>"; };
+		C96EE07923A60EE400DD1F18 /* BariumLight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BariumLight@3x.png"; path = "../../../../../App Icon/Alternate Icons/BariumLight@3x.png"; sourceTree = "<group>"; };
+		C96EE07A23A60EE400DD1F18 /* ZincLight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ZincLight@3x.png"; path = "../../../../../App Icon/Alternate Icons/ZincLight@3x.png"; sourceTree = "<group>"; };
+		C96EE07B23A60EE400DD1F18 /* ChlorineBlack@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ChlorineBlack@3x.png"; path = "../../../../../App Icon/Alternate Icons/ChlorineBlack@3x.png"; sourceTree = "<group>"; };
+		C96EE07C23A60EE400DD1F18 /* IronDark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "IronDark@2x.png"; path = "../../../../../App Icon/Alternate Icons/IronDark@2x.png"; sourceTree = "<group>"; };
+		C96EE07D23A60EE400DD1F18 /* LithiumLight-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LithiumLight-iPad.png"; path = "../../../../../App Icon/Alternate Icons/LithiumLight-iPad.png"; sourceTree = "<group>"; };
+		C96EE07E23A60EE400DD1F18 /* BariumBlack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BariumBlack@2x.png"; path = "../../../../../App Icon/Alternate Icons/BariumBlack@2x.png"; sourceTree = "<group>"; };
+		C96EE07F23A60EE400DD1F18 /* DefaultDark-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "DefaultDark-iPad.png"; path = "../../../../../App Icon/Alternate Icons/DefaultDark-iPad.png"; sourceTree = "<group>"; };
+		C96EE08023A60EE400DD1F18 /* ZincDark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ZincDark@3x.png"; path = "../../../../../App Icon/Alternate Icons/ZincDark@3x.png"; sourceTree = "<group>"; };
+		C96EE08123A60EE400DD1F18 /* HeliumBlack@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HeliumBlack@3x.png"; path = "../../../../../App Icon/Alternate Icons/HeliumBlack@3x.png"; sourceTree = "<group>"; };
+		C96EE08223A60EE400DD1F18 /* PhosphorusDark-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PhosphorusDark-iPad.png"; path = "../../../../../App Icon/Alternate Icons/PhosphorusDark-iPad.png"; sourceTree = "<group>"; };
+		C96EE08323A60EE400DD1F18 /* LithiumLight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LithiumLight@2x.png"; path = "../../../../../App Icon/Alternate Icons/LithiumLight@2x.png"; sourceTree = "<group>"; };
+		C96EE08423A60EE400DD1F18 /* PhosphorusLight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PhosphorusLight@3x.png"; path = "../../../../../App Icon/Alternate Icons/PhosphorusLight@3x.png"; sourceTree = "<group>"; };
+		C96EE08523A60EE400DD1F18 /* LithiumBlack@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LithiumBlack@3x.png"; path = "../../../../../App Icon/Alternate Icons/LithiumBlack@3x.png"; sourceTree = "<group>"; };
+		C96EE08623A60EE400DD1F18 /* IronLight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "IronLight@3x.png"; path = "../../../../../App Icon/Alternate Icons/IronLight@3x.png"; sourceTree = "<group>"; };
+		C96EE08723A60EE400DD1F18 /* ChlorineDark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ChlorineDark@2x.png"; path = "../../../../../App Icon/Alternate Icons/ChlorineDark@2x.png"; sourceTree = "<group>"; };
+		C96EE08823A60EE500DD1F18 /* PhosphorusBlack-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PhosphorusBlack-iPad.png"; path = "../../../../../App Icon/Alternate Icons/PhosphorusBlack-iPad.png"; sourceTree = "<group>"; };
+		C96EE08923A60EE500DD1F18 /* NeonBlack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NeonBlack@2x.png"; path = "../../../../../App Icon/Alternate Icons/NeonBlack@2x.png"; sourceTree = "<group>"; };
+		C96EE08A23A60EE500DD1F18 /* DefaultBlack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "DefaultBlack@2x.png"; path = "../../../../../App Icon/Alternate Icons/DefaultBlack@2x.png"; sourceTree = "<group>"; };
+		C96EE08B23A60EE500DD1F18 /* DefaultLight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "DefaultLight@3x.png"; path = "../../../../../App Icon/Alternate Icons/DefaultLight@3x.png"; sourceTree = "<group>"; };
+		C96EE08C23A60EE500DD1F18 /* PhosphorusDark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PhosphorusDark@3x.png"; path = "../../../../../App Icon/Alternate Icons/PhosphorusDark@3x.png"; sourceTree = "<group>"; };
+		C96EE08D23A60EE500DD1F18 /* OxygenBlack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "OxygenBlack@2x.png"; path = "../../../../../App Icon/Alternate Icons/OxygenBlack@2x.png"; sourceTree = "<group>"; };
+		C96EE08E23A60EE500DD1F18 /* BariumBlack@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BariumBlack@3x.png"; path = "../../../../../App Icon/Alternate Icons/BariumBlack@3x.png"; sourceTree = "<group>"; };
+		C96EE08F23A60EE500DD1F18 /* ZincDark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ZincDark@2x.png"; path = "../../../../../App Icon/Alternate Icons/ZincDark@2x.png"; sourceTree = "<group>"; };
+		C96EE09023A60EE500DD1F18 /* NitrogenLight-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NitrogenLight-iPad.png"; path = "../../../../../App Icon/Alternate Icons/NitrogenLight-iPad.png"; sourceTree = "<group>"; };
+		C96EE09123A60EE500DD1F18 /* ChlorineLight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ChlorineLight@3x.png"; path = "../../../../../App Icon/Alternate Icons/ChlorineLight@3x.png"; sourceTree = "<group>"; };
+		C96EE09223A60EE500DD1F18 /* HeliumDark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HeliumDark@3x.png"; path = "../../../../../App Icon/Alternate Icons/HeliumDark@3x.png"; sourceTree = "<group>"; };
+		C96EE09323A60EE500DD1F18 /* IronBlack@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "IronBlack@3x.png"; path = "../../../../../App Icon/Alternate Icons/IronBlack@3x.png"; sourceTree = "<group>"; };
+		C96EE09423A60EE500DD1F18 /* HeliumBlack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HeliumBlack@2x.png"; path = "../../../../../App Icon/Alternate Icons/HeliumBlack@2x.png"; sourceTree = "<group>"; };
+		C96EE09523A60EE500DD1F18 /* IronLight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "IronLight@2x.png"; path = "../../../../../App Icon/Alternate Icons/IronLight@2x.png"; sourceTree = "<group>"; };
+		C96EE09623A60EE500DD1F18 /* LithiumBlack-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LithiumBlack-iPad.png"; path = "../../../../../App Icon/Alternate Icons/LithiumBlack-iPad.png"; sourceTree = "<group>"; };
+		C96EE09723A60EE500DD1F18 /* BariumLight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BariumLight@2x.png"; path = "../../../../../App Icon/Alternate Icons/BariumLight@2x.png"; sourceTree = "<group>"; };
+		C96EE09823A60EE500DD1F18 /* SiliconBlack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SiliconBlack@2x.png"; path = "../../../../../App Icon/Alternate Icons/SiliconBlack@2x.png"; sourceTree = "<group>"; };
+		C96EE09923A60EE500DD1F18 /* NitrogenBlack@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NitrogenBlack@3x.png"; path = "../../../../../App Icon/Alternate Icons/NitrogenBlack@3x.png"; sourceTree = "<group>"; };
+		C96EE09A23A60EE500DD1F18 /* HeliumDark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HeliumDark@2x.png"; path = "../../../../../App Icon/Alternate Icons/HeliumDark@2x.png"; sourceTree = "<group>"; };
+		C96EE09B23A60EE500DD1F18 /* PhosphorusBlack@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PhosphorusBlack@3x.png"; path = "../../../../../App Icon/Alternate Icons/PhosphorusBlack@3x.png"; sourceTree = "<group>"; };
+		C96EE09C23A60EE500DD1F18 /* ChlorineDark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ChlorineDark@3x.png"; path = "../../../../../App Icon/Alternate Icons/ChlorineDark@3x.png"; sourceTree = "<group>"; };
+		C96EE09D23A60EE500DD1F18 /* ZincBlack-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ZincBlack-iPad.png"; path = "../../../../../App Icon/Alternate Icons/ZincBlack-iPad.png"; sourceTree = "<group>"; };
+		C96EE09E23A60EE500DD1F18 /* NeonBlack@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NeonBlack@3x.png"; path = "../../../../../App Icon/Alternate Icons/NeonBlack@3x.png"; sourceTree = "<group>"; };
+		C96EE09F23A60EE500DD1F18 /* DefaultBlack@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "DefaultBlack@3x.png"; path = "../../../../../App Icon/Alternate Icons/DefaultBlack@3x.png"; sourceTree = "<group>"; };
+		C96EE0A023A60EE500DD1F18 /* BariumLight-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BariumLight-iPad.png"; path = "../../../../../App Icon/Alternate Icons/BariumLight-iPad.png"; sourceTree = "<group>"; };
+		C96EE0A123A60EE500DD1F18 /* DefaultBlack-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "DefaultBlack-iPad.png"; path = "../../../../../App Icon/Alternate Icons/DefaultBlack-iPad.png"; sourceTree = "<group>"; };
+		C96EE0A223A60EE500DD1F18 /* DefaultLight-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "DefaultLight-iPad.png"; path = "../../../../../App Icon/Alternate Icons/DefaultLight-iPad.png"; sourceTree = "<group>"; };
+		C96EE0A323A60EE500DD1F18 /* ChlorineDark-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ChlorineDark-iPad.png"; path = "../../../../../App Icon/Alternate Icons/ChlorineDark-iPad.png"; sourceTree = "<group>"; };
+		C96EE0A423A60EE500DD1F18 /* PhosphorusLight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PhosphorusLight@2x.png"; path = "../../../../../App Icon/Alternate Icons/PhosphorusLight@2x.png"; sourceTree = "<group>"; };
+		C96EE0A523A60EE500DD1F18 /* OxygenBlack@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "OxygenBlack@3x.png"; path = "../../../../../App Icon/Alternate Icons/OxygenBlack@3x.png"; sourceTree = "<group>"; };
+		C96EE0A623A60EE500DD1F18 /* NitrogenDark-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NitrogenDark-iPad.png"; path = "../../../../../App Icon/Alternate Icons/NitrogenDark-iPad.png"; sourceTree = "<group>"; };
+		C96EE0A723A60EE500DD1F18 /* IronDark-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "IronDark-iPad.png"; path = "../../../../../App Icon/Alternate Icons/IronDark-iPad.png"; sourceTree = "<group>"; };
+		C96EE0A823A60EE500DD1F18 /* ChlorineBlack-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ChlorineBlack-iPad.png"; path = "../../../../../App Icon/Alternate Icons/ChlorineBlack-iPad.png"; sourceTree = "<group>"; };
+		C96EE0A923A60EE600DD1F18 /* DefaultDark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "DefaultDark@2x.png"; path = "../../../../../App Icon/Alternate Icons/DefaultDark@2x.png"; sourceTree = "<group>"; };
+		C96EE0AA23A60EE600DD1F18 /* OxygenLight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "OxygenLight@3x.png"; path = "../../../../../App Icon/Alternate Icons/OxygenLight@3x.png"; sourceTree = "<group>"; };
+		C96EE0AB23A60EE600DD1F18 /* NitrogenBlack-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NitrogenBlack-iPad.png"; path = "../../../../../App Icon/Alternate Icons/NitrogenBlack-iPad.png"; sourceTree = "<group>"; };
+		C96EE0AC23A60EE600DD1F18 /* NeonBlack-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "NeonBlack-iPad.png"; path = "../../../../../App Icon/Alternate Icons/NeonBlack-iPad.png"; sourceTree = "<group>"; };
+		C96EE0AD23A60EE600DD1F18 /* OxygenLight-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "OxygenLight-iPad.png"; path = "../../../../../App Icon/Alternate Icons/OxygenLight-iPad.png"; sourceTree = "<group>"; };
+		C96EE0AE23A60EE600DD1F18 /* OxygenDark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "OxygenDark@2x.png"; path = "../../../../../App Icon/Alternate Icons/OxygenDark@2x.png"; sourceTree = "<group>"; };
+		C96EE0AF23A60EE600DD1F18 /* OxygenLight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "OxygenLight@2x.png"; path = "../../../../../App Icon/Alternate Icons/OxygenLight@2x.png"; sourceTree = "<group>"; };
+		C974B20021E62DAC005F96BD /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		C9827031216F8B24000A5414 /* UISettingsTwoFingerTapTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISettingsTwoFingerTapTableViewController.swift; sourceTree = "<group>"; };
+		C9827033216F8B35000A5414 /* UISettingsOneFingerHoldTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISettingsOneFingerHoldTableViewController.swift; sourceTree = "<group>"; };
+		C9827035216F8B43000A5414 /* UISettingsShakeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISettingsShakeTableViewController.swift; sourceTree = "<group>"; };
+		C9827037216F8D35000A5414 /* UISettingsOneFingerHoldTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISettingsOneFingerHoldTableViewController.storyboard; sourceTree = "<group>"; };
+		C9827039216F8D51000A5414 /* UISettingsShakeTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISettingsShakeTableViewController.storyboard; sourceTree = "<group>"; };
+		C982703B216F8D66000A5414 /* UISettingsTwoFingerTapTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISettingsTwoFingerTapTableViewController.storyboard; sourceTree = "<group>"; };
+		C98631EE218DE9EB00489872 /* UIChooserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIChooserViewController.swift; sourceTree = "<group>"; };
+		C98684AC2170CE5A00FD5222 /* UIThemeableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIThemeableLabel.swift; sourceTree = "<group>"; };
+		C98684AF2170D0A300FD5222 /* AppearanceModifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceModifiable.swift; sourceTree = "<group>"; };
+		C98684B12170DE4000FD5222 /* UIThemeableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIThemeableTableViewCell.swift; sourceTree = "<group>"; };
+		C98684B92170DEB000FD5222 /* UIThemeableSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIThemeableSwitch.swift; sourceTree = "<group>"; };
+		C98684BB2170DED100FD5222 /* UIThemeableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIThemeableImageView.swift; sourceTree = "<group>"; };
+		C98684BD2170DFBA00FD5222 /* UIThemeableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIThemeableView.swift; sourceTree = "<group>"; };
+		C98684BF2170E0E500FD5222 /* UIThemeableTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIThemeableTableView.swift; sourceTree = "<group>"; };
+		C98684C12171001900FD5222 /* UIThemeableNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIThemeableNavigationController.swift; sourceTree = "<group>"; };
+		C98C5D48220A70C100A8C01E /* UIWonderfulAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWonderfulAlert.swift; sourceTree = "<group>"; };
+		C9980956220BCE60004A0C16 /* UserStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatistics.swift; sourceTree = "<group>"; };
+		C99A828C2184ABC5004FB5B6 /* UISetupLifeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISetupLifeViewController.swift; sourceTree = "<group>"; };
+		C99A828D2184ABC5004FB5B6 /* UISetupLifeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UISetupLifeViewController.xib; sourceTree = "<group>"; };
+		C99A82922184ABE2004FB5B6 /* UISetupPlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISetupPlayersViewController.swift; sourceTree = "<group>"; };
+		C99A82932184ABE2004FB5B6 /* UISetupPlayersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UISetupPlayersViewController.xib; sourceTree = "<group>"; };
+		C99A82962184ABEE004FB5B6 /* UISetupLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISetupLayoutViewController.swift; sourceTree = "<group>"; };
+		C99A82972184ABEE004FB5B6 /* UISetupLayoutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UISetupLayoutViewController.xib; sourceTree = "<group>"; };
+		C99A829A2184ABF9004FB5B6 /* UISetupChooserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISetupChooserViewController.swift; sourceTree = "<group>"; };
+		C99A829B2184ABF9004FB5B6 /* UISetupChooserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UISetupChooserViewController.xib; sourceTree = "<group>"; };
+		C99A829E2184AC46004FB5B6 /* UISetupHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISetupHomeViewController.swift; sourceTree = "<group>"; };
+		C99A829F2184AC46004FB5B6 /* UISetupHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UISetupHomeViewController.xib; sourceTree = "<group>"; };
+		C99A82A22184AEC9004FB5B6 /* UIPageViewControllerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPageViewControllerPage.swift; sourceTree = "<group>"; };
+		C99A82A42184BB00004FB5B6 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		C9B36F83220F65C400851AD9 /* UISettingsOurTeamTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISettingsOurTeamTableViewController.swift; sourceTree = "<group>"; };
+		C9B36F8B220F6F5600851AD9 /* UISettingsOurTeamTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISettingsOurTeamTableViewController.storyboard; sourceTree = "<group>"; };
+		C9B590CA21ADD842004E1BF9 /* UISettingsAppIconTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISettingsAppIconTableViewController.swift; sourceTree = "<group>"; };
+		C9B590CC21ADD865004E1BF9 /* UISettingsAppIconTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISettingsAppIconTableViewController.storyboard; sourceTree = "<group>"; };
+		C9B590CE21AE291C004E1BF9 /* Notification.Name+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification.Name+Extension.swift"; sourceTree = "<group>"; };
+		C9B923D021F143E50047845D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C9B923D221F144C60047845D /* InAppPurchaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchaseHelper.swift; sourceTree = "<group>"; };
+		C9BEA532217F6EC100A538B3 /* UISetupPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISetupPageViewController.swift; sourceTree = "<group>"; };
+		C9BEA540217F819300A538B3 /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
+		C9C9E6CB21E7D97D0082CC17 /* UIPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPopUpViewController.swift; sourceTree = "<group>"; };
+		C9C9E6CF21E8241A0082CC17 /* UIChoicePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIChoicePopUpViewController.swift; sourceTree = "<group>"; };
+		C9C9E6D121E836580082CC17 /* UINumberPadPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINumberPadPopUpViewController.swift; sourceTree = "<group>"; };
+		C9C9E6D321E8366B0082CC17 /* UITimePickerPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITimePickerPopUpViewController.swift; sourceTree = "<group>"; };
+		C9CB1230220F3112001E160F /* CarbonProBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonProBanner.swift; sourceTree = "<group>"; };
+		C9CB1231220F3112001E160F /* CarbonProBanner.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarbonProBanner.xib; sourceTree = "<group>"; };
+		C9CD31F6218E1A95003CF4B8 /* Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setup.swift; sourceTree = "<group>"; };
+		C9CD31F8218E3C82003CF4B8 /* CBEdge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBEdge.swift; sourceTree = "<group>"; };
+		C9CD31FA218E3D82003CF4B8 /* CBLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBLayout.swift; sourceTree = "<group>"; };
+		C9CD31FE218E3F3C003CF4B8 /* CBParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBParameters.swift; sourceTree = "<group>"; };
+		C9CD3200218E5A33003CF4B8 /* UIMenuPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMenuPageViewController.swift; sourceTree = "<group>"; };
+		C9CD3209218E5CC7003CF4B8 /* UIMenuMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMenuMainViewController.swift; sourceTree = "<group>"; };
+		C9CD320A218E5CC7003CF4B8 /* UIMenuMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIMenuMainViewController.xib; sourceTree = "<group>"; };
+		C9CD320D218E5CE5003CF4B8 /* UIMenuTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMenuTimerViewController.swift; sourceTree = "<group>"; };
+		C9CD320E218E5CE5003CF4B8 /* UIMenuTimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIMenuTimerViewController.xib; sourceTree = "<group>"; };
+		C9CD3211218E5CF7003CF4B8 /* UIMenuNamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMenuNamesViewController.swift; sourceTree = "<group>"; };
+		C9CD3212218E5CF7003CF4B8 /* UIMenuNamesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIMenuNamesViewController.xib; sourceTree = "<group>"; };
+		C9CD3215218E5FD5003CF4B8 /* UIMenuChooserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMenuChooserViewController.swift; sourceTree = "<group>"; };
+		C9CD3216218E5FD5003CF4B8 /* UIMenuChooserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIMenuChooserViewController.xib; sourceTree = "<group>"; };
+		C9CD3219218E60DF003CF4B8 /* UIMenuHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMenuHistoryViewController.swift; sourceTree = "<group>"; };
+		C9CD321A218E60DF003CF4B8 /* UIMenuHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIMenuHistoryViewController.xib; sourceTree = "<group>"; };
+		C9CD321D218E60F1003CF4B8 /* UIMenuDiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMenuDiceViewController.swift; sourceTree = "<group>"; };
+		C9CD321E218E60F1003CF4B8 /* UIMenuDiceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIMenuDiceViewController.xib; sourceTree = "<group>"; };
+		C9D897882128554300FDE385 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		C9E5C55221FF8B50009DCC49 /* Monetization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monetization.swift; sourceTree = "<group>"; };
+		C9E9283521A0B5EC0038D97A /* UISettingsGeneralTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISettingsGeneralTableViewController.swift; sourceTree = "<group>"; };
+		C9E9283721A0B6080038D97A /* UISettingsGeneralTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISettingsGeneralTableViewController.storyboard; sourceTree = "<group>"; };
+		C9F88E2F21D1AC5E004CE220 /* CBCityLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBCityLayer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C96A4CAA2094CDF700367421 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9B923D121F143E50047845D /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96A4CC12094CDF800367421 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96A4CCC2094CDF800367421 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C91922AA216EAC2800CBD511 /* Default Counters */ = {
+			isa = PBXGroup;
+			children = (
+				C91922AF216F015800CBD511 /* UISettingsDefaultCountersTableViewController.swift */,
+				C91922B5216F021F00CBD511 /* UISettingsDefaultCountersTableViewController.storyboard */,
+			);
+			path = "Default Counters";
+			sourceTree = "<group>";
+		};
+		C91922AC216F012500CBD511 /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				C91922AD216F014300CBD511 /* UISettingsGesturesTableViewController.swift */,
+				C91922B7216F022D00CBD511 /* UISettingsGesturesTableViewController.storyboard */,
+				C982703D216F8D6B000A5414 /* Shake */,
+				C982703E216F8D76000A5414 /* Two Finger Tap */,
+				C982703F216F8D83000A5414 /* One Finger Hold */,
+				C96D4EA821D6BBAD00C84B7B /* Two Finger Hold */,
+			);
+			path = Gestures;
+			sourceTree = "<group>";
+		};
+		C92472FB216CEC6500DE6F7D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C9D897882128554300FDE385 /* UIColor+Extension.swift */,
+				C92472FC216CEC7300DE6F7D /* UIFont+Extension.swift */,
+				C99A82A42184BB00004FB5B6 /* UIImage+Extension.swift */,
+				C940BCCF21AC28750026E85C /* UIImageView+Extension.swift */,
+				C9BEA540217F819300A538B3 /* UIStoryboard+Extension.swift */,
+				C94E149F219DD3E200CFAABB /* UIView+Extension.swift */,
+				C928604D21A9F6D000AD1B9B /* CGSize+Extension.swift */,
+				C940BCCD21AC27770026E85C /* UILabel+Extension.swift */,
+				C9B590CE21AE291C004E1BF9 /* Notification.Name+Extension.swift */,
+				C974B20021E62DAC005F96BD /* Array+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C9289429218E080000E0384E /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				C928942C218E084100E0384E /* UIGameViewController.swift */,
+				C928942E218E08F300E0384E /* Player */,
+				C92E2FD1219743F500845A09 /* Counter */,
+				C92E2FD62197592100845A09 /* Auxiliary Menus */,
+				C928942F218E08FB00E0384E /* Game Menus */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		C928942E218E08F300E0384E /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				C9289430218E096700E0384E /* UIPlayerViewController.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		C928942F218E08FB00E0384E /* Game Menus */ = {
+			isa = PBXGroup;
+			children = (
+				C9CD3200218E5A33003CF4B8 /* UIMenuPageViewController.swift */,
+				C9CD3202218E5B49003CF4B8 /* Main */,
+				C9CD3203218E5B51003CF4B8 /* Timer */,
+				C9CD3208218E5BFC003CF4B8 /* Names */,
+				C9CD3205218E5B65003CF4B8 /* Chooser */,
+				C9CD3206218E5B72003CF4B8 /* History */,
+				C9CD3207218E5B79003CF4B8 /* Dice */,
+			);
+			path = "Game Menus";
+			sourceTree = "<group>";
+		};
+		C92E2FD1219743F500845A09 /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+				C92E2FD22197443600845A09 /* UICounterViewController.swift */,
+			);
+			path = Counter;
+			sourceTree = "<group>";
+		};
+		C92E2FD62197592100845A09 /* Auxiliary Menus */ = {
+			isa = PBXGroup;
+			children = (
+				C92E2FD72197593100845A09 /* Colors */,
+				C92E2FD82197593800845A09 /* Effects */,
+				C92E2FD92197595400845A09 /* Counters */,
+			);
+			path = "Auxiliary Menus";
+			sourceTree = "<group>";
+		};
+		C92E2FD72197593100845A09 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				C92E2FDA21975D8C00845A09 /* UIColorsViewController.swift */,
+				C92E2FDE21975EA100845A09 /* UIColorsVerticalViewController.xib */,
+				C92E2FE021975EAE00845A09 /* UIColorsHorizontalViewController.xib */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		C92E2FD82197593800845A09 /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				C92E2FE42197683500845A09 /* UIEffectsViewController.swift */,
+				C92E2FE82197685600845A09 /* UIEffectsVerticalViewController.xib */,
+				C92E2FEA2197686400845A09 /* UIEffectsHorizontalViewController.xib */,
+			);
+			path = Effects;
+			sourceTree = "<group>";
+		};
+		C92E2FD92197595400845A09 /* Counters */ = {
+			isa = PBXGroup;
+			children = (
+				C92E2FE62197684300845A09 /* UICountersViewController.swift */,
+				C92E2FEC2197687A00845A09 /* UICountersVerticalViewController.xib */,
+				C92E2FEE2197688C00845A09 /* UICountersHorizontalViewController.xib */,
+			);
+			path = Counters;
+			sourceTree = "<group>";
+		};
+		C9440E23216E5C5D007CD783 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C9440E1D216E59B7007CD783 /* UISettingsMainTableViewController.swift */,
+				C9440E21216E5A4E007CD783 /* UISettingsMainTableViewController.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C9440E24216E5C69007CD783 /* Theme & Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				C9440E27216E5CA0007CD783 /* UISettingsThemeAndAppearanceTableViewController.swift */,
+				C9440E25216E5C8C007CD783 /* UISettingsThemeAndAppearanceTableViewController.storyboard */,
+			);
+			path = "Theme & Appearance";
+			sourceTree = "<group>";
+		};
+		C94E14A1219F190600CFAABB /* Wonderful Library */ = {
+			isa = PBXGroup;
+			children = (
+				C98C5D48220A70C100A8C01E /* UIWonderfulAlert.swift */,
+				C9C9E6CB21E7D97D0082CC17 /* UIPopUpViewController.swift */,
+				C9C9E6CF21E8241A0082CC17 /* UIChoicePopUpViewController.swift */,
+				C9C9E6D121E836580082CC17 /* UINumberPadPopUpViewController.swift */,
+				C9C9E6D321E8366B0082CC17 /* UITimePickerPopUpViewController.swift */,
+			);
+			path = "Wonderful Library";
+			sourceTree = "<group>";
+		};
+		C94E819C21D2E1E300303F35 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C9F074422096175C00D51D54 /* Fonts */,
+				C94E819D21D2E1EB00303F35 /* Alternate Icons */,
+			);
+			name = Resources;
+			path = "Wonderful Library/Resources";
+			sourceTree = "<group>";
+		};
+		C94E819D21D2E1EB00303F35 /* Alternate Icons */ = {
+			isa = PBXGroup;
+			children = (
+				C96EE05323A60EE300DD1F18 /* BariumBlack-iPad.png */,
+				C96EE07E23A60EE400DD1F18 /* BariumBlack@2x.png */,
+				C96EE08E23A60EE500DD1F18 /* BariumBlack@3x.png */,
+				C96EE05423A60EE300DD1F18 /* BariumDark-iPad.png */,
+				C96EE06B23A60EE400DD1F18 /* BariumDark@2x.png */,
+				C96EE05823A60EE300DD1F18 /* BariumDark@3x.png */,
+				C96EE0A023A60EE500DD1F18 /* BariumLight-iPad.png */,
+				C96EE09723A60EE500DD1F18 /* BariumLight@2x.png */,
+				C96EE07923A60EE400DD1F18 /* BariumLight@3x.png */,
+				C96EE0A823A60EE500DD1F18 /* ChlorineBlack-iPad.png */,
+				C96EE05223A60EE300DD1F18 /* ChlorineBlack@2x.png */,
+				C96EE07B23A60EE400DD1F18 /* ChlorineBlack@3x.png */,
+				C96EE0A323A60EE500DD1F18 /* ChlorineDark-iPad.png */,
+				C96EE08723A60EE400DD1F18 /* ChlorineDark@2x.png */,
+				C96EE09C23A60EE500DD1F18 /* ChlorineDark@3x.png */,
+				C96EE06823A60EE400DD1F18 /* ChlorineLight-iPad.png */,
+				C96EE06223A60EE300DD1F18 /* ChlorineLight@2x.png */,
+				C96EE09123A60EE500DD1F18 /* ChlorineLight@3x.png */,
+				C96EE0A123A60EE500DD1F18 /* DefaultBlack-iPad.png */,
+				C96EE08A23A60EE500DD1F18 /* DefaultBlack@2x.png */,
+				C96EE09F23A60EE500DD1F18 /* DefaultBlack@3x.png */,
+				C96EE07F23A60EE400DD1F18 /* DefaultDark-iPad.png */,
+				C96EE0A923A60EE600DD1F18 /* DefaultDark@2x.png */,
+				C96EE05F23A60EE300DD1F18 /* DefaultDark@3x.png */,
+				C96EE0A223A60EE500DD1F18 /* DefaultLight-iPad.png */,
+				C96EE05923A60EE300DD1F18 /* DefaultLight@2x.png */,
+				C96EE08B23A60EE500DD1F18 /* DefaultLight@3x.png */,
+				C96EE06423A60EE300DD1F18 /* HeliumBlack-iPad.png */,
+				C96EE09423A60EE500DD1F18 /* HeliumBlack@2x.png */,
+				C96EE08123A60EE400DD1F18 /* HeliumBlack@3x.png */,
+				C96EE05B23A60EE300DD1F18 /* HeliumDark-iPad.png */,
+				C96EE09A23A60EE500DD1F18 /* HeliumDark@2x.png */,
+				C96EE09223A60EE500DD1F18 /* HeliumDark@3x.png */,
+				C96EE04723A60EE200DD1F18 /* HeliumLight-iPad.png */,
+				C96EE06C23A60EE400DD1F18 /* HeliumLight@2x.png */,
+				C96EE05023A60EE300DD1F18 /* HeliumLight@3x.png */,
+				C96EE04623A60EE200DD1F18 /* IronBlack-iPad.png */,
+				C96EE04523A60EE200DD1F18 /* IronBlack@2x.png */,
+				C96EE09323A60EE500DD1F18 /* IronBlack@3x.png */,
+				C96EE0A723A60EE500DD1F18 /* IronDark-iPad.png */,
+				C96EE07C23A60EE400DD1F18 /* IronDark@2x.png */,
+				C96EE05623A60EE300DD1F18 /* IronDark@3x.png */,
+				C96EE06F23A60EE400DD1F18 /* IronLight-iPad.png */,
+				C96EE09523A60EE500DD1F18 /* IronLight@2x.png */,
+				C96EE08623A60EE400DD1F18 /* IronLight@3x.png */,
+				C96EE09623A60EE500DD1F18 /* LithiumBlack-iPad.png */,
+				C96EE06023A60EE300DD1F18 /* LithiumBlack@2x.png */,
+				C96EE08523A60EE400DD1F18 /* LithiumBlack@3x.png */,
+				C96EE05A23A60EE300DD1F18 /* LithiumDark-iPad.png */,
+				C96EE05C23A60EE300DD1F18 /* LithiumDark@2x.png */,
+				C96EE06923A60EE400DD1F18 /* LithiumDark@3x.png */,
+				C96EE07D23A60EE400DD1F18 /* LithiumLight-iPad.png */,
+				C96EE08323A60EE400DD1F18 /* LithiumLight@2x.png */,
+				C96EE07723A60EE400DD1F18 /* LithiumLight@3x.png */,
+				C96EE0AC23A60EE600DD1F18 /* NeonBlack-iPad.png */,
+				C96EE08923A60EE500DD1F18 /* NeonBlack@2x.png */,
+				C96EE09E23A60EE500DD1F18 /* NeonBlack@3x.png */,
+				C96EE07623A60EE400DD1F18 /* NeonDark-iPad.png */,
+				C96EE07023A60EE400DD1F18 /* NeonDark@2x.png */,
+				C96EE05E23A60EE300DD1F18 /* NeonDark@3x.png */,
+				C96EE04C23A60EE300DD1F18 /* NeonLight-iPad.png */,
+				C96EE07323A60EE400DD1F18 /* NeonLight@2x.png */,
+				C96EE07123A60EE400DD1F18 /* NeonLight@3x.png */,
+				C96EE0AB23A60EE600DD1F18 /* NitrogenBlack-iPad.png */,
+				C96EE05723A60EE300DD1F18 /* NitrogenBlack@2x.png */,
+				C96EE09923A60EE500DD1F18 /* NitrogenBlack@3x.png */,
+				C96EE0A623A60EE500DD1F18 /* NitrogenDark-iPad.png */,
+				C96EE06323A60EE300DD1F18 /* NitrogenDark@2x.png */,
+				C96EE04423A60EE200DD1F18 /* NitrogenDark@3x.png */,
+				C96EE09023A60EE500DD1F18 /* NitrogenLight-iPad.png */,
+				C96EE07523A60EE400DD1F18 /* NitrogenLight@2x.png */,
+				C96EE06A23A60EE400DD1F18 /* NitrogenLight@3x.png */,
+				C96EE05523A60EE300DD1F18 /* OxygenBlack-iPad.png */,
+				C96EE08D23A60EE500DD1F18 /* OxygenBlack@2x.png */,
+				C96EE0A523A60EE500DD1F18 /* OxygenBlack@3x.png */,
+				C96EE06523A60EE300DD1F18 /* OxygenDark-iPad.png */,
+				C96EE0AE23A60EE600DD1F18 /* OxygenDark@2x.png */,
+				C96EE04823A60EE300DD1F18 /* OxygenDark@3x.png */,
+				C96EE0AD23A60EE600DD1F18 /* OxygenLight-iPad.png */,
+				C96EE0AF23A60EE600DD1F18 /* OxygenLight@2x.png */,
+				C96EE0AA23A60EE600DD1F18 /* OxygenLight@3x.png */,
+				C96EE08823A60EE500DD1F18 /* PhosphorusBlack-iPad.png */,
+				C96EE06D23A60EE400DD1F18 /* PhosphorusBlack@2x.png */,
+				C96EE09B23A60EE500DD1F18 /* PhosphorusBlack@3x.png */,
+				C96EE08223A60EE400DD1F18 /* PhosphorusDark-iPad.png */,
+				C96EE06E23A60EE400DD1F18 /* PhosphorusDark@2x.png */,
+				C96EE08C23A60EE500DD1F18 /* PhosphorusDark@3x.png */,
+				C96EE04E23A60EE300DD1F18 /* PhosphorusLight-iPad.png */,
+				C96EE0A423A60EE500DD1F18 /* PhosphorusLight@2x.png */,
+				C96EE08423A60EE400DD1F18 /* PhosphorusLight@3x.png */,
+				C96EE04923A60EE300DD1F18 /* SiliconBlack-iPad.png */,
+				C96EE09823A60EE500DD1F18 /* SiliconBlack@2x.png */,
+				C96EE04D23A60EE300DD1F18 /* SiliconBlack@3x.png */,
+				C96EE05123A60EE300DD1F18 /* SiliconDark-iPad.png */,
+				C96EE05D23A60EE300DD1F18 /* SiliconDark@2x.png */,
+				C96EE07823A60EE400DD1F18 /* SiliconDark@3x.png */,
+				C96EE06623A60EE300DD1F18 /* SiliconLight-iPad.png */,
+				C96EE07423A60EE400DD1F18 /* SiliconLight@2x.png */,
+				C96EE06723A60EE400DD1F18 /* SiliconLight@3x.png */,
+				C96EE09D23A60EE500DD1F18 /* ZincBlack-iPad.png */,
+				C96EE04A23A60EE300DD1F18 /* ZincBlack@2x.png */,
+				C96EE04F23A60EE300DD1F18 /* ZincBlack@3x.png */,
+				C96EE07223A60EE400DD1F18 /* ZincDark-iPad.png */,
+				C96EE08F23A60EE500DD1F18 /* ZincDark@2x.png */,
+				C96EE08023A60EE400DD1F18 /* ZincDark@3x.png */,
+				C96EE06123A60EE300DD1F18 /* ZincLight-iPad.png */,
+				C96EE04B23A60EE300DD1F18 /* ZincLight@2x.png */,
+				C96EE07A23A60EE400DD1F18 /* ZincLight@3x.png */,
+			);
+			path = "Alternate Icons";
+			sourceTree = "<group>";
+		};
+		C96A4CA42094CDF700367421 = {
+			isa = PBXGroup;
+			children = (
+				C96A4CAF2094CDF700367421 /* Carbon_3.0 */,
+				C96A4CC72094CDF800367421 /* Carbon_3.0Tests */,
+				C96A4CD22094CDF800367421 /* Carbon_3.0UITests */,
+				C96A4CAE2094CDF700367421 /* Products */,
+				C9B923CF21F143E50047845D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C96A4CAE2094CDF700367421 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C96A4CAD2094CDF700367421 /* Carbon_3.0.app */,
+				C96A4CC42094CDF800367421 /* Carbon_3.0Tests.xctest */,
+				C96A4CCF2094CDF800367421 /* Carbon_3.0UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C96A4CAF2094CDF700367421 /* Carbon_3.0 */ = {
+			isa = PBXGroup;
+			children = (
+				C9E5C54F21FF8856009DCC49 /* Monetization */,
+				C94E14A1219F190600CFAABB /* Wonderful Library */,
+				C9289429218E080000E0384E /* Game */,
+				C9BEA522217F681100A538B3 /* Setup */,
+				C97F48B9216C60E800DD25DB /* Settings */,
+				C98631ED218DE8C300489872 /* Custom User Interface Components */,
+				C9827044216FBD3B000A5414 /* Themeable User Interface Components */,
+				C9CDF540216C4DE000048C9E /* Basic User Interface Components */,
+				C98684AE2170D07C00FD5222 /* Protocols */,
+				C9B2684B21737E78001B41B7 /* Structures */,
+				C99A82AC21867F5D004FB5B6 /* Enumerations */,
+				C9F88E2E21D1AC43004CE220 /* CALayers */,
+				C92472FB216CEC6500DE6F7D /* Extensions */,
+				C94E819C21D2E1E300303F35 /* Resources */,
+				C96A4CB02094CDF700367421 /* AppDelegate.swift */,
+				C9440E15216E3064007CD783 /* UserPreferences.swift */,
+				C9980956220BCE60004A0C16 /* UserStatistics.swift */,
+				C96A4CBA2094CDF800367421 /* Assets.xcassets */,
+				C96A4CBC2094CDF800367421 /* LaunchScreen.storyboard */,
+				C96A4CBF2094CDF800367421 /* Info.plist */,
+				C96A4CB72094CDF700367421 /* Carbon_3_0.xcdatamodeld */,
+			);
+			path = Carbon_3.0;
+			sourceTree = "<group>";
+		};
+		C96A4CC72094CDF800367421 /* Carbon_3.0Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C96A4CC82094CDF800367421 /* Carbon_3_0Tests.swift */,
+				C96A4CCA2094CDF800367421 /* Info.plist */,
+			);
+			path = Carbon_3.0Tests;
+			sourceTree = "<group>";
+		};
+		C96A4CD22094CDF800367421 /* Carbon_3.0UITests */ = {
+			isa = PBXGroup;
+			children = (
+				C96A4CD32094CDF800367421 /* Carbon_3_0UITests.swift */,
+				C96A4CD52094CDF800367421 /* Info.plist */,
+			);
+			path = Carbon_3.0UITests;
+			sourceTree = "<group>";
+		};
+		C96D4EA821D6BBAD00C84B7B /* Two Finger Hold */ = {
+			isa = PBXGroup;
+			children = (
+				C96D4EAB21D6E4C400C84B7B /* UISettingsTwoFingerHoldTableTableViewController.swift */,
+				C96D4EA921D6E49D00C84B7B /* UISettingsTwoFingerHoldTableViewController.storyboard */,
+			);
+			path = "Two Finger Hold";
+			sourceTree = "<group>";
+		};
+		C97F48B9216C60E800DD25DB /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C9440E23216E5C5D007CD783 /* Main */,
+				C9E9283421A0B5C10038D97A /* General */,
+				C9440E24216E5C69007CD783 /* Theme & Appearance */,
+				C91922AC216F012500CBD511 /* Gestures */,
+				C9B590C921ADD81E004E1BF9 /* App Icon */,
+				C91922AA216EAC2800CBD511 /* Default Counters */,
+				C9B36F82220F659B00851AD9 /* Our Team */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		C982703D216F8D6B000A5414 /* Shake */ = {
+			isa = PBXGroup;
+			children = (
+				C9827035216F8B43000A5414 /* UISettingsShakeTableViewController.swift */,
+				C9827039216F8D51000A5414 /* UISettingsShakeTableViewController.storyboard */,
+			);
+			path = Shake;
+			sourceTree = "<group>";
+		};
+		C982703E216F8D76000A5414 /* Two Finger Tap */ = {
+			isa = PBXGroup;
+			children = (
+				C9827031216F8B24000A5414 /* UISettingsTwoFingerTapTableViewController.swift */,
+				C982703B216F8D66000A5414 /* UISettingsTwoFingerTapTableViewController.storyboard */,
+			);
+			path = "Two Finger Tap";
+			sourceTree = "<group>";
+		};
+		C982703F216F8D83000A5414 /* One Finger Hold */ = {
+			isa = PBXGroup;
+			children = (
+				C9827033216F8B35000A5414 /* UISettingsOneFingerHoldTableViewController.swift */,
+				C9827037216F8D35000A5414 /* UISettingsOneFingerHoldTableViewController.storyboard */,
+			);
+			path = "One Finger Hold";
+			sourceTree = "<group>";
+		};
+		C9827044216FBD3B000A5414 /* Themeable User Interface Components */ = {
+			isa = PBXGroup;
+			children = (
+				C98684BB2170DED100FD5222 /* UIThemeableImageView.swift */,
+				C98684AC2170CE5A00FD5222 /* UIThemeableLabel.swift */,
+				C98684C12171001900FD5222 /* UIThemeableNavigationController.swift */,
+				C98684B92170DEB000FD5222 /* UIThemeableSwitch.swift */,
+				C98684BF2170E0E500FD5222 /* UIThemeableTableView.swift */,
+				C98684B12170DE4000FD5222 /* UIThemeableTableViewCell.swift */,
+				C98684BD2170DFBA00FD5222 /* UIThemeableView.swift */,
+			);
+			path = "Themeable User Interface Components";
+			sourceTree = "<group>";
+		};
+		C98631ED218DE8C300489872 /* Custom User Interface Components */ = {
+			isa = PBXGroup;
+			children = (
+				C98631EE218DE9EB00489872 /* UIChooserViewController.swift */,
+			);
+			path = "Custom User Interface Components";
+			sourceTree = "<group>";
+		};
+		C98684AE2170D07C00FD5222 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C98684AF2170D0A300FD5222 /* AppearanceModifiable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C99A82AC21867F5D004FB5B6 /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				C9CD31F8218E3C82003CF4B8 /* CBEdge.swift */,
+				C9CD31FA218E3D82003CF4B8 /* CBLayout.swift */,
+			);
+			path = Enumerations;
+			sourceTree = "<group>";
+		};
+		C9B2684B21737E78001B41B7 /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				C9CD31FE218E3F3C003CF4B8 /* CBParameters.swift */,
+				C9CD31F6218E1A95003CF4B8 /* Setup.swift */,
+				C91441F321AF83E600884D11 /* HistoryItem.swift */,
+			);
+			path = Structures;
+			sourceTree = "<group>";
+		};
+		C9B36F82220F659B00851AD9 /* Our Team */ = {
+			isa = PBXGroup;
+			children = (
+				C9B36F83220F65C400851AD9 /* UISettingsOurTeamTableViewController.swift */,
+				C9B36F8B220F6F5600851AD9 /* UISettingsOurTeamTableViewController.storyboard */,
+			);
+			path = "Our Team";
+			sourceTree = "<group>";
+		};
+		C9B590C921ADD81E004E1BF9 /* App Icon */ = {
+			isa = PBXGroup;
+			children = (
+				C9B590CA21ADD842004E1BF9 /* UISettingsAppIconTableViewController.swift */,
+				C9B590CC21ADD865004E1BF9 /* UISettingsAppIconTableViewController.storyboard */,
+			);
+			path = "App Icon";
+			sourceTree = "<group>";
+		};
+		C9B923CF21F143E50047845D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9B923D021F143E50047845D /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9BEA522217F681100A538B3 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				C9BEA532217F6EC100A538B3 /* UISetupPageViewController.swift */,
+				C9BEA523217F69C100A538B3 /* Home Page */,
+				C9BEA524217F69C900A538B3 /* Life Page */,
+				C9BEA527217F69E100A538B3 /* Players Page */,
+				C9BEA525217F69CF00A538B3 /* Layout Page */,
+				C9BEA526217F69DA00A538B3 /* Chooser Page */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		C9BEA523217F69C100A538B3 /* Home Page */ = {
+			isa = PBXGroup;
+			children = (
+				C99A829E2184AC46004FB5B6 /* UISetupHomeViewController.swift */,
+				C99A829F2184AC46004FB5B6 /* UISetupHomeViewController.xib */,
+			);
+			path = "Home Page";
+			sourceTree = "<group>";
+		};
+		C9BEA524217F69C900A538B3 /* Life Page */ = {
+			isa = PBXGroup;
+			children = (
+				C99A828C2184ABC5004FB5B6 /* UISetupLifeViewController.swift */,
+				C99A828D2184ABC5004FB5B6 /* UISetupLifeViewController.xib */,
+			);
+			path = "Life Page";
+			sourceTree = "<group>";
+		};
+		C9BEA525217F69CF00A538B3 /* Layout Page */ = {
+			isa = PBXGroup;
+			children = (
+				C99A82962184ABEE004FB5B6 /* UISetupLayoutViewController.swift */,
+				C99A82972184ABEE004FB5B6 /* UISetupLayoutViewController.xib */,
+			);
+			path = "Layout Page";
+			sourceTree = "<group>";
+		};
+		C9BEA526217F69DA00A538B3 /* Chooser Page */ = {
+			isa = PBXGroup;
+			children = (
+				C99A829A2184ABF9004FB5B6 /* UISetupChooserViewController.swift */,
+				C99A829B2184ABF9004FB5B6 /* UISetupChooserViewController.xib */,
+			);
+			path = "Chooser Page";
+			sourceTree = "<group>";
+		};
+		C9BEA527217F69E100A538B3 /* Players Page */ = {
+			isa = PBXGroup;
+			children = (
+				C99A82922184ABE2004FB5B6 /* UISetupPlayersViewController.swift */,
+				C99A82932184ABE2004FB5B6 /* UISetupPlayersViewController.xib */,
+			);
+			path = "Players Page";
+			sourceTree = "<group>";
+		};
+		C9CD3202218E5B49003CF4B8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C9CD3209218E5CC7003CF4B8 /* UIMenuMainViewController.swift */,
+				C9CD320A218E5CC7003CF4B8 /* UIMenuMainViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C9CD3203218E5B51003CF4B8 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				C9CD320D218E5CE5003CF4B8 /* UIMenuTimerViewController.swift */,
+				C9CD320E218E5CE5003CF4B8 /* UIMenuTimerViewController.xib */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		C9CD3205218E5B65003CF4B8 /* Chooser */ = {
+			isa = PBXGroup;
+			children = (
+				C9CD3215218E5FD5003CF4B8 /* UIMenuChooserViewController.swift */,
+				C9CD3216218E5FD5003CF4B8 /* UIMenuChooserViewController.xib */,
+			);
+			path = Chooser;
+			sourceTree = "<group>";
+		};
+		C9CD3206218E5B72003CF4B8 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				C9CD3219218E60DF003CF4B8 /* UIMenuHistoryViewController.swift */,
+				C9CD321A218E60DF003CF4B8 /* UIMenuHistoryViewController.xib */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		C9CD3207218E5B79003CF4B8 /* Dice */ = {
+			isa = PBXGroup;
+			children = (
+				C9CD321D218E60F1003CF4B8 /* UIMenuDiceViewController.swift */,
+				C9CD321E218E60F1003CF4B8 /* UIMenuDiceViewController.xib */,
+			);
+			path = Dice;
+			sourceTree = "<group>";
+		};
+		C9CD3208218E5BFC003CF4B8 /* Names */ = {
+			isa = PBXGroup;
+			children = (
+				C9CD3211218E5CF7003CF4B8 /* UIMenuNamesViewController.swift */,
+				C9CD3212218E5CF7003CF4B8 /* UIMenuNamesViewController.xib */,
+			);
+			path = Names;
+			sourceTree = "<group>";
+		};
+		C9CDF540216C4DE000048C9E /* Basic User Interface Components */ = {
+			isa = PBXGroup;
+			children = (
+				C92EF33F216BB976004BCAAA /* UIAnimatableButton.swift */,
+				C92EF341216BF6CA004BCAAA /* UISquircleButton.swift */,
+				C90ED406216C545C00E046F8 /* UIIconButton.swift */,
+				C99A82A22184AEC9004FB5B6 /* UIPageViewControllerPage.swift */,
+				C92E2FE22197639E00845A09 /* UIBlurryView.swift */,
+			);
+			path = "Basic User Interface Components";
+			sourceTree = "<group>";
+		};
+		C9E5C54F21FF8856009DCC49 /* Monetization */ = {
+			isa = PBXGroup;
+			children = (
+				C9B923D221F144C60047845D /* InAppPurchaseHelper.swift */,
+				C9E5C55421FF8B5A009DCC49 /* Structures */,
+				C9FDDEE222026F54004317E0 /* Carbon Pro */,
+				C9CB1230220F3112001E160F /* CarbonProBanner.swift */,
+				C9CB1231220F3112001E160F /* CarbonProBanner.xib */,
+			);
+			path = Monetization;
+			sourceTree = "<group>";
+		};
+		C9E5C55421FF8B5A009DCC49 /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				C9E5C55221FF8B50009DCC49 /* Monetization.swift */,
+			);
+			path = Structures;
+			sourceTree = "<group>";
+		};
+		C9E9283421A0B5C10038D97A /* General */ = {
+			isa = PBXGroup;
+			children = (
+				C9E9283521A0B5EC0038D97A /* UISettingsGeneralTableViewController.swift */,
+				C9E9283721A0B6080038D97A /* UISettingsGeneralTableViewController.storyboard */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		C9F074422096175C00D51D54 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C96EE03F23A60EAD00DD1F18 /* Dense-Regular.otf */,
+				C96EE03C23A60EAD00DD1F18 /* Tondo-Bold.ttf */,
+				C96EE03D23A60EAD00DD1F18 /* Tondo-Light.ttf */,
+				C96EE03E23A60EAD00DD1F18 /* Tondo-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C9F88E2E21D1AC43004CE220 /* CALayers */ = {
+			isa = PBXGroup;
+			children = (
+				C9F88E2F21D1AC5E004CE220 /* CBCityLayer.swift */,
+				C9567AC721E4CE810000CB40 /* CBConfettiLayer.swift */,
+			);
+			path = CALayers;
+			sourceTree = "<group>";
+		};
+		C9FDDEE222026F54004317E0 /* Carbon Pro */ = {
+			isa = PBXGroup;
+			children = (
+				C9693DC121F0E34100B9A44A /* CarbonProLabel.swift */,
+				C91346DE21EFB80F00D219CA /* CarbonProViewController.swift */,
+				C93B6E1D21EFD4F0007496E0 /* CarbonProItemCell.swift */,
+				C91346DF21EFB80F00D219CA /* CarbonProViewController.xib */,
+				C93B6E1E21EFD4F0007496E0 /* CarbonProItemCell.xib */,
+			);
+			path = "Carbon Pro";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C96A4CAC2094CDF700367421 /* Carbon_3.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C96A4CD82094CDF800367421 /* Build configuration list for PBXNativeTarget "Carbon_3.0" */;
+			buildPhases = (
+				C96A4CA92094CDF700367421 /* Sources */,
+				C96A4CAA2094CDF700367421 /* Frameworks */,
+				C96A4CAB2094CDF700367421 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Carbon_3.0;
+			productName = Carbon_3.0;
+			productReference = C96A4CAD2094CDF700367421 /* Carbon_3.0.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C96A4CC32094CDF800367421 /* Carbon_3.0Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C96A4CDB2094CDF800367421 /* Build configuration list for PBXNativeTarget "Carbon_3.0Tests" */;
+			buildPhases = (
+				C96A4CC02094CDF800367421 /* Sources */,
+				C96A4CC12094CDF800367421 /* Frameworks */,
+				C96A4CC22094CDF800367421 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C96A4CC62094CDF800367421 /* PBXTargetDependency */,
+			);
+			name = Carbon_3.0Tests;
+			productName = Carbon_3.0Tests;
+			productReference = C96A4CC42094CDF800367421 /* Carbon_3.0Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C96A4CCE2094CDF800367421 /* Carbon_3.0UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C96A4CDE2094CDF800367421 /* Build configuration list for PBXNativeTarget "Carbon_3.0UITests" */;
+			buildPhases = (
+				C96A4CCB2094CDF800367421 /* Sources */,
+				C96A4CCC2094CDF800367421 /* Frameworks */,
+				C96A4CCD2094CDF800367421 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C96A4CD12094CDF800367421 /* PBXTargetDependency */,
+			);
+			name = Carbon_3.0UITests;
+			productName = Carbon_3.0UITests;
+			productReference = C96A4CCF2094CDF800367421 /* Carbon_3.0UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C96A4CA52094CDF700367421 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Matt Marks";
+				TargetAttributes = {
+					C96A4CAC2094CDF700367421 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+					C96A4CC32094CDF800367421 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1020;
+						TestTargetID = C96A4CAC2094CDF700367421;
+					};
+					C96A4CCE2094CDF800367421 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1020;
+						TestTargetID = C96A4CAC2094CDF700367421;
+					};
+				};
+			};
+			buildConfigurationList = C96A4CA82094CDF700367421 /* Build configuration list for PBXProject "Carbon_3.0" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C96A4CA42094CDF700367421;
+			productRefGroup = C96A4CAE2094CDF700367421 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C96A4CAC2094CDF700367421 /* Carbon_3.0 */,
+				C96A4CC32094CDF800367421 /* Carbon_3.0Tests */,
+				C96A4CCE2094CDF800367421 /* Carbon_3.0UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C96A4CAB2094CDF700367421 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96EE11523A60EE600DD1F18 /* DefaultDark@2x.png in Resources */,
+				C96EE0BD23A60EE600DD1F18 /* SiliconDark-iPad.png in Resources */,
+				C96EE0F523A60EE600DD1F18 /* NeonBlack@2x.png in Resources */,
+				C96EE0E223A60EE600DD1F18 /* NeonDark-iPad.png in Resources */,
+				C96EE11723A60EE600DD1F18 /* NitrogenBlack-iPad.png in Resources */,
+				C96EE0FD23A60EE600DD1F18 /* ChlorineLight@3x.png in Resources */,
+				C96EE0EE23A60EE600DD1F18 /* PhosphorusDark-iPad.png in Resources */,
+				C96EE0D723A60EE600DD1F18 /* BariumDark@2x.png in Resources */,
+				C96EE0BC23A60EE600DD1F18 /* HeliumLight@3x.png in Resources */,
+				C96EE0D923A60EE600DD1F18 /* PhosphorusBlack@2x.png in Resources */,
+				C96EE11A23A60EE600DD1F18 /* OxygenDark@2x.png in Resources */,
+				C99A82992184ABEE004FB5B6 /* UISetupLayoutViewController.xib in Resources */,
+				C93B6E2021EFD4F0007496E0 /* CarbonProItemCell.xib in Resources */,
+				C9827038216F8D35000A5414 /* UISettingsOneFingerHoldTableViewController.storyboard in Resources */,
+				C96EE0F723A60EE600DD1F18 /* DefaultLight@3x.png in Resources */,
+				C96EE0B023A60EE600DD1F18 /* NitrogenDark@3x.png in Resources */,
+				C9CD3210218E5CE5003CF4B8 /* UIMenuTimerViewController.xib in Resources */,
+				C96EE0CC23A60EE600DD1F18 /* LithiumBlack@2x.png in Resources */,
+				C96EE0D623A60EE600DD1F18 /* NitrogenLight@3x.png in Resources */,
+				C92E2FE92197685600845A09 /* UIEffectsVerticalViewController.xib in Resources */,
+				C96EE0D123A60EE600DD1F18 /* OxygenDark-iPad.png in Resources */,
+				C96EE0D523A60EE600DD1F18 /* LithiumDark@3x.png in Resources */,
+				C96EE0DC23A60EE600DD1F18 /* NeonDark@2x.png in Resources */,
+				C96EE0F623A60EE600DD1F18 /* DefaultBlack@2x.png in Resources */,
+				C92E2FE121975EAE00845A09 /* UIColorsHorizontalViewController.xib in Resources */,
+				C92E2FDF21975EA100845A09 /* UIColorsVerticalViewController.xib in Resources */,
+				C96EE0E623A60EE600DD1F18 /* ZincLight@3x.png in Resources */,
+				C96EE0B123A60EE600DD1F18 /* IronBlack@2x.png in Resources */,
+				C96EE10323A60EE600DD1F18 /* BariumLight@2x.png in Resources */,
+				C96EE0CB23A60EE600DD1F18 /* DefaultDark@3x.png in Resources */,
+				C96EE11B23A60EE600DD1F18 /* OxygenLight@2x.png in Resources */,
+				C96EE10023A60EE600DD1F18 /* HeliumBlack@2x.png in Resources */,
+				C96EE0F423A60EE600DD1F18 /* PhosphorusBlack-iPad.png in Resources */,
+				C96EE0B323A60EE600DD1F18 /* HeliumLight-iPad.png in Resources */,
+				C96EE0E923A60EE600DD1F18 /* LithiumLight-iPad.png in Resources */,
+				C96EE0B523A60EE600DD1F18 /* SiliconBlack-iPad.png in Resources */,
+				C96EE0EF23A60EE600DD1F18 /* LithiumLight@2x.png in Resources */,
+				C96EE0D823A60EE600DD1F18 /* HeliumLight@2x.png in Resources */,
+				C91922B8216F022D00CBD511 /* UISettingsGesturesTableViewController.storyboard in Resources */,
+				C99A829D2184ABF9004FB5B6 /* UISetupChooserViewController.xib in Resources */,
+				C96EE04323A60EAD00DD1F18 /* Dense-Regular.otf in Resources */,
+				C96EE0DF23A60EE600DD1F18 /* NeonLight@2x.png in Resources */,
+				C96EE04123A60EAD00DD1F18 /* Tondo-Light.ttf in Resources */,
+				C96EE0FC23A60EE600DD1F18 /* NitrogenLight-iPad.png in Resources */,
+				C96EE0C023A60EE600DD1F18 /* BariumDark-iPad.png in Resources */,
+				C9CD320C218E5CC7003CF4B8 /* UIMenuMainViewController.xib in Resources */,
+				C96EE0B723A60EE600DD1F18 /* ZincLight@2x.png in Resources */,
+				C96EE0FE23A60EE600DD1F18 /* HeliumDark@3x.png in Resources */,
+				C96EE0F323A60EE600DD1F18 /* ChlorineDark@2x.png in Resources */,
+				C96EE10B23A60EE600DD1F18 /* DefaultBlack@3x.png in Resources */,
+				C96EE11023A60EE600DD1F18 /* PhosphorusLight@2x.png in Resources */,
+				C96EE0CF23A60EE600DD1F18 /* NitrogenDark@2x.png in Resources */,
+				C96EE10723A60EE600DD1F18 /* PhosphorusBlack@3x.png in Resources */,
+				C96EE0D323A60EE600DD1F18 /* SiliconLight@3x.png in Resources */,
+				C96EE0E423A60EE600DD1F18 /* SiliconDark@3x.png in Resources */,
+				C9CD3214218E5CF7003CF4B8 /* UIMenuNamesViewController.xib in Resources */,
+				C96EE10D23A60EE600DD1F18 /* DefaultBlack-iPad.png in Resources */,
+				C96EE0DA23A60EE600DD1F18 /* PhosphorusDark@2x.png in Resources */,
+				C96EE0C423A60EE600DD1F18 /* BariumDark@3x.png in Resources */,
+				C99A82A12184AC46004FB5B6 /* UISetupHomeViewController.xib in Resources */,
+				C96EE0E123A60EE600DD1F18 /* NitrogenLight@2x.png in Resources */,
+				C96EE10223A60EE600DD1F18 /* LithiumBlack-iPad.png in Resources */,
+				C96EE0CD23A60EE600DD1F18 /* ZincLight-iPad.png in Resources */,
+				C96EE0C823A60EE600DD1F18 /* LithiumDark@2x.png in Resources */,
+				C96EE10623A60EE600DD1F18 /* HeliumDark@2x.png in Resources */,
+				C96EE0DE23A60EE600DD1F18 /* ZincDark-iPad.png in Resources */,
+				C96EE0EA23A60EE600DD1F18 /* BariumBlack@2x.png in Resources */,
+				C9E9283821A0B6080038D97A /* UISettingsGeneralTableViewController.storyboard in Resources */,
+				C9CB1233220F3112001E160F /* CarbonProBanner.xib in Resources */,
+				C96EE0E023A60EE600DD1F18 /* SiliconLight@2x.png in Resources */,
+				C99A828F2184ABC5004FB5B6 /* UISetupLifeViewController.xib in Resources */,
+				C9CD3220218E60F1003CF4B8 /* UIMenuDiceViewController.xib in Resources */,
+				C96EE0C323A60EE600DD1F18 /* NitrogenBlack@2x.png in Resources */,
+				C96EE11623A60EE600DD1F18 /* OxygenLight@3x.png in Resources */,
+				C96EE0C623A60EE600DD1F18 /* LithiumDark-iPad.png in Resources */,
+				C96EE0B623A60EE600DD1F18 /* ZincBlack@2x.png in Resources */,
+				C96EE0D223A60EE600DD1F18 /* SiliconLight-iPad.png in Resources */,
+				C96EE0DD23A60EE600DD1F18 /* NeonLight@3x.png in Resources */,
+				C96EE10F23A60EE600DD1F18 /* ChlorineDark-iPad.png in Resources */,
+				C96EE10E23A60EE600DD1F18 /* DefaultLight-iPad.png in Resources */,
+				C96EE04223A60EAD00DD1F18 /* Tondo-Regular.ttf in Resources */,
+				C96EE11323A60EE600DD1F18 /* IronDark-iPad.png in Resources */,
+				C96EE0C123A60EE600DD1F18 /* OxygenBlack-iPad.png in Resources */,
+				C96EE0BF23A60EE600DD1F18 /* BariumBlack-iPad.png in Resources */,
+				C96EE0BA23A60EE600DD1F18 /* PhosphorusLight-iPad.png in Resources */,
+				C92E2FED2197687A00845A09 /* UICountersVerticalViewController.xib in Resources */,
+				C96EE0B923A60EE600DD1F18 /* SiliconBlack@3x.png in Resources */,
+				C96EE0ED23A60EE600DD1F18 /* HeliumBlack@3x.png in Resources */,
+				C96EE04023A60EAD00DD1F18 /* Tondo-Bold.ttf in Resources */,
+				C96EE0C923A60EE600DD1F18 /* SiliconDark@2x.png in Resources */,
+				C96A4CBE2094CDF800367421 /* LaunchScreen.storyboard in Resources */,
+				C96EE0B423A60EE600DD1F18 /* OxygenDark@3x.png in Resources */,
+				C9B590CD21ADD865004E1BF9 /* UISettingsAppIconTableViewController.storyboard in Resources */,
+				C96EE0B823A60EE600DD1F18 /* NeonLight-iPad.png in Resources */,
+				C99A82952184ABE2004FB5B6 /* UISetupPlayersViewController.xib in Resources */,
+				C96EE0E823A60EE600DD1F18 /* IronDark@2x.png in Resources */,
+				C96EE0FF23A60EE600DD1F18 /* IronBlack@3x.png in Resources */,
+				C96EE0C223A60EE600DD1F18 /* IronDark@3x.png in Resources */,
+				C96EE0D423A60EE600DD1F18 /* ChlorineLight-iPad.png in Resources */,
+				C96EE11823A60EE600DD1F18 /* NeonBlack-iPad.png in Resources */,
+				C96EE0C723A60EE600DD1F18 /* HeliumDark-iPad.png in Resources */,
+				C96EE0FB23A60EE600DD1F18 /* ZincDark@2x.png in Resources */,
+				C982703C216F8D66000A5414 /* UISettingsTwoFingerTapTableViewController.storyboard in Resources */,
+				C96EE10A23A60EE600DD1F18 /* NeonBlack@3x.png in Resources */,
+				C982703A216F8D51000A5414 /* UISettingsShakeTableViewController.storyboard in Resources */,
+				C96EE0BE23A60EE600DD1F18 /* ChlorineBlack@2x.png in Resources */,
+				C96EE0D023A60EE600DD1F18 /* HeliumBlack-iPad.png in Resources */,
+				C96EE0F023A60EE600DD1F18 /* PhosphorusLight@3x.png in Resources */,
+				C9CD3218218E5FD5003CF4B8 /* UIMenuChooserViewController.xib in Resources */,
+				C91346E121EFB80F00D219CA /* CarbonProViewController.xib in Resources */,
+				C96EE10523A60EE600DD1F18 /* NitrogenBlack@3x.png in Resources */,
+				C92E2FEB2197686400845A09 /* UIEffectsHorizontalViewController.xib in Resources */,
+				C96EE0E323A60EE600DD1F18 /* LithiumLight@3x.png in Resources */,
+				C96EE0E523A60EE600DD1F18 /* BariumLight@3x.png in Resources */,
+				C96EE0F123A60EE600DD1F18 /* LithiumBlack@3x.png in Resources */,
+				C96EE0DB23A60EE600DD1F18 /* IronLight-iPad.png in Resources */,
+				C96D4EAA21D6E49D00C84B7B /* UISettingsTwoFingerHoldTableViewController.storyboard in Resources */,
+				C96EE0E723A60EE600DD1F18 /* ChlorineBlack@3x.png in Resources */,
+				C96EE11123A60EE600DD1F18 /* OxygenBlack@3x.png in Resources */,
+				C96EE11423A60EE600DD1F18 /* ChlorineBlack-iPad.png in Resources */,
+				C9440E22216E5A4E007CD783 /* UISettingsMainTableViewController.storyboard in Resources */,
+				C96EE0EC23A60EE600DD1F18 /* ZincDark@3x.png in Resources */,
+				C96EE10823A60EE600DD1F18 /* ChlorineDark@3x.png in Resources */,
+				C96EE0F823A60EE600DD1F18 /* PhosphorusDark@3x.png in Resources */,
+				C96EE10923A60EE600DD1F18 /* ZincBlack-iPad.png in Resources */,
+				C96EE10C23A60EE600DD1F18 /* BariumLight-iPad.png in Resources */,
+				C91922B6216F021F00CBD511 /* UISettingsDefaultCountersTableViewController.storyboard in Resources */,
+				C9440E26216E5C8C007CD783 /* UISettingsThemeAndAppearanceTableViewController.storyboard in Resources */,
+				C96EE0EB23A60EE600DD1F18 /* DefaultDark-iPad.png in Resources */,
+				C96EE10423A60EE600DD1F18 /* SiliconBlack@2x.png in Resources */,
+				C96EE0F223A60EE600DD1F18 /* IronLight@3x.png in Resources */,
+				C96A4CBB2094CDF800367421 /* Assets.xcassets in Resources */,
+				C96EE0BB23A60EE600DD1F18 /* ZincBlack@3x.png in Resources */,
+				C96EE11923A60EE600DD1F18 /* OxygenLight-iPad.png in Resources */,
+				C9B36F8C220F6F5600851AD9 /* UISettingsOurTeamTableViewController.storyboard in Resources */,
+				C96EE0F923A60EE600DD1F18 /* OxygenBlack@2x.png in Resources */,
+				C96EE10123A60EE600DD1F18 /* IronLight@2x.png in Resources */,
+				C96EE0B223A60EE600DD1F18 /* IronBlack-iPad.png in Resources */,
+				C92E2FEF2197688C00845A09 /* UICountersHorizontalViewController.xib in Resources */,
+				C96EE0C523A60EE600DD1F18 /* DefaultLight@2x.png in Resources */,
+				C96EE11223A60EE600DD1F18 /* NitrogenDark-iPad.png in Resources */,
+				C96EE0CE23A60EE600DD1F18 /* ChlorineLight@2x.png in Resources */,
+				C96EE0FA23A60EE600DD1F18 /* BariumBlack@3x.png in Resources */,
+				C9CD321C218E60DF003CF4B8 /* UIMenuHistoryViewController.xib in Resources */,
+				C96EE0CA23A60EE600DD1F18 /* NeonDark@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96A4CC22094CDF800367421 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96A4CCD2094CDF800367421 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C96A4CA92094CDF700367421 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C99A828E2184ABC5004FB5B6 /* UISetupLifeViewController.swift in Sources */,
+				C98684B22170DE4000FD5222 /* UIThemeableTableViewCell.swift in Sources */,
+				C9BEA541217F819300A538B3 /* UIStoryboard+Extension.swift in Sources */,
+				C92E2FE52197683500845A09 /* UIEffectsViewController.swift in Sources */,
+				C9440E1F216E59B7007CD783 /* UISettingsMainTableViewController.swift in Sources */,
+				C9C9E6D421E8366B0082CC17 /* UITimePickerPopUpViewController.swift in Sources */,
+				C92E2FD42197443600845A09 /* UICounterViewController.swift in Sources */,
+				C98684C02170E0E500FD5222 /* UIThemeableTableView.swift in Sources */,
+				C9CD321B218E60DF003CF4B8 /* UIMenuHistoryViewController.swift in Sources */,
+				C9F88E3021D1AC5E004CE220 /* CBCityLayer.swift in Sources */,
+				C96A4CB12094CDF700367421 /* AppDelegate.swift in Sources */,
+				C92E2FE72197684300845A09 /* UICountersViewController.swift in Sources */,
+				C98684BE2170DFBA00FD5222 /* UIThemeableView.swift in Sources */,
+				C92E2FDC21975D8C00845A09 /* UIColorsViewController.swift in Sources */,
+				C940BCCE21AC27770026E85C /* UILabel+Extension.swift in Sources */,
+				C9D897892128554300FDE385 /* UIColor+Extension.swift in Sources */,
+				C9B36F84220F65C400851AD9 /* UISettingsOurTeamTableViewController.swift in Sources */,
+				C9CD31FB218E3D82003CF4B8 /* CBLayout.swift in Sources */,
+				C9827034216F8B35000A5414 /* UISettingsOneFingerHoldTableViewController.swift in Sources */,
+				C9BEA533217F6EC100A538B3 /* UISetupPageViewController.swift in Sources */,
+				C96D4EAC21D6E4C400C84B7B /* UISettingsTwoFingerHoldTableTableViewController.swift in Sources */,
+				C9CD31F9218E3C82003CF4B8 /* CBEdge.swift in Sources */,
+				C9CD31FF218E3F3C003CF4B8 /* CBParameters.swift in Sources */,
+				C9E9283621A0B5EC0038D97A /* UISettingsGeneralTableViewController.swift in Sources */,
+				C9B590CF21AE291C004E1BF9 /* Notification.Name+Extension.swift in Sources */,
+				C9CD321F218E60F1003CF4B8 /* UIMenuDiceViewController.swift in Sources */,
+				C9CB1232220F3112001E160F /* CarbonProBanner.swift in Sources */,
+				C9693DC221F0E34100B9A44A /* CarbonProLabel.swift in Sources */,
+				C9CD31F7218E1A95003CF4B8 /* Setup.swift in Sources */,
+				C92E2FE32197639E00845A09 /* UIBlurryView.swift in Sources */,
+				C9C9E6CC21E7D97D0082CC17 /* UIPopUpViewController.swift in Sources */,
+				C98684AD2170CE5A00FD5222 /* UIThemeableLabel.swift in Sources */,
+				C9CD3213218E5CF7003CF4B8 /* UIMenuNamesViewController.swift in Sources */,
+				C99A82A32184AEC9004FB5B6 /* UIPageViewControllerPage.swift in Sources */,
+				C98684C22171001900FD5222 /* UIThemeableNavigationController.swift in Sources */,
+				C9C9E6D221E836580082CC17 /* UINumberPadPopUpViewController.swift in Sources */,
+				C9827036216F8B43000A5414 /* UISettingsShakeTableViewController.swift in Sources */,
+				C9B590CB21ADD842004E1BF9 /* UISettingsAppIconTableViewController.swift in Sources */,
+				C9E5C55321FF8B50009DCC49 /* Monetization.swift in Sources */,
+				C98684B02170D0A300FD5222 /* AppearanceModifiable.swift in Sources */,
+				C98631EF218DE9EB00489872 /* UIChooserViewController.swift in Sources */,
+				C99A82942184ABE2004FB5B6 /* UISetupPlayersViewController.swift in Sources */,
+				C96A4CB92094CDF700367421 /* Carbon_3_0.xcdatamodeld in Sources */,
+				C91346E021EFB80F00D219CA /* CarbonProViewController.swift in Sources */,
+				C9289432218E096700E0384E /* UIPlayerViewController.swift in Sources */,
+				C940BCD021AC28750026E85C /* UIImageView+Extension.swift in Sources */,
+				C974B20121E62DAC005F96BD /* Array+Extension.swift in Sources */,
+				C9980957220BCE60004A0C16 /* UserStatistics.swift in Sources */,
+				C98C5D49220A70C100A8C01E /* UIWonderfulAlert.swift in Sources */,
+				C92EF340216BB976004BCAAA /* UIAnimatableButton.swift in Sources */,
+				C9567AC821E4CE810000CB40 /* CBConfettiLayer.swift in Sources */,
+				C9B923D321F144C60047845D /* InAppPurchaseHelper.swift in Sources */,
+				C98684BA2170DEB000FD5222 /* UIThemeableSwitch.swift in Sources */,
+				C98684BC2170DED100FD5222 /* UIThemeableImageView.swift in Sources */,
+				C92472FD216CEC7300DE6F7D /* UIFont+Extension.swift in Sources */,
+				C99A82A52184BB00004FB5B6 /* UIImage+Extension.swift in Sources */,
+				C9440E28216E5CA0007CD783 /* UISettingsThemeAndAppearanceTableViewController.swift in Sources */,
+				C91922AE216F014300CBD511 /* UISettingsGesturesTableViewController.swift in Sources */,
+				C93B6E1F21EFD4F0007496E0 /* CarbonProItemCell.swift in Sources */,
+				C94E14A0219DD3E200CFAABB /* UIView+Extension.swift in Sources */,
+				C928942D218E084100E0384E /* UIGameViewController.swift in Sources */,
+				C90ED407216C545C00E046F8 /* UIIconButton.swift in Sources */,
+				C99A82A02184AC46004FB5B6 /* UISetupHomeViewController.swift in Sources */,
+				C928604E21A9F6D000AD1B9B /* CGSize+Extension.swift in Sources */,
+				C91922B0216F015800CBD511 /* UISettingsDefaultCountersTableViewController.swift in Sources */,
+				C91441F421AF83E600884D11 /* HistoryItem.swift in Sources */,
+				C9440E16216E3064007CD783 /* UserPreferences.swift in Sources */,
+				C9C9E6D021E8241A0082CC17 /* UIChoicePopUpViewController.swift in Sources */,
+				C9CD3201218E5A33003CF4B8 /* UIMenuPageViewController.swift in Sources */,
+				C92EF342216BF6CA004BCAAA /* UISquircleButton.swift in Sources */,
+				C99A82982184ABEE004FB5B6 /* UISetupLayoutViewController.swift in Sources */,
+				C9CD3217218E5FD5003CF4B8 /* UIMenuChooserViewController.swift in Sources */,
+				C9827032216F8B24000A5414 /* UISettingsTwoFingerTapTableViewController.swift in Sources */,
+				C99A829C2184ABF9004FB5B6 /* UISetupChooserViewController.swift in Sources */,
+				C9CD320B218E5CC7003CF4B8 /* UIMenuMainViewController.swift in Sources */,
+				C9CD320F218E5CE5003CF4B8 /* UIMenuTimerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96A4CC02094CDF800367421 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96A4CC92094CDF800367421 /* Carbon_3_0Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C96A4CCB2094CDF800367421 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C96A4CD42094CDF800367421 /* Carbon_3_0UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C96A4CC62094CDF800367421 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C96A4CAC2094CDF700367421 /* Carbon_3.0 */;
+			targetProxy = C96A4CC52094CDF800367421 /* PBXContainerItemProxy */;
+		};
+		C96A4CD12094CDF800367421 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C96A4CAC2094CDF700367421 /* Carbon_3.0 */;
+			targetProxy = C96A4CD02094CDF800367421 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C96A4CBC2094CDF800367421 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C96A4CBD2094CDF800367421 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C96A4CD62094CDF800367421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C96A4CD72094CDF800367421 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C96A4CD92094CDF800367421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 63;
+				DEVELOPMENT_TEAM = G469XPXR7F;
+				INFOPLIST_FILE = Carbon_3.0/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = nanotube.carbon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C96A4CDA2094CDF800367421 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 63;
+				DEVELOPMENT_TEAM = G469XPXR7F;
+				INFOPLIST_FILE = Carbon_3.0/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = nanotube.carbon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C96A4CDC2094CDF800367421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G469XPXR7F;
+				INFOPLIST_FILE = Carbon_3.0Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nanotube.Carbon-3-0Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carbon_3.0.app/Carbon_3.0";
+			};
+			name = Debug;
+		};
+		C96A4CDD2094CDF800367421 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G469XPXR7F;
+				INFOPLIST_FILE = Carbon_3.0Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nanotube.Carbon-3-0Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carbon_3.0.app/Carbon_3.0";
+			};
+			name = Release;
+		};
+		C96A4CDF2094CDF800367421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G469XPXR7F;
+				INFOPLIST_FILE = Carbon_3.0UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nanotube.Carbon-3-0UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Carbon_3.0;
+			};
+			name = Debug;
+		};
+		C96A4CE02094CDF800367421 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G469XPXR7F;
+				INFOPLIST_FILE = Carbon_3.0UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "nanotube.Carbon-3-0UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Carbon_3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C96A4CA82094CDF700367421 /* Build configuration list for PBXProject "Carbon_3.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C96A4CD62094CDF800367421 /* Debug */,
+				C96A4CD72094CDF800367421 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C96A4CD82094CDF800367421 /* Build configuration list for PBXNativeTarget "Carbon_3.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C96A4CD92094CDF800367421 /* Debug */,
+				C96A4CDA2094CDF800367421 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C96A4CDB2094CDF800367421 /* Build configuration list for PBXNativeTarget "Carbon_3.0Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C96A4CDC2094CDF800367421 /* Debug */,
+				C96A4CDD2094CDF800367421 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C96A4CDE2094CDF800367421 /* Build configuration list for PBXNativeTarget "Carbon_3.0UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C96A4CDF2094CDF800367421 /* Debug */,
+				C96A4CE02094CDF800367421 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C96A4CB72094CDF700367421 /* Carbon_3_0.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C96A4CB82094CDF700367421 /* Carbon_3_0.xcdatamodel */,
+			);
+			currentVersion = C96A4CB82094CDF700367421 /* Carbon_3_0.xcdatamodel */;
+			path = Carbon_3_0.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C96A4CA52094CDF700367421 /* Project object */;
+}

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Dense-Regular.otf">
+            <string>Dense-Regular</string>
+        </array>
+        <array key="Tondo-Bold.ttf">
+            <string>Tondo-Bold</string>
+        </array>
+        <array key="Tondo-Regular.ttf">
+            <string>Tondo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIMenuTimerViewController" customModule="Carbon_3_0" customModuleProvider="target">
+            <connections>
+                <outlet property="alertAtEndSwitch" destination="tqE-dM-gTN" id="BzS-B4-bOI"/>
+                <outlet property="alertAtFiveSwitch" destination="2e2-r9-Wxt" id="vb4-h6-o2k"/>
+                <outlet property="alertAtTenSwitch" destination="7uP-ke-z7W" id="oqw-Re-Doo"/>
+                <outlet property="displayTimeSwitch" destination="4KA-rB-xek" id="LCI-DC-ufc"/>
+                <outlet property="editButton" destination="cDS-x0-GWD" id="Ain-yM-nFQ"/>
+                <outlet property="playPauseButton" destination="xmV-xJ-hJR" id="E09-lS-12b"/>
+                <outlet property="resetButton" destination="bKb-Zm-LZm" id="1ce-IS-iIy"/>
+                <outlet property="timeLabel" destination="nBE-6x-u2Y" id="EfA-rJ-3PE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6o1-gi-zs9">
+                    <rect key="frame" x="47.666666666666657" y="406" width="280" height="70"/>
+                    <subviews>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tqE-dM-gTN" customClass="UIThemeableSwitch" customModule="Carbon_3_0" customModuleProvider="target">
+                            <rect key="frame" x="231" y="19.666666666666686" width="51" height="31"/>
+                            <connections>
+                                <action selector="switchToggled:" destination="-1" eventType="valueChanged" id="BYE-nf-Vu4"/>
+                            </connections>
+                        </switch>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alert at End" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXP-nR-M0e">
+                            <rect key="frame" x="0.0" y="7" width="95" height="21"/>
+                            <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An alert will appear when time runs out." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahc-iV-1lJ">
+                            <rect key="frame" x="0.0" y="30" width="210" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="2OL-Y5-L9l"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Tondo-Regular" family="Tondo" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ySn-0I-UXg">
+                            <rect key="frame" x="0.0" y="69" width="280" height="1"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Qtz-iC-6sz"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Ahc-iV-1lJ" firstAttribute="leading" secondItem="6o1-gi-zs9" secondAttribute="leading" id="1HE-tS-Dz4"/>
+                        <constraint firstItem="tqE-dM-gTN" firstAttribute="centerY" secondItem="6o1-gi-zs9" secondAttribute="centerY" id="4k7-cB-zgi"/>
+                        <constraint firstAttribute="trailing" secondItem="ySn-0I-UXg" secondAttribute="trailing" id="50e-Wx-EeP"/>
+                        <constraint firstAttribute="height" constant="70" id="JsD-fU-I5m"/>
+                        <constraint firstAttribute="trailing" secondItem="Ahc-iV-1lJ" secondAttribute="trailing" constant="70" id="P0H-gs-eSa"/>
+                        <constraint firstItem="yXP-nR-M0e" firstAttribute="leading" secondItem="6o1-gi-zs9" secondAttribute="leading" id="XW5-9s-hcE"/>
+                        <constraint firstItem="ySn-0I-UXg" firstAttribute="leading" secondItem="6o1-gi-zs9" secondAttribute="leading" id="e4G-dR-lvv"/>
+                        <constraint firstItem="Ahc-iV-1lJ" firstAttribute="top" secondItem="6o1-gi-zs9" secondAttribute="centerY" constant="-5" id="eAL-le-tYF"/>
+                        <constraint firstAttribute="trailing" secondItem="tqE-dM-gTN" secondAttribute="trailing" id="gUA-gm-6bh"/>
+                        <constraint firstItem="yXP-nR-M0e" firstAttribute="bottom" secondItem="6o1-gi-zs9" secondAttribute="centerY" constant="-7" id="giJ-fz-fwY"/>
+                        <constraint firstAttribute="width" constant="280" id="hUQ-cD-ixb"/>
+                        <constraint firstAttribute="bottom" secondItem="ySn-0I-UXg" secondAttribute="bottom" id="oFW-hA-id9"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XCa-w7-tWU">
+                    <rect key="frame" x="47.666666666666657" y="476" width="280" height="70"/>
+                    <subviews>
+                        <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2e2-r9-Wxt" customClass="UIThemeableSwitch" customModule="Carbon_3_0" customModuleProvider="target">
+                            <rect key="frame" x="231" y="19.666666666666686" width="51" height="31"/>
+                            <connections>
+                                <action selector="switchToggled:" destination="-1" eventType="valueChanged" id="q4o-ry-xcX"/>
+                            </connections>
+                        </switch>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alert at 5:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UA0-MC-4OK">
+                            <rect key="frame" x="0.0" y="7" width="99.333333333333329" height="21"/>
+                            <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An alert will appear when the time hits 5 minutes." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AU6-Xq-Lx5">
+                            <rect key="frame" x="0.0" y="30" width="210" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="bEa-Wj-Wda"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Tondo-Regular" family="Tondo" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wlF-et-8Vi">
+                            <rect key="frame" x="0.0" y="69" width="280" height="1"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="pCh-tY-8Fd"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="AU6-Xq-Lx5" secondAttribute="trailing" constant="70" id="55Y-Jk-qEr"/>
+                        <constraint firstItem="wlF-et-8Vi" firstAttribute="leading" secondItem="XCa-w7-tWU" secondAttribute="leading" id="Hqt-BJ-Noo"/>
+                        <constraint firstAttribute="bottom" secondItem="wlF-et-8Vi" secondAttribute="bottom" id="Ire-hM-ic2"/>
+                        <constraint firstAttribute="trailing" secondItem="2e2-r9-Wxt" secondAttribute="trailing" id="RVT-sA-DhL"/>
+                        <constraint firstItem="AU6-Xq-Lx5" firstAttribute="top" secondItem="XCa-w7-tWU" secondAttribute="centerY" constant="-5" id="cnH-en-Fmr"/>
+                        <constraint firstItem="UA0-MC-4OK" firstAttribute="bottom" secondItem="XCa-w7-tWU" secondAttribute="centerY" constant="-7" id="g2m-BP-NDr"/>
+                        <constraint firstAttribute="height" constant="70" id="gUU-Vf-LdK"/>
+                        <constraint firstItem="AU6-Xq-Lx5" firstAttribute="leading" secondItem="XCa-w7-tWU" secondAttribute="leading" id="kTL-Ok-TrY"/>
+                        <constraint firstAttribute="trailing" secondItem="wlF-et-8Vi" secondAttribute="trailing" id="lFW-HR-iNe"/>
+                        <constraint firstItem="2e2-r9-Wxt" firstAttribute="centerY" secondItem="XCa-w7-tWU" secondAttribute="centerY" id="w07-QT-iNM"/>
+                        <constraint firstItem="UA0-MC-4OK" firstAttribute="leading" secondItem="XCa-w7-tWU" secondAttribute="leading" id="zSZ-pQ-vIZ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RLi-yr-sXu">
+                    <rect key="frame" x="47.666666666666657" y="546" width="280" height="70"/>
+                    <subviews>
+                        <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7uP-ke-z7W" customClass="UIThemeableSwitch" customModule="Carbon_3_0" customModuleProvider="target">
+                            <rect key="frame" x="231" y="19.666666666666629" width="51" height="31"/>
+                            <connections>
+                                <action selector="switchToggled:" destination="-1" eventType="valueChanged" id="DYr-6C-FAc"/>
+                            </connections>
+                        </switch>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alert at 10:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LU7-Gj-fTx">
+                            <rect key="frame" x="0.0" y="7" width="109.66666666666667" height="21"/>
+                            <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An alert will appear when the time hits 10 minutes." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LS9-u1-3Nf">
+                            <rect key="frame" x="0.0" y="30" width="210" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="8JH-CL-JAt"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Tondo-Regular" family="Tondo" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Gn-9v-Mng">
+                            <rect key="frame" x="0.0" y="69" width="280" height="1"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="koF-DG-aGs"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="LS9-u1-3Nf" secondAttribute="trailing" constant="70" id="3pS-6U-Qjv"/>
+                        <constraint firstAttribute="height" constant="70" id="5YW-L0-Sxw"/>
+                        <constraint firstAttribute="bottom" secondItem="0Gn-9v-Mng" secondAttribute="bottom" id="5sp-EE-RWq"/>
+                        <constraint firstAttribute="trailing" secondItem="7uP-ke-z7W" secondAttribute="trailing" id="HbB-pX-CAr"/>
+                        <constraint firstItem="0Gn-9v-Mng" firstAttribute="leading" secondItem="RLi-yr-sXu" secondAttribute="leading" id="IRn-JK-4wP"/>
+                        <constraint firstAttribute="trailing" secondItem="0Gn-9v-Mng" secondAttribute="trailing" id="J50-Od-esc"/>
+                        <constraint firstItem="LU7-Gj-fTx" firstAttribute="bottom" secondItem="RLi-yr-sXu" secondAttribute="centerY" constant="-7" id="P1m-Ex-8L3"/>
+                        <constraint firstItem="LU7-Gj-fTx" firstAttribute="leading" secondItem="RLi-yr-sXu" secondAttribute="leading" id="YbZ-hw-I7r"/>
+                        <constraint firstItem="7uP-ke-z7W" firstAttribute="centerY" secondItem="RLi-yr-sXu" secondAttribute="centerY" id="ZJe-Vj-55f"/>
+                        <constraint firstItem="LS9-u1-3Nf" firstAttribute="top" secondItem="RLi-yr-sXu" secondAttribute="centerY" constant="-5" id="fVD-HN-98c"/>
+                        <constraint firstItem="LS9-u1-3Nf" firstAttribute="leading" secondItem="RLi-yr-sXu" secondAttribute="leading" id="xB7-kW-KLX"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KUp-N8-GgG">
+                    <rect key="frame" x="47.666666666666657" y="616" width="280" height="70"/>
+                    <subviews>
+                        <switch opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4KA-rB-xek" customClass="UIThemeableSwitch" customModule="Carbon_3_0" customModuleProvider="target">
+                            <rect key="frame" x="231" y="19.666666666666629" width="51" height="31"/>
+                            <connections>
+                                <action selector="switchToggled:" destination="-1" eventType="valueChanged" id="iCN-xN-GkC"/>
+                            </connections>
+                        </switch>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Display Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXw-ZC-BeP">
+                            <rect key="frame" x="0.0" y="7" width="104.33333333333333" height="21"/>
+                            <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Replace the D20 icon with the time." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljo-th-3az">
+                            <rect key="frame" x="0.0" y="30" width="210" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="kNT-fm-OtS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Tondo-Regular" family="Tondo" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ljo-th-3az" firstAttribute="leading" secondItem="KUp-N8-GgG" secondAttribute="leading" id="978-QC-Fwv"/>
+                        <constraint firstItem="BXw-ZC-BeP" firstAttribute="leading" secondItem="KUp-N8-GgG" secondAttribute="leading" id="CDi-04-n9z"/>
+                        <constraint firstAttribute="trailing" secondItem="ljo-th-3az" secondAttribute="trailing" constant="70" id="K4U-SI-pht"/>
+                        <constraint firstItem="BXw-ZC-BeP" firstAttribute="bottom" secondItem="KUp-N8-GgG" secondAttribute="centerY" constant="-7" id="LAF-yA-TNG"/>
+                        <constraint firstItem="ljo-th-3az" firstAttribute="top" secondItem="KUp-N8-GgG" secondAttribute="centerY" constant="-5" id="Lg7-OS-9xX"/>
+                        <constraint firstItem="4KA-rB-xek" firstAttribute="centerY" secondItem="KUp-N8-GgG" secondAttribute="centerY" id="TJk-Bg-ao8"/>
+                        <constraint firstAttribute="trailing" secondItem="4KA-rB-xek" secondAttribute="trailing" id="oJz-Tu-ba0"/>
+                        <constraint firstAttribute="height" constant="70" id="pJR-oG-Qla"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBE-6x-u2Y">
+                    <rect key="frame" x="81.333333333333329" y="130" width="212.66666666666669" height="141"/>
+                    <fontDescription key="fontDescription" name="Dense-Regular" family="Dense" pointSize="141"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKb-Zm-LZm" customClass="UIAnimatableButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="157.66666666666666" y="271" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="HK6-7O-TtC"/>
+                        <constraint firstAttribute="height" constant="60" id="VnE-DS-tQM"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Auxiliary_HardReset"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="resetButtonPressed:" destination="-1" eventType="touchUpInside" id="fxQ-n1-qov"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmV-xJ-hJR" customClass="UIAnimatableButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="237.66666666666663" y="271" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="cqq-YN-hfp"/>
+                        <constraint firstAttribute="height" constant="60" id="gTB-p0-MsA"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Auxiliary_Play"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="playPauseButtonPressed:" destination="-1" eventType="touchUpInside" id="m4z-0H-l5r"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDS-x0-GWD" customClass="UIAnimatableButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="77.666666666666671" y="271" width="60.000000000000014" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="9oe-8b-yoF"/>
+                        <constraint firstAttribute="height" constant="60" id="y7R-ro-WdM"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Auxiliary_Edit"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="editButtonPressed:" destination="-1" eventType="touchUpInside" id="RX5-eL-R6P"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="6o1-gi-zs9" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="028-C5-G7w"/>
+                <constraint firstItem="KUp-N8-GgG" firstAttribute="top" secondItem="RLi-yr-sXu" secondAttribute="bottom" id="5fk-9e-F5g"/>
+                <constraint firstItem="bKb-Zm-LZm" firstAttribute="leading" secondItem="cDS-x0-GWD" secondAttribute="trailing" constant="20" id="5nt-Qk-GNc"/>
+                <constraint firstItem="xmV-xJ-hJR" firstAttribute="leading" secondItem="bKb-Zm-LZm" secondAttribute="trailing" constant="20" id="ElH-wb-6Ph"/>
+                <constraint firstItem="RLi-yr-sXu" firstAttribute="width" secondItem="XCa-w7-tWU" secondAttribute="width" id="Gxl-MK-cxB"/>
+                <constraint firstItem="KUp-N8-GgG" firstAttribute="centerX" secondItem="RLi-yr-sXu" secondAttribute="centerX" id="U8w-UL-oWa"/>
+                <constraint firstItem="cDS-x0-GWD" firstAttribute="centerY" secondItem="bKb-Zm-LZm" secondAttribute="centerY" id="UJM-gy-oEa"/>
+                <constraint firstItem="bKb-Zm-LZm" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="-80" id="aA0-EG-Jvp"/>
+                <constraint firstItem="RLi-yr-sXu" firstAttribute="centerX" secondItem="XCa-w7-tWU" secondAttribute="centerX" id="dwq-4d-Ke7"/>
+                <constraint firstItem="nBE-6x-u2Y" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="gIn-2u-4Pd"/>
+                <constraint firstItem="XCa-w7-tWU" firstAttribute="top" secondItem="6o1-gi-zs9" secondAttribute="bottom" id="j65-WR-oWG"/>
+                <constraint firstItem="RLi-yr-sXu" firstAttribute="top" secondItem="XCa-w7-tWU" secondAttribute="bottom" id="kJe-jE-DYw"/>
+                <constraint firstItem="xmV-xJ-hJR" firstAttribute="centerY" secondItem="bKb-Zm-LZm" secondAttribute="centerY" id="ooo-1k-EoG"/>
+                <constraint firstItem="6o1-gi-zs9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="-5" id="ssj-8D-C5E"/>
+                <constraint firstItem="bKb-Zm-LZm" firstAttribute="top" secondItem="nBE-6x-u2Y" secondAttribute="bottom" id="tuU-Kn-Tmt"/>
+                <constraint firstItem="XCa-w7-tWU" firstAttribute="width" secondItem="6o1-gi-zs9" secondAttribute="width" id="uOs-bb-ysM"/>
+                <constraint firstItem="XCa-w7-tWU" firstAttribute="centerX" secondItem="6o1-gi-zs9" secondAttribute="centerX" id="vcf-7I-Wn1"/>
+                <constraint firstItem="bKb-Zm-LZm" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="yZW-WH-858"/>
+                <constraint firstItem="KUp-N8-GgG" firstAttribute="width" secondItem="RLi-yr-sXu" secondAttribute="width" id="yoP-o9-hQ1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="136.80000000000001" y="152.95566502463055"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Auxiliary_Edit" width="100" height="100"/>
+        <image name="Auxiliary_HardReset" width="100" height="100"/>
+        <image name="Auxiliary_Play" width="100" height="100"/>
+    </resources>
+</document>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1kr-mO-49L">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings Gestures Table View Controller-->
+        <scene sceneID="Sjx-ij-5MG">
+            <objects>
+                <tableViewController id="1kr-mO-49L" customClass="UISettingsGesturesTableViewController" customModule="Carbon_3_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="K6s-mw-BrI" customClass="UIThemeableTableView" customModule="Carbon_3_0" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Game" id="HJ8-ry-ZES">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="80" id="LiJ-di-EaA" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.333333333333343" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LiJ-di-EaA" id="R4C-of-4ok">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="79.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake Device" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fT0-22-7Uc" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="80" y="11.666666666666666" width="103.66666666666669" height="20.333333333333336"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Settings_Shake" translatesAutoresizingMaskIntoConstraints="NO" id="9d4-if-TEH" customClass="UIThemeableImageView" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="20" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="AxN-k4-rEl"/>
+                                                        <constraint firstAttribute="width" constant="40" id="VB3-sX-KSk"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Off" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfm-mz-DL3" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="309" y="31" width="22" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake your device while in a game" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVo-T5-CDS" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="80" y="38" width="141" height="31.333333333333329"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="141" id="pxA-pW-zZi"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="nfm-mz-DL3" firstAttribute="centerY" secondItem="R4C-of-4ok" secondAttribute="centerY" id="AYz-L0-GI7"/>
+                                                <constraint firstItem="fT0-22-7Uc" firstAttribute="leading" secondItem="9d4-if-TEH" secondAttribute="trailing" constant="20" id="QiQ-6g-ilM"/>
+                                                <constraint firstItem="oVo-T5-CDS" firstAttribute="top" secondItem="fT0-22-7Uc" secondAttribute="bottom" constant="6" id="Y4p-wX-y3g"/>
+                                                <constraint firstItem="oVo-T5-CDS" firstAttribute="leading" secondItem="fT0-22-7Uc" secondAttribute="leading" id="bCx-p7-uev"/>
+                                                <constraint firstItem="9d4-if-TEH" firstAttribute="leading" secondItem="R4C-of-4ok" secondAttribute="leading" constant="20" id="cEO-Vk-pLH"/>
+                                                <constraint firstItem="9d4-if-TEH" firstAttribute="centerY" secondItem="R4C-of-4ok" secondAttribute="centerY" id="cVB-06-fsH"/>
+                                                <constraint firstItem="fT0-22-7Uc" firstAttribute="centerY" secondItem="R4C-of-4ok" secondAttribute="centerY" constant="-18" id="oET-H3-pOR"/>
+                                                <constraint firstAttribute="trailing" secondItem="nfm-mz-DL3" secondAttribute="trailing" constant="10" id="uvg-ug-UWd"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="80" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <segue destination="Do6-KZ-x7l" kind="show" id="khl-GT-d9i"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Counter Buttons" id="KTc-CT-sxX">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="80" id="nxf-Q5-cN7" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="191.33333333333334" width="375" height="80.000000000000028"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nxf-Q5-cN7" id="M9H-t0-mHi">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="79.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Two Finger Tap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ip-EG-zxq" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="80" y="11.666666666666666" width="116" height="20.333333333333336"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Settings_TwoFinger" translatesAutoresizingMaskIntoConstraints="NO" id="RfW-of-6xZ" customClass="UIThemeableImageView" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="20" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="ZFt-RC-HdS"/>
+                                                        <constraint firstAttribute="width" constant="40" id="yML-aX-0S5"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Off" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LrO-cd-Jw3" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="309" y="31" width="22" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Two fingers tapping up or down." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azC-jm-LAM" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="80" y="38" width="130" height="31.333333333333329"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="130" id="mxo-4B-9AO"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="3Ip-EG-zxq" firstAttribute="leading" secondItem="RfW-of-6xZ" secondAttribute="trailing" constant="20" id="4rL-QF-LHr"/>
+                                                <constraint firstItem="3Ip-EG-zxq" firstAttribute="centerY" secondItem="M9H-t0-mHi" secondAttribute="centerY" constant="-18" id="80n-wT-3CD"/>
+                                                <constraint firstItem="LrO-cd-Jw3" firstAttribute="centerY" secondItem="M9H-t0-mHi" secondAttribute="centerY" id="MUL-h6-KDj"/>
+                                                <constraint firstItem="RfW-of-6xZ" firstAttribute="leading" secondItem="M9H-t0-mHi" secondAttribute="leading" constant="20" id="Nce-bo-ryX"/>
+                                                <constraint firstItem="azC-jm-LAM" firstAttribute="top" secondItem="3Ip-EG-zxq" secondAttribute="bottom" constant="6" id="WGV-Ew-02h"/>
+                                                <constraint firstAttribute="trailing" secondItem="LrO-cd-Jw3" secondAttribute="trailing" constant="10" id="lX2-Fc-S96"/>
+                                                <constraint firstItem="RfW-of-6xZ" firstAttribute="centerY" secondItem="M9H-t0-mHi" secondAttribute="centerY" id="lrK-1N-ZSp"/>
+                                                <constraint firstItem="azC-jm-LAM" firstAttribute="leading" secondItem="3Ip-EG-zxq" secondAttribute="leading" id="wbU-LZ-iLz"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="80" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <segue destination="lVW-28-fle" kind="show" id="62z-Bw-VV2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="80" id="dJ2-bV-JE0" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="271.33333333333337" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dJ2-bV-JE0" id="AqC-Zx-dcN">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="79.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One Finger Hold" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXO-ZT-6Qd" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="80" y="11.333333333333336" width="124.66666666666669" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Settings_Hold" translatesAutoresizingMaskIntoConstraints="NO" id="mWc-5b-xfE" customClass="UIThemeableImageView" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="20" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="byM-kr-114"/>
+                                                        <constraint firstAttribute="width" constant="40" id="jcU-x5-hIy"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Off" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfj-rj-qu1" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="309" y="31" width="22" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One finger holding up or down." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdn-99-EAW" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="80" y="38.333333333333336" width="130" height="31.333333333333336"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="130" id="pyU-WE-XI2"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mWc-5b-xfE" firstAttribute="centerY" secondItem="AqC-Zx-dcN" secondAttribute="centerY" id="LX0-Vd-9Kq"/>
+                                                <constraint firstItem="mWc-5b-xfE" firstAttribute="leading" secondItem="AqC-Zx-dcN" secondAttribute="leading" constant="20" id="OfX-7s-bo0"/>
+                                                <constraint firstItem="jfj-rj-qu1" firstAttribute="centerY" secondItem="AqC-Zx-dcN" secondAttribute="centerY" id="UDd-p0-t8i"/>
+                                                <constraint firstItem="hdn-99-EAW" firstAttribute="leading" secondItem="GXO-ZT-6Qd" secondAttribute="leading" id="YBL-2s-zDU"/>
+                                                <constraint firstItem="GXO-ZT-6Qd" firstAttribute="centerY" secondItem="AqC-Zx-dcN" secondAttribute="centerY" constant="-18" id="ciZ-TP-6Lg"/>
+                                                <constraint firstAttribute="trailing" secondItem="jfj-rj-qu1" secondAttribute="trailing" constant="10" id="fuv-r3-vFv"/>
+                                                <constraint firstItem="hdn-99-EAW" firstAttribute="top" secondItem="GXO-ZT-6Qd" secondAttribute="bottom" constant="6" id="iUg-lA-opK"/>
+                                                <constraint firstItem="GXO-ZT-6Qd" firstAttribute="leading" secondItem="mWc-5b-xfE" secondAttribute="trailing" constant="20" id="pXk-Vw-MeD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="80" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <segue destination="B5l-JY-cQv" kind="show" id="NxU-R9-bDW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="80" id="2ZG-2c-5mp" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="351.33333333333337" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2ZG-2c-5mp" id="mjV-1S-B0I">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="79.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Two Finger Hold" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zj4-vJ-qJK" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="80" y="11.333333333333336" width="124.66666666666669" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Settings_Hold_Two" translatesAutoresizingMaskIntoConstraints="NO" id="djX-ef-AQ7" customClass="UIThemeableImageView" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="20" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="ZCK-23-exS"/>
+                                                        <constraint firstAttribute="width" constant="40" id="d03-pa-rWJ"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Off" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85J-Ru-Wr9" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="309" y="31" width="22" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Two fingers holding up or down." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlo-Kp-8pG" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="80" y="38.333333333333336" width="130" height="31.333333333333336"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="130" id="lJv-0R-JoP"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Zj4-vJ-qJK" firstAttribute="centerY" secondItem="mjV-1S-B0I" secondAttribute="centerY" constant="-18" id="EJ2-zs-Xca"/>
+                                                <constraint firstAttribute="trailing" secondItem="85J-Ru-Wr9" secondAttribute="trailing" constant="10" id="LaT-Wo-S9u"/>
+                                                <constraint firstItem="djX-ef-AQ7" firstAttribute="centerY" secondItem="mjV-1S-B0I" secondAttribute="centerY" id="TWq-EW-3zM"/>
+                                                <constraint firstItem="85J-Ru-Wr9" firstAttribute="centerY" secondItem="mjV-1S-B0I" secondAttribute="centerY" id="Tev-rf-6hp"/>
+                                                <constraint firstItem="qlo-Kp-8pG" firstAttribute="leading" secondItem="Zj4-vJ-qJK" secondAttribute="leading" id="Wut-Gq-PgS"/>
+                                                <constraint firstItem="djX-ef-AQ7" firstAttribute="leading" secondItem="mjV-1S-B0I" secondAttribute="leading" constant="20" id="cjH-xk-H3r"/>
+                                                <constraint firstItem="qlo-Kp-8pG" firstAttribute="top" secondItem="Zj4-vJ-qJK" secondAttribute="bottom" constant="6" id="eHj-LM-zE6"/>
+                                                <constraint firstItem="Zj4-vJ-qJK" firstAttribute="leading" secondItem="djX-ef-AQ7" secondAttribute="trailing" constant="20" id="tgb-on-MSU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="80" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <segue destination="ZvD-HL-FQF" kind="show" id="ofA-31-yNy"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="1kr-mO-49L" id="bB0-4H-Re2"/>
+                            <outlet property="delegate" destination="1kr-mO-49L" id="liC-eB-kpm"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="oneFingerHoldLabel" destination="jfj-rj-qu1" id="cFd-Md-7Vt"/>
+                        <outlet property="shakeLabel" destination="nfm-mz-DL3" id="bAl-vv-YMX"/>
+                        <outlet property="twoFingerHoldLabel" destination="85J-Ru-Wr9" id="Gef-PY-leH"/>
+                        <outlet property="twoFingerTapLabel" destination="LrO-cd-Jw3" id="nZN-PU-zpk"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cdp-Da-id2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18.399999999999999" y="163.30049261083744"/>
+        </scene>
+        <!--UISettingsShakeTableViewController-->
+        <scene sceneID="dSb-sv-8fP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UISettingsShakeTableViewController" id="Do6-KZ-x7l" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I2c-vJ-CNz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="618" y="-33"/>
+        </scene>
+        <!--UISettingsTwoFingerTapTableViewController-->
+        <scene sceneID="PEe-7J-jTb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UISettingsTwoFingerTapTableViewController" id="lVW-28-fle" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wL9-46-psJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="655" y="69"/>
+        </scene>
+        <!--UISettingsOneFingerHoldTableViewController-->
+        <scene sceneID="DwT-fZ-JbU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UISettingsOneFingerHoldTableViewController" id="B5l-JY-cQv" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MWH-vN-rNs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="647" y="124"/>
+        </scene>
+        <!--UISettingsTwoFingerHoldTableViewController-->
+        <scene sceneID="9Gd-P7-3ZO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UISettingsTwoFingerHoldTableViewController" id="ZvD-HL-FQF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1aK-SU-CNN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="654" y="234"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Settings_Hold" width="150" height="150"/>
+        <image name="Settings_Hold_Two" width="150" height="150"/>
+        <image name="Settings_Shake" width="150" height="150"/>
+        <image name="Settings_TwoFinger" width="150" height="150"/>
+    </resources>
+</document>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tondo-Bold.ttf">
+            <string>Tondo-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UISetupPlayersViewController" customModule="Carbon_3_0" customModuleProvider="target">
+            <connections>
+                <outlet property="fivePlayersButton" destination="z9a-pz-7T3" id="qsy-sg-bh0"/>
+                <outlet property="fourPlayersButton" destination="ZQw-eT-W07" id="e8c-hR-4Cd"/>
+                <outlet property="onePlayerButton" destination="b56-to-wDL" id="Z7a-hu-JAt"/>
+                <outlet property="sixPlayersButton" destination="ADU-g6-x7F" id="or2-77-PoY"/>
+                <outlet property="threePlayersButton" destination="In4-Hp-rOQ" id="hVk-RB-X5v"/>
+                <outlet property="twoPlayersButton" destination="dgh-od-ukh" id="fwp-7S-NO4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="UIThemeableView" customModule="Carbon_3_0" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgh-od-ukh" customClass="UISquircleButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="140" y="348.66666666666669" width="95" height="95"/>
+                    <color key="backgroundColor" red="0.29803921570000003" green="0.62352941179999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="95" id="SD2-fK-76Y"/>
+                        <constraint firstAttribute="width" constant="95" id="eAg-Ss-rCz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="twoPlayersButtonPressed:" destination="-1" eventType="touchUpInside" id="bx9-yY-ySL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="In4-Hp-rOQ" customClass="UISquircleButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="247" y="348.66666666666669" width="95" height="95"/>
+                    <color key="backgroundColor" red="0.29803921570000003" green="0.62352941179999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="95" id="56F-cr-ZqS"/>
+                        <constraint firstAttribute="height" constant="95" id="LWn-jN-Rpa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="threePlayersButtonPressed:" destination="-1" eventType="touchUpInside" id="EHc-x0-ANH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b56-to-wDL" customClass="UISquircleButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="33" y="348.66666666666669" width="95" height="95"/>
+                    <color key="backgroundColor" red="0.29803921570000003" green="0.62352941179999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="95" id="XMs-tA-7TZ"/>
+                        <constraint firstAttribute="height" constant="95" id="vgZ-Z0-3is"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onePlayerButtonPressed:" destination="-1" eventType="touchUpInside" id="OLb-0f-lUE"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SET PLAYERS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvQ-pO-XEp" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="90.666666666666671" y="227.66666666666666" width="193.66666666666663" height="38.333333333333343"/>
+                    <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="31"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQw-eT-W07" customClass="UISquircleButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="33" y="455.66666666666669" width="95" height="95.000000000000057"/>
+                    <color key="backgroundColor" red="0.29803921570000003" green="0.62352941179999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="95" id="sjp-oJ-efh"/>
+                        <constraint firstAttribute="height" constant="95" id="vwN-ct-NRy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="fourPlayersButtonPressed:" destination="-1" eventType="touchUpInside" id="5PB-lQ-6Bz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9a-pz-7T3" customClass="UISquircleButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="140" y="455.66666666666669" width="95" height="95.000000000000057"/>
+                    <color key="backgroundColor" red="0.29803921570000003" green="0.62352941179999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="95" id="htM-YP-M5y"/>
+                        <constraint firstAttribute="width" constant="95" id="yfC-BA-Kv7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="fivePlayersButtonPressed:" destination="-1" eventType="touchUpInside" id="OSo-Mf-gay"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADU-g6-x7F" customClass="UISquircleButton" customModule="Carbon_3_0" customModuleProvider="target">
+                    <rect key="frame" x="247" y="455.66666666666669" width="95" height="95.000000000000057"/>
+                    <color key="backgroundColor" red="0.29803921570000003" green="0.62352941179999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="95" id="aAF-Qj-3Hx"/>
+                        <constraint firstAttribute="height" constant="95" id="hoh-Ua-mgc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="sixPlayersButtonPressed:" destination="-1" eventType="touchUpInside" id="s5D-Iq-HS9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZQw-eT-W07" firstAttribute="centerX" secondItem="b56-to-wDL" secondAttribute="centerX" id="8Ir-4A-e5Y"/>
+                <constraint firstItem="dgh-od-ukh" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="-15" id="DTf-ep-4MA"/>
+                <constraint firstItem="In4-Hp-rOQ" firstAttribute="centerY" secondItem="dgh-od-ukh" secondAttribute="centerY" id="Oke-Eq-b97"/>
+                <constraint firstItem="ADU-g6-x7F" firstAttribute="centerX" secondItem="In4-Hp-rOQ" secondAttribute="centerX" id="PVD-js-kAh"/>
+                <constraint firstItem="dgh-od-ukh" firstAttribute="leading" secondItem="b56-to-wDL" secondAttribute="trailing" constant="12" id="WPu-Tp-0s7"/>
+                <constraint firstItem="dgh-od-ukh" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="XKd-8p-UdN"/>
+                <constraint firstItem="ZQw-eT-W07" firstAttribute="top" secondItem="dgh-od-ukh" secondAttribute="bottom" constant="12" id="fh1-fn-LfW"/>
+                <constraint firstItem="hvQ-pO-XEp" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="gqI-2k-QgV"/>
+                <constraint firstItem="b56-to-wDL" firstAttribute="centerY" secondItem="dgh-od-ukh" secondAttribute="centerY" id="hQe-hl-DW1"/>
+                <constraint firstItem="z9a-pz-7T3" firstAttribute="centerX" secondItem="dgh-od-ukh" secondAttribute="centerX" id="iVU-lt-hcC"/>
+                <constraint firstItem="z9a-pz-7T3" firstAttribute="centerY" secondItem="ZQw-eT-W07" secondAttribute="centerY" id="ktN-wh-mPD"/>
+                <constraint firstItem="ADU-g6-x7F" firstAttribute="centerY" secondItem="ZQw-eT-W07" secondAttribute="centerY" id="o7h-CT-4Te"/>
+                <constraint firstItem="In4-Hp-rOQ" firstAttribute="leading" secondItem="dgh-od-ukh" secondAttribute="trailing" constant="12" id="psY-56-OUh"/>
+                <constraint firstItem="hvQ-pO-XEp" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="-145" id="wzf-Ls-7QO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

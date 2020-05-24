@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tondo-Bold.ttf">
+            <string>Tondo-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CarbonProBanner" customModule="Carbon_3_0" customModuleProvider="target">
+            <connections>
+                <outlet property="roundedBackgroundView" destination="GP0-mT-40Z" id="c5z-FH-4oB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewButton" destination="C09-8N-gdh" id="pRW-ct-KNA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GP0-mT-40Z">
+                    <rect key="frame" x="10" y="10" width="355" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CARBON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OyW-Tn-sV3">
+                            <rect key="frame" x="23" y="20" width="124" height="37"/>
+                            <fontDescription key="fontDescription" name="Tondo-Bold" family="Tondo" pointSize="30"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmU-Nj-Gzd">
+                            <rect key="frame" x="155" y="26" width="45" height="27"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="27" id="bZ8-Xm-3F1"/>
+                                <constraint firstAttribute="width" constant="45" id="zve-aS-RaM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More features, just for you." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBl-ir-ftc">
+                            <rect key="frame" x="23" y="57" width="184.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C09-8N-gdh" customClass="UIAnimatableButton" customModule="Carbon_3_0" customModuleProvider="target">
+                            <rect key="frame" x="265" y="35" width="60" height="30"/>
+                            <color key="backgroundColor" red="0.1960784314" green="0.50980392159999999" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="iKi-bT-4jy"/>
+                                <constraint firstAttribute="width" constant="60" id="vk0-8e-ATB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                            <state key="normal" title="View">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="viewButtonPressed:" destination="-1" eventType="touchUpInside" id="sei-xB-TWr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="OyW-Tn-sV3" firstAttribute="baseline" secondItem="GP0-mT-40Z" secondAttribute="centerY" id="4aj-tp-CuH"/>
+                        <constraint firstItem="DBl-ir-ftc" firstAttribute="top" secondItem="OyW-Tn-sV3" secondAttribute="bottom" id="9LU-nl-1CC"/>
+                        <constraint firstItem="DBl-ir-ftc" firstAttribute="leading" secondItem="OyW-Tn-sV3" secondAttribute="leading" id="HvJ-jV-Ct7"/>
+                        <constraint firstItem="C09-8N-gdh" firstAttribute="centerY" secondItem="GP0-mT-40Z" secondAttribute="centerY" id="MFX-fM-KIx"/>
+                        <constraint firstItem="OyW-Tn-sV3" firstAttribute="leading" secondItem="GP0-mT-40Z" secondAttribute="leading" constant="23" id="MbN-x9-aEp"/>
+                        <constraint firstAttribute="trailing" secondItem="C09-8N-gdh" secondAttribute="trailing" constant="30" id="mUB-c3-B6B"/>
+                        <constraint firstItem="tmU-Nj-Gzd" firstAttribute="centerY" secondItem="OyW-Tn-sV3" secondAttribute="centerY" constant="1" id="thf-Ed-qgk"/>
+                        <constraint firstItem="tmU-Nj-Gzd" firstAttribute="leading" secondItem="OyW-Tn-sV3" secondAttribute="trailing" constant="8" id="ugu-lZ-sOt"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="GP0-mT-40Z" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="6HD-CC-l0A"/>
+                <constraint firstItem="GP0-mT-40Z" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="7zf-rJ-klU"/>
+                <constraint firstAttribute="trailing" secondItem="GP0-mT-40Z" secondAttribute="trailing" constant="10" id="DwB-o0-i5G"/>
+                <constraint firstAttribute="bottom" secondItem="GP0-mT-40Z" secondAttribute="bottom" constant="10" id="i3M-mJ-dBB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="-98.050974512743636"/>
+        </view>
+    </objects>
+</document>

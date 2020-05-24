@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NRi-GA-lHG">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings Shake Table View Controller-->
+        <scene sceneID="Ktf-Cw-b6j">
+            <objects>
+                <tableViewController id="NRi-GA-lHG" customClass="UISettingsShakeTableViewController" customModule="Carbon_3_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="7GP-xE-8is" customClass="UIThemeableTableView" customModule="Carbon_3_0" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="1PY-iD-9Nz">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="checkmark" indentationWidth="10" rowHeight="50" id="m3w-0p-Wkq" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="35" width="600" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m3w-0p-Wkq" id="3re-EM-VzL">
+                                            <rect key="frame" x="0.0" y="0.0" width="556" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Twa-7l-Emz" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="25" y="14.5" width="24.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Twa-7l-Emz" firstAttribute="centerY" secondItem="3re-EM-VzL" secondAttribute="centerY" id="QYB-vJ-2wc"/>
+                                                <constraint firstItem="Twa-7l-Emz" firstAttribute="leading" secondItem="3re-EM-VzL" secondAttribute="leading" constant="25" id="obn-Ol-Yo1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="D66-Ii-Cym">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="checkmark" indentationWidth="10" rowHeight="80" id="Hf6-lf-lSF" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="121" width="600" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hf6-lf-lSF" id="5FW-xc-9GK">
+                                            <rect key="frame" x="0.0" y="0.0" width="556" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open Timer Options" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tu-xR-9MQ" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="80" y="11.5" width="155" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Auxiliary_Timer" translatesAutoresizingMaskIntoConstraints="NO" id="hs7-8g-c6m" customClass="UIThemeableImageView" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="20" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="MBn-1d-VJg"/>
+                                                        <constraint firstAttribute="height" constant="40" id="Rkq-3c-aZw"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A shortcut to the timer settings." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jL0-rA-Sx9" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="80" y="38.5" width="130" height="31.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="130" id="3Gn-Bj-Rer"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2J-1k-SgQ" customClass="CarbonProLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="501" y="29" width="40" height="22"/>
+                                                    <color key="backgroundColor" red="0.92941176469999998" green="0.30588235289999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="9XP-zr-2xZ"/>
+                                                        <constraint firstAttribute="height" constant="22" id="Fak-2n-CGk"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hs7-8g-c6m" firstAttribute="leading" secondItem="5FW-xc-9GK" secondAttribute="leading" constant="20" id="4xk-Ni-gMS"/>
+                                                <constraint firstItem="1tu-xR-9MQ" firstAttribute="centerY" secondItem="5FW-xc-9GK" secondAttribute="centerY" constant="-18" id="CHd-Lt-BXf"/>
+                                                <constraint firstItem="jL0-rA-Sx9" firstAttribute="top" secondItem="1tu-xR-9MQ" secondAttribute="bottom" constant="6" id="UjQ-gq-5TL"/>
+                                                <constraint firstItem="jL0-rA-Sx9" firstAttribute="leading" secondItem="1tu-xR-9MQ" secondAttribute="leading" id="cTJ-pm-kkY"/>
+                                                <constraint firstItem="hs7-8g-c6m" firstAttribute="centerY" secondItem="5FW-xc-9GK" secondAttribute="centerY" id="lmu-cM-Om2"/>
+                                                <constraint firstItem="u2J-1k-SgQ" firstAttribute="centerY" secondItem="5FW-xc-9GK" secondAttribute="centerY" id="omz-NW-qtR"/>
+                                                <constraint firstAttribute="trailing" secondItem="u2J-1k-SgQ" secondAttribute="trailing" constant="15" id="wJQ-aa-xbZ"/>
+                                                <constraint firstItem="1tu-xR-9MQ" firstAttribute="leading" secondItem="hs7-8g-c6m" secondAttribute="trailing" constant="20" id="ymp-lv-J1s"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="80" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="checkmark" indentationWidth="10" rowHeight="80" id="jC7-b8-9AQ" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="201" width="600" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jC7-b8-9AQ" id="KJP-aW-OYw">
+                                            <rect key="frame" x="0.0" y="0.0" width="556" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset The Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pbt-ex-5AJ" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="80" y="11.5" width="127" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Auxiliary_HardReset" translatesAutoresizingMaskIntoConstraints="NO" id="jMu-VS-LND" customClass="UIThemeableImageView" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="20" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="E0b-Te-O4E"/>
+                                                        <constraint firstAttribute="width" constant="40" id="fhQ-l8-5ym"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resets the game to its initial state." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAD-HK-BSL" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="80" y="38.5" width="130" height="31.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="130" id="Y5U-sa-ga8"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQN-Dk-WHE" customClass="CarbonProLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="501" y="29" width="40" height="22"/>
+                                                    <color key="backgroundColor" red="0.92941176469999998" green="0.30588235289999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="8k9-nP-Ae8"/>
+                                                        <constraint firstAttribute="width" constant="40" id="IIM-u2-twh"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Pbt-ex-5AJ" firstAttribute="centerY" secondItem="KJP-aW-OYw" secondAttribute="centerY" constant="-18" id="3h7-ob-KWY"/>
+                                                <constraint firstItem="jMu-VS-LND" firstAttribute="leading" secondItem="KJP-aW-OYw" secondAttribute="leading" constant="20" id="9DL-xp-j28"/>
+                                                <constraint firstItem="jMu-VS-LND" firstAttribute="centerY" secondItem="KJP-aW-OYw" secondAttribute="centerY" id="9oy-E5-YOt"/>
+                                                <constraint firstItem="Pbt-ex-5AJ" firstAttribute="leading" secondItem="jMu-VS-LND" secondAttribute="trailing" constant="20" id="Esk-yP-fML"/>
+                                                <constraint firstItem="ZAD-HK-BSL" firstAttribute="top" secondItem="Pbt-ex-5AJ" secondAttribute="bottom" constant="6" id="G3y-mL-ao6"/>
+                                                <constraint firstAttribute="trailing" secondItem="pQN-Dk-WHE" secondAttribute="trailing" constant="15" id="N9q-PK-E5y"/>
+                                                <constraint firstItem="pQN-Dk-WHE" firstAttribute="centerY" secondItem="KJP-aW-OYw" secondAttribute="centerY" id="ZZb-03-84g"/>
+                                                <constraint firstItem="ZAD-HK-BSL" firstAttribute="leading" secondItem="Pbt-ex-5AJ" secondAttribute="leading" id="d6U-2t-NdB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="80" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="checkmark" indentationWidth="10" rowHeight="80" id="hgk-Ma-9MW" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="281" width="600" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hgk-Ma-9MW" id="f6J-Jd-zl9">
+                                            <rect key="frame" x="0.0" y="0.0" width="556" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open Names Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9K-Ve-xj2" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="80" y="11.5" width="147" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Auxiliary_Text" translatesAutoresizingMaskIntoConstraints="NO" id="g4V-Dm-Ifw" customClass="UIThemeableImageView" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="20" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="720-sG-flX"/>
+                                                        <constraint firstAttribute="height" constant="40" id="P3a-uA-elT"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A shortcut to the names menu." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wie-A7-rd2" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="80" y="38.5" width="130" height="31.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="130" id="wfw-8K-QYn"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mes-45-dbP" customClass="CarbonProLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="501" y="29" width="40" height="22"/>
+                                                    <color key="backgroundColor" red="0.92941176469999998" green="0.30588235289999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="0tB-lp-3SE"/>
+                                                        <constraint firstAttribute="width" constant="40" id="dBA-j6-BJf"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="o9K-Ve-xj2" firstAttribute="centerY" secondItem="f6J-Jd-zl9" secondAttribute="centerY" constant="-18" id="043-qu-nns"/>
+                                                <constraint firstItem="wie-A7-rd2" firstAttribute="leading" secondItem="o9K-Ve-xj2" secondAttribute="leading" id="2nr-BR-cRK"/>
+                                                <constraint firstItem="g4V-Dm-Ifw" firstAttribute="leading" secondItem="f6J-Jd-zl9" secondAttribute="leading" constant="20" id="4om-K5-IbT"/>
+                                                <constraint firstItem="o9K-Ve-xj2" firstAttribute="leading" secondItem="g4V-Dm-Ifw" secondAttribute="trailing" constant="20" id="fmx-jT-p8W"/>
+                                                <constraint firstItem="mes-45-dbP" firstAttribute="centerY" secondItem="f6J-Jd-zl9" secondAttribute="centerY" id="jqb-oP-KpG"/>
+                                                <constraint firstItem="g4V-Dm-Ifw" firstAttribute="centerY" secondItem="f6J-Jd-zl9" secondAttribute="centerY" id="l0O-lj-2rh"/>
+                                                <constraint firstAttribute="trailing" secondItem="mes-45-dbP" secondAttribute="trailing" constant="15" id="wS0-pn-myS"/>
+                                                <constraint firstItem="wie-A7-rd2" firstAttribute="top" secondItem="o9K-Ve-xj2" secondAttribute="bottom" constant="6" id="zJt-lA-4kl"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="80" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="checkmark" indentationWidth="10" rowHeight="80" id="8n6-1U-FUU" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="361" width="600" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8n6-1U-FUU" id="Owf-HX-dQ0">
+                                            <rect key="frame" x="0.0" y="0.0" width="556" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open Chooser" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dip-43-eDO" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="80" y="11.5" width="111" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Auxiliary_Chooser" translatesAutoresizingMaskIntoConstraints="NO" id="2WH-Jp-QOW" customClass="UIThemeableImageView" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="20" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="G6q-qe-6bi"/>
+                                                        <constraint firstAttribute="height" constant="40" id="q10-rt-pvf"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A shortcut to choose a player at random." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mn3-cq-Rzf" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="80" y="38.5" width="130" height="31.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="130" id="fso-h6-M7r"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJD-RU-IzQ" customClass="CarbonProLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="501" y="29" width="40" height="22"/>
+                                                    <color key="backgroundColor" red="0.92941176469999998" green="0.30588235289999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="5BK-mq-WLL"/>
+                                                        <constraint firstAttribute="height" constant="22" id="kf9-Ik-tNr"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mn3-cq-Rzf" firstAttribute="top" secondItem="dip-43-eDO" secondAttribute="bottom" constant="6" id="Fkl-PV-Rlz"/>
+                                                <constraint firstItem="yJD-RU-IzQ" firstAttribute="centerY" secondItem="Owf-HX-dQ0" secondAttribute="centerY" id="LwJ-0m-iRb"/>
+                                                <constraint firstItem="dip-43-eDO" firstAttribute="leading" secondItem="2WH-Jp-QOW" secondAttribute="trailing" constant="20" id="Tor-Nq-c1g"/>
+                                                <constraint firstAttribute="trailing" secondItem="yJD-RU-IzQ" secondAttribute="trailing" constant="15" id="UfJ-bf-DZ8"/>
+                                                <constraint firstItem="mn3-cq-Rzf" firstAttribute="leading" secondItem="dip-43-eDO" secondAttribute="leading" id="Vn0-uG-MZa"/>
+                                                <constraint firstItem="2WH-Jp-QOW" firstAttribute="centerY" secondItem="Owf-HX-dQ0" secondAttribute="centerY" id="XbD-JM-zG1"/>
+                                                <constraint firstItem="dip-43-eDO" firstAttribute="centerY" secondItem="Owf-HX-dQ0" secondAttribute="centerY" constant="-18" id="ZYq-5h-yR8"/>
+                                                <constraint firstItem="2WH-Jp-QOW" firstAttribute="leading" secondItem="Owf-HX-dQ0" secondAttribute="leading" constant="20" id="k8P-P8-otX"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="80" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="checkmark" indentationWidth="10" rowHeight="80" id="cOA-nP-kjx" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="441" width="600" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cOA-nP-kjx" id="5JO-99-Rhi">
+                                            <rect key="frame" x="0.0" y="0.0" width="556" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open Game History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPo-C0-C6I" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="80" y="11.5" width="151" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Auxiliary_History" translatesAutoresizingMaskIntoConstraints="NO" id="1H9-20-cYy" customClass="UIThemeableImageView" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="20" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="7Z9-yX-6aB"/>
+                                                        <constraint firstAttribute="width" constant="40" id="kDe-1K-pqN"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A shortcut to view the game history." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUy-09-nfq" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="80" y="38.5" width="130" height="31.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="130" id="Pd2-Bn-bLr"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Mg-72-jaG" customClass="CarbonProLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="501" y="29" width="40" height="22"/>
+                                                    <color key="backgroundColor" red="0.92941176469999998" green="0.30588235289999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="LDu-hD-yP4"/>
+                                                        <constraint firstAttribute="width" constant="40" id="YJZ-jL-NJt"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="nUy-09-nfq" firstAttribute="top" secondItem="sPo-C0-C6I" secondAttribute="bottom" constant="6" id="0Zg-lb-Oi9"/>
+                                                <constraint firstItem="7Mg-72-jaG" firstAttribute="centerY" secondItem="5JO-99-Rhi" secondAttribute="centerY" id="6XN-c2-jaS"/>
+                                                <constraint firstItem="sPo-C0-C6I" firstAttribute="leading" secondItem="1H9-20-cYy" secondAttribute="trailing" constant="20" id="d1T-AH-OYa"/>
+                                                <constraint firstItem="1H9-20-cYy" firstAttribute="leading" secondItem="5JO-99-Rhi" secondAttribute="leading" constant="20" id="eUl-RC-hyU"/>
+                                                <constraint firstItem="sPo-C0-C6I" firstAttribute="centerY" secondItem="5JO-99-Rhi" secondAttribute="centerY" constant="-18" id="g6B-S0-abC"/>
+                                                <constraint firstItem="1H9-20-cYy" firstAttribute="centerY" secondItem="5JO-99-Rhi" secondAttribute="centerY" id="ldH-Ta-N9f"/>
+                                                <constraint firstItem="nUy-09-nfq" firstAttribute="leading" secondItem="sPo-C0-C6I" secondAttribute="leading" id="nvk-sb-Lkd"/>
+                                                <constraint firstAttribute="trailing" secondItem="7Mg-72-jaG" secondAttribute="trailing" constant="15" id="wFO-Jj-Sld"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="80" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="checkmark" indentationWidth="10" rowHeight="80" id="4xm-3z-KAC" customClass="UIThemeableTableViewCell" customModule="Carbon_3_0" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="521" width="600" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4xm-3z-KAC" id="5iI-ZH-wWj">
+                                            <rect key="frame" x="0.0" y="0.0" width="556" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open Dice Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQ4-kK-aQ2" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="80" y="11.5" width="127.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Auxiliary_Dice" translatesAutoresizingMaskIntoConstraints="NO" id="KIa-50-HEi" customClass="UIThemeableImageView" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="20" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="MlF-OU-oz3"/>
+                                                        <constraint firstAttribute="width" constant="40" id="Z0D-cI-s7d"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A shortcut to the dice menu." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opL-aN-X5Q" customClass="UIThemeableLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="80" y="38.5" width="130" height="31.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="130" id="4qY-Zz-nk6"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFf-bi-3DC" customClass="CarbonProLabel" customModule="Carbon_3_0" customModuleProvider="target">
+                                                    <rect key="frame" x="501" y="29" width="40" height="22"/>
+                                                    <color key="backgroundColor" red="0.92941176469999998" green="0.30588235289999999" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="e5a-gq-gLc"/>
+                                                        <constraint firstAttribute="width" constant="40" id="xx4-1Z-Rln"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="opL-aN-X5Q" firstAttribute="top" secondItem="lQ4-kK-aQ2" secondAttribute="bottom" constant="6" id="DCN-qM-Gg9"/>
+                                                <constraint firstItem="KIa-50-HEi" firstAttribute="leading" secondItem="5iI-ZH-wWj" secondAttribute="leading" constant="20" id="Kh4-Xy-NFK"/>
+                                                <constraint firstItem="lQ4-kK-aQ2" firstAttribute="centerY" secondItem="5iI-ZH-wWj" secondAttribute="centerY" constant="-18" id="LaK-7R-aBN"/>
+                                                <constraint firstItem="hFf-bi-3DC" firstAttribute="centerY" secondItem="5iI-ZH-wWj" secondAttribute="centerY" id="ZHX-gd-Hl3"/>
+                                                <constraint firstItem="KIa-50-HEi" firstAttribute="centerY" secondItem="5iI-ZH-wWj" secondAttribute="centerY" id="cGt-Ij-xfy"/>
+                                                <constraint firstAttribute="trailing" secondItem="hFf-bi-3DC" secondAttribute="trailing" constant="15" id="h4h-mu-5cg"/>
+                                                <constraint firstItem="lQ4-kK-aQ2" firstAttribute="leading" secondItem="KIa-50-HEi" secondAttribute="trailing" constant="20" id="nFC-NE-wMW"/>
+                                                <constraint firstItem="opL-aN-X5Q" firstAttribute="leading" secondItem="lQ4-kK-aQ2" secondAttribute="leading" id="uI4-hR-MeP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="80" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="NRi-GA-lHG" id="5Zj-JQ-3df"/>
+                            <outlet property="delegate" destination="NRi-GA-lHG" id="Hda-FK-eou"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EfV-et-pHV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="148"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Auxiliary_Chooser" width="100" height="100"/>
+        <image name="Auxiliary_Dice" width="100" height="100"/>
+        <image name="Auxiliary_HardReset" width="100" height="100"/>
+        <image name="Auxiliary_History" width="100" height="100"/>
+        <image name="Auxiliary_Text" width="100" height="100"/>
+        <image name="Auxiliary_Timer" width="100" height="100"/>
+    </resources>
+</document>
